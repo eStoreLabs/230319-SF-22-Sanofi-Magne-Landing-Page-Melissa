@@ -155,12 +155,12 @@
   background-color: #001e61;
   color: #fff;
 }
-#es-sanofi.es-sanofi #es-magne.es-magne .es-may .es-mySlides {
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__slide {
   display: flex;
   flex-direction: column;
-  min-height: 400px;
+  min-height: 500px;
 }
-#es-sanofi.es-sanofi #es-magne.es-magne .es-may .es-mySlides--second {
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__slide--second {
   background-image: url(./img/es-may-slider-bg.png);
   background-repeat: no-repeat;
   background-position: top right;
@@ -172,6 +172,13 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__packshot {
   max-height: 200px;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__packshotCtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__title {
   font-family: "es-Gilroy";
   font-size: 30px;
@@ -181,6 +188,15 @@
   font-family: "es-Gilroy";
   font-size: 16px;
   color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__text span {
+  text-decoration: underline;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__link {
   text-decoration: none;
@@ -195,6 +211,9 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__link:hover {
   background-color: #001e61;
   color: #fff;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow {
+  cursor: pointer;
 }
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-kv {
@@ -289,7 +308,14 @@
     position: absolute;
     left: -200px;
   }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-may .es-mySlides {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-may__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
+    gap: 20px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-may__content {
+    max-width: 40%;
   }
 }/*# sourceMappingURL=style.css.map */

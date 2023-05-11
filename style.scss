@@ -167,10 +167,10 @@ $es-dark-color: #001e61;
         }
 
         .es-may{
-            .es-mySlides{
+            &__slide{
                 display: flex;
                 flex-direction: column;
-                min-height: 400px;
+                min-height: 500px;
                 &--second{
                     background-image: url(./img/es-may-slider-bg.png);
                     background-repeat: no-repeat;
@@ -184,6 +184,13 @@ $es-dark-color: #001e61;
             &__packshot{
                 max-height: 200px;
             }
+            &__packshotCtn{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap:20px;
+            }
             &__title{
                 font-family: $es-regular;
                 font-size: 30px;
@@ -193,6 +200,15 @@ $es-dark-color: #001e61;
                 font-family: $es-regular;
                 font-size: 16px;
                 color: $es-main-text-color;
+                span{
+                    text-decoration: underline;
+                }
+            }
+            &__item{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 20px;
             }
             &__link{
                 text-decoration: none;
@@ -207,6 +223,9 @@ $es-dark-color: #001e61;
                     background-color: $es-dark-color;
                     color: #fff;
                 }
+            }
+            &__arrow{
+                cursor: pointer;
             }
         }
         @media (min-width: 750px){
@@ -304,8 +323,15 @@ $es-dark-color: #001e61;
                 }
             }
             .es-may{
-                .es-mySlides{
+                &__slide{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     flex-direction: row;
+                    gap: 20px;
+                }
+                &__content{
+                    max-width: 40%;
                 }
             }
         }
