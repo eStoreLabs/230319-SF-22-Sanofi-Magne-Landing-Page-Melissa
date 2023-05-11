@@ -16,6 +16,10 @@ $es-main-text-light-color: #78a9df;
         $es-regular: "es-Gilroy";
         $es-title: "es-Bliss-heavy";
 
+    @mixin es-text-reset {
+        font-size: 16px;
+        line-height: 1.1;
+    }
 #es-sanofi.es-sanofi{
     #es-magne.es-magne{
         max-width: 1200px;
@@ -56,6 +60,7 @@ $es-main-text-light-color: #78a9df;
                 padding: 10px;
             }
             &__navLink{
+                @include es-text-reset;
                 text-decoration: none;
                 color: $es-main-text-color;
                 position: relative;
@@ -91,6 +96,7 @@ $es-main-text-light-color: #78a9df;
                 color: $es-main-text-color;
             }
             &__title{
+                @include es-text-reset;
                 font-size: 25px;
                 margin-bottom: 60px;
             }
@@ -112,6 +118,7 @@ $es-main-text-light-color: #78a9df;
                 left: 40px;
             }
             &__subtitle{
+                @include es-text-reset;
                 font-size:20px;
             }
             &__imgCtn{
@@ -147,6 +154,7 @@ $es-main-text-light-color: #78a9df;
                 max-width: 280px;
             }
             &__name{
+                @include es-text-reset;
                 font-family: $es-regular;
                 text-align: center;
                 color: $es-dark-color;
@@ -193,11 +201,13 @@ $es-main-text-light-color: #78a9df;
                 gap:20px;
             }
             &__title{
+                @include es-text-reset;
                 font-family: $es-regular;
                 font-size: 30px;
                 color: $es-main-text-color;
             }
             &__text{
+                @include es-text-reset;
                 font-family: $es-regular;
                 font-size: 16px;
                 color: $es-main-text-color;
@@ -240,6 +250,7 @@ $es-main-text-light-color: #78a9df;
             justify-content: center;
             align-items: center;
             &__title{
+                @include es-text-reset;
                 font-size: 30px;
                 text-align: center;
                 font-family: $es-title;
@@ -256,6 +267,7 @@ $es-main-text-light-color: #78a9df;
                 }
             }
             &__text{
+                @include es-text-reset;
                 font-size: 16px;
                 text-align: center;
                 font-family: $es-title;
@@ -291,6 +303,7 @@ $es-main-text-light-color: #78a9df;
                 align-items: center;
             }
             &__name{
+                @include es-text-reset;
                 font-family: $es-regular;
                 text-align: center;
                 color: $es-dark-color;
@@ -320,6 +333,7 @@ $es-main-text-light-color: #78a9df;
                 max-width: 300px;
             }
             &__title{
+                @include es-text-reset;
                 font-size: 30px;
                 text-align: center;
                 font-family: $es-regular;
@@ -350,11 +364,13 @@ $es-main-text-light-color: #78a9df;
                 align-items: center;
             }
             &__number{
+                @include es-text-reset;
                 font-size: 30px;
                 font-family: $es-title;
                 color: $es-dark-color;
             }
             &__how-text{
+                @include es-text-reset;
                 text-align: center;
                 font-family: $es-title;
                 color: $es-main-text-color;
@@ -370,6 +386,7 @@ $es-main-text-light-color: #78a9df;
                 }
             }
             &__button{
+                @include es-text-reset;
                 border: none;
                 background-color: $es-dark-color;
                 color: #fff;

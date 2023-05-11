@@ -49,6 +49,8 @@
   padding: 10px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__navLink {
+  font-size: 16px;
+  line-height: 1.1;
   text-decoration: none;
   color: #001883;
   position: relative;
@@ -82,6 +84,8 @@
   color: #001883;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__title {
+  font-size: 16px;
+  line-height: 1.1;
   font-size: 25px;
   margin-bottom: 60px;
 }
@@ -103,6 +107,8 @@
   left: 40px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__subtitle {
+  font-size: 16px;
+  line-height: 1.1;
   font-size: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__imgCtn::after {
@@ -137,6 +143,8 @@
   max-width: 280px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-cross__name {
+  font-size: 16px;
+  line-height: 1.1;
   font-family: "es-Gilroy";
   text-align: center;
   color: #001e61;
@@ -180,11 +188,15 @@
   gap: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__title {
+  font-size: 16px;
+  line-height: 1.1;
   font-family: "es-Gilroy";
   font-size: 30px;
   color: #001883;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__text {
+  font-size: 16px;
+  line-height: 1.1;
   font-family: "es-Gilroy";
   font-size: 16px;
   color: #001883;
@@ -227,6 +239,8 @@
   align-items: center;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-message__title {
+  font-size: 16px;
+  line-height: 1.1;
   font-size: 30px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -243,6 +257,8 @@
   display: none;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-message__text {
+  font-size: 16px;
+  line-height: 1.1;
   font-size: 16px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -278,6 +294,8 @@
   align-items: center;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__name {
+  font-size: 16px;
+  line-height: 1.1;
   font-family: "es-Gilroy";
   text-align: center;
   color: #001e61;
@@ -307,6 +325,8 @@
   max-width: 300px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__title {
+  font-size: 16px;
+  line-height: 1.1;
   font-size: 30px;
   text-align: center;
   font-family: "es-Gilroy";
@@ -337,11 +357,15 @@
   align-items: center;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__number {
+  font-size: 16px;
+  line-height: 1.1;
   font-size: 30px;
   font-family: "es-Bliss-heavy";
   color: #001e61;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__how-text {
+  font-size: 16px;
+  line-height: 1.1;
   text-align: center;
   font-family: "es-Bliss-heavy";
   color: #001883;
@@ -357,6 +381,8 @@
   text-align: center;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__button {
+  font-size: 16px;
+  line-height: 1.1;
   border: none;
   background-color: #001e61;
   color: #fff;
