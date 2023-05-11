@@ -1,0 +1,313 @@
+$es-main-text-color:#001883;
+$es-dark-color: #001e61;
+
+@font-face {
+    font-family: "es-Gilroy";
+    src: url("./fonts/Gilroy-SemiBold.otf") format("opentype");
+    font-display: auto;
+    }
+    @font-face {
+        font-family: "es-Bliss-heavy";
+        src: url("./fonts/Bliss-Heavy.otf") format("opentype");
+        font-display: auto;
+        }
+
+        $es-regular: "es-Gilroy";
+        $es-title: "es-Bliss-heavy";
+
+#es-sanofi.es-sanofi{
+    #es-magne.es-magne{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        background-color: #fff;
+        img{
+            max-width: 100%;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .es-kv{
+            background-image: url(./img/kv-bg.png);
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-size: contain;
+            min-height: 500px;
+            position: relative;
+            &__nav{
+                display: flex;
+                justify-content: center;
+                background-color: rgba(255, 255, 255, 0.678);
+                border-radius: 100% 0% 48% 52% / 0% 34% 66% 100%;
+                padding: 10px 5px;
+                width: 100%;
+            }
+            &__navCtn{
+                display: flex;
+                flex-direction: column;
+                z-index: 10;
+            }
+            &__navItem{
+                min-width: 160px;
+                text-align: center;
+                list-style: none;
+                padding: 10px;
+            }
+            &__navLink{
+                text-decoration: none;
+                color: $es-main-text-color;
+                position: relative;
+                font-family: 'es-Gilroy';
+                font-size: 16px;
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    height: 1.5px;
+                    width: 100%;
+                    background-color: $es-main-text-color;
+                }
+                &:nth-child(1){
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+            &__content{
+                display: flex;
+                flex-direction: column;
+            }
+            &__text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                font-family: $es-title;
+                color: $es-main-text-color;
+            }
+            &__title{
+                font-size: 25px;
+                margin-bottom: 60px;
+            }
+            &__subtitleCtn{
+                background-image: url(./img/es-kv-text-bg.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                min-width: 300px;
+                min-height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            &__subtitleBadge{
+                width: 90px;
+                position: absolute;
+                top:-40px;
+                left: 40px;
+            }
+            &__subtitle{
+                font-size:20px;
+            }
+            &__imgCtn{
+                &::after{
+                    content: url(./img/es-header-line.png);
+                    display: block;
+                    position: absolute;
+                    bottom: -10px;
+                    right: 0;
+                }
+            }
+            &__img{
+                clip-path: circle(39.6% at 50% 50%);
+                width: 100%;
+                max-height: 550px;
+            }
+        }
+        .es-cross{
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:20px;
+            &__item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-width: 300px;
+            }
+            &__img{
+                max-width: 280px;
+            }
+            &__name{
+                font-family: $es-regular;
+                text-align: center;
+                color: $es-dark-color;
+            }
+            &__link{
+                text-decoration: none;
+                color: $es-dark-color;
+                border: 2px solid $es-dark-color;
+                border-radius: 20px;
+                padding: 5px 20px;
+                font-family: $es-regular;
+                font-size: 14px;
+                transition: .4s ease-in-out;
+                &:hover{
+                    background-color: $es-dark-color;
+                    color: #fff;
+                }
+            }
+        }
+
+        .es-may{
+            .es-mySlides{
+                display: flex;
+                flex-direction: column;
+                min-height: 400px;
+                &--second{
+                    background-image: url(./img/es-may-slider-bg.png);
+                    background-repeat: no-repeat;
+                    background-position: top right;
+                    background-size: contain;
+                }
+            }
+            &__img{
+                max-width: 350px;
+            }
+            &__packshot{
+                max-height: 200px;
+            }
+            &__title{
+                font-family: $es-regular;
+                font-size: 30px;
+                color: $es-main-text-color;
+            }
+            &__text{
+                font-family: $es-regular;
+                font-size: 16px;
+                color: $es-main-text-color;
+            }
+            &__link{
+                text-decoration: none;
+                color: $es-dark-color;
+                border: 2px solid $es-dark-color;
+                border-radius: 20px;
+                padding: 5px 20px;
+                font-family: $es-regular;
+                font-size: 18px;
+                transition: .4s ease-in-out;
+                &:hover{
+                    background-color: $es-dark-color;
+                    color: #fff;
+                }
+            }
+        }
+        @media (min-width: 750px){
+            .es-kv{
+                max-height: 600px;
+                &__navCtn{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                &__navItem{
+                    min-width: 100px;
+                    max-width: 100px;
+                    padding: 5px;
+                }
+                &__navLink{
+                    font-size: 12px;
+                    &::after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        width: 2px;
+                        height: 100%;
+                        background-color: $es-main-text-color;
+                    }
+                    &:nth-child(1){
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+                &__content{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+        @media (min-width: 950px) {
+            .es-kv{
+                max-height: 600px;
+                &__navCtn{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                &__nav{
+                    position: absolute;
+                    &::after{
+                        content: url(./img/nav-line.png);
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+                &__navItem{
+                    min-width: 160px;
+                    max-width: 160px;
+                    padding: 10px;
+                }
+                &__navLink{
+                    font-size: 16px;
+                }
+                &__img{
+                    clip-path: none;
+                }
+                &__text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+                    font-family: $es-title;
+                    color: $es-main-text-color;
+                    position: relative;
+                }
+                &__title{
+                    font-size: 40px;
+                    margin-bottom: 0;
+                    margin-top: -80px;
+                }
+                &__subtitleCtn{
+                    position: absolute;
+                    bottom: -20px;
+                    right: -100px;
+                    &::after{
+                        display: block;
+                        content: url(./img/kv-sun.png);
+                        position: absolute;
+                        left:-200px;
+                    }
+                }
+            }
+            .es-may{
+                .es-mySlides{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
