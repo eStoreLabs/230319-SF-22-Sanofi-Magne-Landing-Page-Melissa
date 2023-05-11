@@ -214,6 +214,8 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow {
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow--next {
   align-self: flex-end;
@@ -245,6 +247,114 @@
   text-align: center;
   font-family: "es-Bliss-heavy";
   color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc {
+  background-image: url(./img/es-magneDesc-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__container--secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__name {
+  font-family: "es-Gilroy";
+  text-align: center;
+  color: #001e61;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__link {
+  text-decoration: none;
+  color: #001e61;
+  border: 2px solid #001e61;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-family: "es-Gilroy";
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__link:hover {
+  background-color: #001e61;
+  color: #fff;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__arrow {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  align-self: flex-start;
+  margin-top: 40px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
+  max-width: 300px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__title {
+  font-size: 30px;
+  text-align: center;
+  font-family: "es-Gilroy";
+  color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__howCtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__howItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 200px;
+  min-height: 200px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__numberCtn {
+  height: 60px;
+  width: 60px;
+  background-image: url(./img/es-how-numberBg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__number {
+  font-size: 30px;
+  font-family: "es-Bliss-heavy";
+  color: #001e61;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__how-text {
+  text-align: center;
+  font-family: "es-Bliss-heavy";
+  color: #001883;
+  min-height: 60px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__button {
+  border: none;
+  background-color: #001e61;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "es-Gilroy";
 }
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-kv {
@@ -305,6 +415,26 @@
     font-family: "es-Bliss-heavy";
     color: #001883;
     margin-top: 0;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__container--secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
+    max-width: 450px;
   }
 }
 @media (min-width: 950px) {
