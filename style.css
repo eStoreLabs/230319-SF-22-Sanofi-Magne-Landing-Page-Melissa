@@ -215,6 +215,9 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow {
   cursor: pointer;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow--next {
+  align-self: flex-end;
+}
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-kv {
     max-height: 600px;
@@ -249,6 +252,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow {
+    cursor: pointer;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow--next {
+    align-self: center;
   }
 }
 @media (min-width: 950px) {
