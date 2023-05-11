@@ -164,7 +164,7 @@
                 </div>
                 <div class="es-magneDesc__container es-magneDesc__container--secondary">
                     <p class="es-magneDesc__title">
-                        Magnez, magnezowi nierówny! <br> - jak prawidłowo się dawkować
+                        Magnez, magnezowi nierówny! <br> - jak prawidłowo go dawkować?
                     </p>
                     <div class="es-magneDesc__howCtn">
                         <div class="es-magneDesc__howItem">
@@ -208,6 +208,87 @@
                     </div>
                 </div>
             </section>
+
+            <section class="es-calculator">
+                <p class="es-calculator__title">
+                    Sprawdź dawkowanie <br> poszczególnych wariantów Magne B<sub>6</sub>
+                </p>
+                <div class="es-calculator__ctn es-calculator__ctn--inputs">
+                    <div class="es-calculator__item">
+                        <label class="es-calculator__selectLabel" for="es-calculator-product">wybierz wariant leku:</label>
+                        <select required name="es-product" id="es-calculator-product" class="es-calculator__select">
+                            <option value="magne-b6-forte-100">MAGNE B<sub>6</sub> FORTE 100 TABL. POWLEKANYCH</option>
+                            <option value="magne-b6-forte-60">MAGNE B<sub>6</sub> FORTE 160 TABL. POWLEKANYCH</option>
+                            <option value="magne-b6-60">MAGNE B<sub>6</sub> 60 TABL. POWLEKANYCH</option>
+                        </select>
+                    </div>
+
+                    <div class="es-calculator__item">
+                        <label class="es-calculator__selectLabel" for="es-calculator-who">wybierz dla kogo:</label>
+                        <select required name="es-product" id="es-calculator-who" class="es-calculator__select">
+                            <option value="dorosly">Dorosły</option>
+                            <option value="dziecko">Dziecko</option>
+                            <option value="kobieta">Kobieta</option>
+                        </select>
+                    </div>
+
+                    <div class="es-calculator__item">
+                        <label class="es-calculator__selectLabel" for="es-calculator-data">wybierz datę zakupu:</label>
+                        <input required class="es-calculator__dataInput" type="date" name="es-calculator-data" id="es-calculator-data">
+                    </div>
+
+                    <button class="es-calculator__submitBtn" type="submit">Oblicz</button>
+                </div>
+
+                <div class="es-calculator__ctn es-calculator__ctn--results">
+                    <div class="es-calculator__item">
+                        <p class="es-calculator__resultText">
+                            zalecana ilość tabletek na dobę:
+                        </p>
+                        <p class="es-calculator__result es-calculator__result--tabs">XXX</p>
+                    </div>
+
+                    
+
+                    <div class="es-calculator__item">
+                       <p class="es-calculator__resultText">
+                        przy zalecanym dawkowaniu opakowanie wystarczy do:
+                       </p>
+                       <p class="es-calculator__result es-calculator__result--date">04.05.2023r.</p>
+                    </div>
+
+                    <button class="es-calculator__returnBtn" type="button">Oblicz jeszcze raz</button>
+                </div>
+
+                
+            </section>
+
+            <div class="es-how">
+                <div class="es-how__content">
+                    <p class="es-how__title">
+                        Jak ukoić nerwy <br> i&nbsp;radzić sobie ze&nbsp;stresem? 
+                    </p>
+                    <p class="es-how__desc">
+                        Stresująca praca, wiosenny remont w&nbsp;domu, pojawienie się nowego członka rodziny, czy egzaminy - każdy z&nbsp;nas czasami doświadcza wzmożonego napięcia.
+                    </p>
+                    <p class="es-how__desc">
+                        Niedobór magnezu może objawiać się <br>
+                        w&nbsp;następujący sposób<sup>2</sup> :
+                    </p>
+                    <ul class="es-how__list">
+                        <li class="es-how__listItem">nerwowość</li>
+                        <li class="es-how__listItem">drażliwość</li>
+                        <li class="es-how__listItem">wahania nastroju</li>
+                        <li class="es-how__listItem">łagodny lęk</li>
+                        <li class="es-how__listItem">niepokój</li>
+                        <li class="es-how__listItem">ospałość</li>
+                        <li class="es-how__listItem">zaburzenia snu w niewielkim nasileniu</li>
+                    </ul>
+                </div>
+                <div class="es-how__imgCtn">
+                    <img src="./img/es-how-img.png" alt="" class="es-how__img">
+                </div>
+            </div>
 
         </div>
     </div>

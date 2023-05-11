@@ -399,6 +399,178 @@ $es-main-text-light-color: #78a9df;
         .es-hide{
             display: none;
         }
+        .es-calculator{
+            background-image: url(./img/es-calculator-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100%;
+            padding: 40px 10px;
+            &__ctn{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            &__title{
+                @include es-text-reset;
+                font-size: 30px;
+                text-align: center;
+                font-family: $es-title;
+                color: $es-main-text-color;
+            }
+            &__item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            &__select{
+                border-radius: 20px;
+                padding: 10px;
+                margin: 10px;
+                font-family: $es-regular;
+                color: $es-main-text-color;
+                background-color: #fff;
+                cursor: pointer;
+                min-width: 300px;
+            }
+            &__selectLabel{
+                @include es-text-reset;
+                text-align: center;
+                font-family: $es-regular;
+                color: $es-main-text-color;
+                
+            }
+            &__dataInput{
+                border-radius: 20px;
+                padding: 10px;
+                margin: 10px;
+                font-family: $es-regular;
+                color: $es-main-text-color;
+                background-color: #fff;
+                cursor: pointer;
+                min-width: 300px;
+            }
+            &__submitBtn{
+                margin: 50px 0;
+                text-decoration: none;
+                color: $es-dark-color;
+                border: 2px solid $es-dark-color;
+                background-color: transparent;
+                border-radius: 20px;
+                padding: 5px 30px;
+                font-family: $es-regular;
+                font-size: 14px;
+                transition: .4s ease-in-out;
+                width: 130px;
+                height: 30px;
+                cursor: pointer;
+                position: relative;
+                &:hover{
+                    background-color: $es-dark-color;
+                    color: #fff;
+                }
+                &::after{
+                    content: url(./img/es-line.png);
+                    position: absolute;
+                    top:-30px;
+                    left: -150%;
+                    transform: scale(.6)
+                }
+            }
+            &__resultText{
+                @include es-text-reset;
+                text-align: center;
+                font-family: $es-regular;
+                color: $es-main-text-color;
+                
+            }
+            &__result{
+                @include es-text-reset;
+                font-size: 30px;
+                text-align: center;
+                font-family: $es-title;
+                color: $es-main-text-color;
+                margin: 0;
+            }
+            &__returnBtn{
+                margin: 50px 0;
+                text-decoration: none;
+                color: $es-dark-color;
+                border: 2px solid $es-dark-color;
+                background-color: transparent;
+                border-radius: 20px;
+                padding: 5px 30px;
+                font-family: $es-regular;
+                font-size: 14px;
+                transition: .4s ease-in-out;
+                width: 200px;
+                height: 30px;
+                cursor: pointer;
+                position: relative;
+                &:hover{
+                    background-color: $es-dark-color;
+                    color: #fff;
+                }
+                &::after{
+                    content: url(./img/es-line.png);
+                    position: absolute;
+                    top:-30px;
+                    left: -60%;
+                    transform: scale(.6)
+                }
+            }
+        }
+        .es-how{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 50px 0;
+            &::after{
+                content: url(./img/es-how-happyFace.png);
+                display: block;
+                position: absolute;
+                right: 10%;
+                bottom:-10%;
+            }
+            &__content{
+                width: 100%;
+            }
+            &__title{
+                @include es-text-reset;
+                font-size: 30px;
+                text-align: center;
+                font-family: $es-title;
+                color: $es-main-text-color;
+                position: relative;
+                &::after{
+                    content: url(./img/es-how-sadFace.png);
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top:-150%;
+                }
+            }
+            &__desc{
+                @include es-text-reset;
+                max-width: 500px;
+                font-family: $es-regular;
+                color: $es-main-text-color;
+            }
+            &__imgCtn{
+                max-width: 300px;
+                align-self: flex-end;
+            }
+            &__listItem{
+                @include es-text-reset;
+                font-family: $es-regular;
+                color: $es-main-text-color;
+            }
+        }
         @media (min-width: 750px){
             .es-kv{
                 max-height: 600px;
@@ -485,6 +657,32 @@ $es-main-text-light-color: #78a9df;
                 }
                 &__img{
                     max-width: 450px;
+                }
+            }
+            .es-how{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                &__content{
+                    width: 60%;
+                }
+                &__title{
+                    font-size: 40px;
+                    text-align: left;
+                    &::after{
+                        top:0;
+                        right:-10%;
+                    }
+                }
+                &__desc{
+                    font-size: 20px;
+                }
+                &__imgCtn{
+                    max-width: 400px;
+                }
+                &__listItem{
+                    font-size: 20px;
                 }
             }
         }

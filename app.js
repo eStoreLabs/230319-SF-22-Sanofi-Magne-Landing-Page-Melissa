@@ -1,3 +1,5 @@
+//slider
+
 const esNext = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-next')
 const esPrev = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-prev')
 
@@ -26,7 +28,7 @@ function showSlides(n) {
 esNext.addEventListener('click', ()=> plusSlides(1))
 esPrev.addEventListener('click', ()=> plusSlides(-1))
 
-
+//show content
 
 const esShowContentButtons = document.querySelectorAll("[data-esshow-id]");
 
@@ -38,3 +40,6 @@ esShowContentButtons.forEach(esShowContentButton=> {
     esShowContentButton.classList.add("es-hide")
   })
 })
+
+
+//calculator
