@@ -336,8 +336,8 @@ $es-main-text-light-color: #78a9df;
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                min-width: 200px;
-                min-height: 200px;
+                min-width: 250px;
+                min-height: 300px;
             }
             &__numberCtn{
                 height: 60px;
@@ -359,6 +359,15 @@ $es-main-text-light-color: #78a9df;
                 font-family: $es-title;
                 color: $es-main-text-color;
                 min-height: 60px;
+                &--hidden{
+                    background-color: $es-main-text-light-color;
+                    color: #fff;
+                    padding: 15px;
+                    border-radius: 40px;
+                    font-family: $es-regular;
+                    font-size: 12px;
+                    text-align: center;
+                }
             }
             &__button{
                 border: none;
@@ -369,6 +378,9 @@ $es-main-text-light-color: #78a9df;
                 cursor: pointer;
                 font-family: $es-regular;
             }
+        }
+        .es-hide{
+            display: none;
         }
         @media (min-width: 750px){
             .es-kv{

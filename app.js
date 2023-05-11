@@ -25,3 +25,16 @@ function showSlides(n) {
 
 esNext.addEventListener('click', ()=> plusSlides(1))
 esPrev.addEventListener('click', ()=> plusSlides(-1))
+
+
+
+const esShowContentButtons = document.querySelectorAll("[data-esshow-id]");
+
+esShowContentButtons.forEach(esShowContentButton=> {
+  esShowContentButton.addEventListener("click", () => {
+    const esshowId = esShowContentButton.dataset.esshowId
+    const esModal = document.getElementById(esshowId)
+    esModal.classList.remove("es-hide");
+    esShowContentButton.classList.add("es-hide")
+  })
+})
