@@ -29,7 +29,7 @@ $es-dark-color: #001e61;
             box-sizing: border-box;
         }
         .es-kv{
-            background-image: url(./img/kv-bg.png);
+            background-image: url(./img/kv-bg.webp);
             background-repeat: no-repeat;
             background-position: top left;
             background-size: contain;
@@ -94,7 +94,7 @@ $es-dark-color: #001e61;
                 margin-bottom: 60px;
             }
             &__subtitleCtn{
-                background-image: url(./img/es-kv-text-bg.png);
+                background-image: url(./img/es-kv-text-bg.webp);
                 background-repeat: no-repeat;
                 background-size: contain;
                 min-width: 300px;
@@ -115,7 +115,7 @@ $es-dark-color: #001e61;
             }
             &__imgCtn{
                 &::after{
-                    content: url(./img/es-header-line.png);
+                    content: url(./img/es-header-line.webp);
                     display: block;
                     position: absolute;
                     bottom: -10px;
@@ -172,7 +172,7 @@ $es-dark-color: #001e61;
                 flex-direction: column;
                 min-height: 500px;
                 &--second{
-                    background-image: url(./img/es-may-slider-bg.png);
+                    background-image: url(./img/es-may-slider-bg.webp);
                     background-repeat: no-repeat;
                     background-position: top right;
                     background-size: contain;
@@ -277,7 +277,7 @@ $es-dark-color: #001e61;
                 &__nav{
                     position: absolute;
                     &::after{
-                        content: url(./img/nav-line.png);
+                        content: url(./img/nav-line.webp);
                         display: block;
                         position: absolute;
                         bottom: 0;
@@ -316,7 +316,7 @@ $es-dark-color: #001e61;
                     right: -100px;
                     &::after{
                         display: block;
-                        content: url(./img/kv-sun.png);
+                        content: url(./img/kv-sun.webp);
                         position: absolute;
                         left:-200px;
                     }

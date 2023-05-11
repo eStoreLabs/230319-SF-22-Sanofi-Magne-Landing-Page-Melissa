@@ -22,7 +22,7 @@
   box-sizing: border-box;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv {
-  background-image: url(./img/kv-bg.png);
+  background-image: url(./img/kv-bg.webp);
   background-repeat: no-repeat;
   background-position: top left;
   background-size: contain;
@@ -86,7 +86,7 @@
   margin-bottom: 60px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__subtitleCtn {
-  background-image: url(./img/es-kv-text-bg.png);
+  background-image: url(./img/es-kv-text-bg.webp);
   background-repeat: no-repeat;
   background-size: contain;
   min-width: 300px;
@@ -106,7 +106,7 @@
   font-size: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__imgCtn::after {
-  content: url(./img/es-header-line.png);
+  content: url(./img/es-header-line.webp);
   display: block;
   position: absolute;
   bottom: -10px;
@@ -161,7 +161,7 @@
   min-height: 500px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__slide--second {
-  background-image: url(./img/es-may-slider-bg.png);
+  background-image: url(./img/es-may-slider-bg.webp);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
@@ -264,7 +264,7 @@
     position: absolute;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__nav::after {
-    content: url(./img/nav-line.png);
+    content: url(./img/nav-line.webp);
     display: block;
     position: absolute;
     bottom: 0;
@@ -304,7 +304,7 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__subtitleCtn::after {
     display: block;
-    content: url(./img/kv-sun.png);
+    content: url(./img/kv-sun.webp);
     position: absolute;
     left: -200px;
   }
