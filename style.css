@@ -218,6 +218,34 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow--next {
   align-self: flex-end;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-message__title {
+  font-size: 30px;
+  text-align: center;
+  font-family: "es-Bliss-heavy";
+  color: #78a9df;
+  position: relative;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-message__title:after {
+  content: url(./img/kv-sun.webp);
+  display: block;
+  position: absolute;
+  right: -150px;
+  top: -50px;
+  transform: scale(0.7);
+  display: none;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-message__text {
+  font-size: 16px;
+  text-align: center;
+  font-family: "es-Bliss-heavy";
+  color: #001883;
+}
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-kv {
     max-height: 600px;
@@ -258,6 +286,25 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow--next {
     align-self: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-message__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-message__title:after {
+    content: url(./img/kv-sun.webp);
+    display: block;
+    position: absolute;
+    right: -150px;
+    top: -50px;
+    transform: scale(0.7);
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-message__text {
+    font-size: 20px;
+    text-align: center;
+    font-family: "es-Bliss-heavy";
+    color: #001883;
+    margin-top: 0;
   }
 }
 @media (min-width: 950px) {

@@ -1,5 +1,6 @@
 $es-main-text-color:#001883;
 $es-dark-color: #001e61;
+$es-main-text-light-color: #78a9df;
 
 @font-face {
     font-family: "es-Gilroy";
@@ -231,6 +232,34 @@ $es-dark-color: #001e61;
                 }
             }
         }
+        .es-message{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__title{
+                font-size: 30px;
+                text-align: center;
+                font-family: $es-title;
+                color: $es-main-text-light-color;
+                position: relative;
+                &:after{
+                    content: url(./img/kv-sun.webp);
+                    display: block;
+                    position: absolute;
+                    right: -150px;
+                    top:-50px;
+                    transform: scale(.7);
+                    display: none;
+                }
+            }
+            &__text{
+                font-size: 16px;
+                text-align: center;
+                font-family: $es-title;
+                color: $es-main-text-color;
+            }
+        }
         @media (min-width: 750px){
             .es-kv{
                 max-height: 600px;
@@ -274,6 +303,27 @@ $es-dark-color: #001e61;
                     &--next{
                         align-self: center;
                     }
+                }
+            }
+            .es-message{
+                &__title{
+                    margin-bottom: 20px;
+                    font-size: 40px;
+                    &:after{
+                        content: url(./img/kv-sun.webp);
+                        display: block;
+                        position: absolute;
+                        right: -150px;
+                        top:-50px;
+                        transform: scale(.7);
+                    }
+                }
+                &__text{
+                    font-size: 20px;
+                    text-align: center;
+                    font-family: $es-title;
+                    color: $es-main-text-color;
+                    margin-top: 0;
                 }
             }
         }
