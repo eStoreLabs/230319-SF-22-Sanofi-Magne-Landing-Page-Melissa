@@ -1,10 +1,13 @@
 //slider
 
-const esNext = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-next')
-const esPrev = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-prev')
+const esNext = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-next');
+const esPrev = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-prev');
 
-const esNext2 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-next2')
-const esPrev2 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-prev2')
+const esNext2 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-next2');
+const esPrev2 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-prev2');
+
+const esNext3 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-next3');
+const esPrev3 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-prev3');
 
 
 let slideIndex = [1,1];
@@ -12,6 +15,7 @@ let slideIndex = [1,1];
 let slideId = ["es-mySlides", "es-mySlides-2"]
 showSlides(1, 0);
 showSlides(1, 1);
+//showSlides(1, 2);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
@@ -28,11 +32,14 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";
 }
 
-esNext.addEventListener('click', ()=> plusSlides(1,0))
-esPrev.addEventListener('click', ()=> plusSlides(-1,0))
+esNext.addEventListener('click', ()=> plusSlides(1,0));
+esPrev.addEventListener('click', ()=> plusSlides(-1,0));
 
-esNext2.addEventListener('click', ()=> plusSlides(1,1))
-esPrev2.addEventListener('click', ()=> plusSlides(-1,1))
+esNext2.addEventListener('click', ()=> plusSlides(1,1));
+esPrev2.addEventListener('click', ()=> plusSlides(-1,1));
+
+// esNext3.addEventListener('click', ()=> plusSlides(1,2));
+// esPrev3.addEventListener('click', ()=> plusSlides(-1,2));
 
 //show content
 
@@ -43,7 +50,7 @@ esShowContentButtons.forEach(esShowContentButton=> {
     const esshowId = esShowContentButton.dataset.esshowId
     const esModal = document.getElementById(esshowId)
     esModal.classList.remove("es-hide");
-    esShowContentButton.classList.add("es-hide")
+    esShowContentButton.classList.add("es-hide");
   })
 })
 
@@ -67,10 +74,8 @@ const returnToCalculator= (input, result) => {
   result.classList.add("es-hide")
 }
 
-calculatorSubmitBtn.addEventListener('click', () => showCalculatorResults(calculatorInputsCtn, calculatorResutlsCtn))
-calculatorReturnBtn.addEventListener('click', () => returnToCalculator(calculatorInputsCtn, calculatorResutlsCtn))
-
-
+calculatorSubmitBtn.addEventListener('click', () => showCalculatorResults(calculatorInputsCtn, calculatorResutlsCtn));
+calculatorReturnBtn.addEventListener('click', () => returnToCalculator(calculatorInputsCtn, calculatorResutlsCtn));
 
 
 
