@@ -43,3 +43,39 @@ esShowContentButtons.forEach(esShowContentButton=> {
 
 
 //calculator
+
+const calculatorSubmitBtn = document.querySelector('.es-calculator__submitBtn');
+const calculatorReturnBtn = document.querySelector('.es-calculator__returnBtn');
+
+const calculatorInputsCtn = document.querySelector('.es-calculator__ctn--inputs');
+const calculatorResutlsCtn = document.querySelector('.es-calculator__ctn--results');
+
+
+const showCalculatorResults= (input, result) => {
+  input.classList.add("es-hide")
+  result.classList.remove("es-hide")
+}
+
+const returnToCalculator= (input, result) => {
+  input.classList.remove("es-hide")
+  result.classList.add("es-hide")
+}
+
+calculatorSubmitBtn.addEventListener('click', () => showCalculatorResults(calculatorInputsCtn, calculatorResutlsCtn))
+calculatorReturnBtn.addEventListener('click', () => returnToCalculator(calculatorInputsCtn, calculatorResutlsCtn))
+
+
+
+
+
+//faq
+
+const faqQuestions = document.querySelectorAll("[data-esquestion-id]");
+
+faqQuestions.forEach(faqQuestion=> {
+  faqQuestion.addEventListener("click", () => {
+    const esquestionId = faqQuestion.dataset.esquestionId 
+    const esfaqArrow= document.getElementById(esquestionId )
+    esfaqArrow.classList.toggle('es-faq__rotate')
+  })
+})

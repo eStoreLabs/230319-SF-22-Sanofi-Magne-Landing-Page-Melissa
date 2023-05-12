@@ -406,6 +406,7 @@ $es-main-text-light-color: #78a9df;
             background-size: contain;
             width: 100%;
             padding: 40px 10px;
+            min-height: 600px;
             &__ctn{
                 display: flex;
                 flex-direction: column;
@@ -523,6 +524,9 @@ $es-main-text-light-color: #78a9df;
                 }
             }
         }
+        .es-hide{
+            display: none;
+        }
         .es-how{
             display: flex;
             flex-direction: column;
@@ -569,6 +573,103 @@ $es-main-text-light-color: #78a9df;
                 @include es-text-reset;
                 font-family: $es-regular;
                 color: $es-main-text-color;
+            }
+        }
+        .es-faq{
+            margin-top: 80px;
+            &__title{
+                @include es-text-reset;
+                font-size: 25px;
+                text-align: center;
+                font-family: $es-title;
+                color: $es-main-text-color;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            &__item{
+                cursor: pointer;
+                margin: 10px
+            }
+            &__question{
+                @include es-text-reset;
+                font-family: $es-regular;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                background: $es-main-text-color;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 30px;
+            }
+            &__arrow{
+            }
+            &__rotate{
+                transform: rotate(-180deg);
+            }
+            &__answer{
+                @include es-text-reset;
+                font-family: $es-regular;
+                color: $es-main-text-color;
+                padding: 0px 20px;
+            }
+            &__answerItem{
+                @include es-text-reset;
+                font-family: $es-regular;
+                color: $es-main-text-color;
+            }
+        }
+        .es-articles{
+            &__title{
+                @include es-text-reset;
+                font-size: 25px;
+                text-align: center;
+                font-family: $es-title;
+                color: $es-main-text-color;
+            }
+        }
+
+        .es-articles{
+            &__ctn{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+            }
+            &__item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-width: 300px;
+                max-width: 500px;
+            }
+            &__subtitle{
+                @include es-text-reset;
+                font-size: 25px;
+                text-align: center;
+                font-family: $es-title;
+                color: $es-main-text-color;
+            }
+            &__link{
+                text-decoration: none;
+                background-color: $es-dark-color;
+                color: #fff;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-family: $es-regular;
+                font-size: 14px;
+                transition: .4s ease-in-out;
+                &:hover{
+                    color: $es-dark-color;
+                    outline: 2px solid $es-dark-color;
+                    background-color: #fff;
+                }
             }
         }
         @media (min-width: 750px){
@@ -683,6 +784,18 @@ $es-main-text-light-color: #78a9df;
                 }
                 &__listItem{
                     font-size: 20px;
+                }
+            }
+
+            .es-faq{
+                &__title{
+                    font-size: 40px;
+                }
+            }
+            .es-articles{
+                &__title{
+                    font-size: 40px;
+
                 }
             }
         }
