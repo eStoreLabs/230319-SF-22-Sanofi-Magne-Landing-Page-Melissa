@@ -3,7 +3,7 @@ $es-dark-color: #001e61;
 $es-main-text-light-color: #78a9df;
 
 @font-face {
-    font-family: "es-Gilroy";
+    font-family: "es-Gilroy-semibold";
     src: url("./fonts/Gilroy-SemiBold.otf") format("opentype");
     font-display: auto;
     }
@@ -11,9 +11,14 @@ $es-main-text-light-color: #78a9df;
         font-family: "es-Bliss-heavy";
         src: url("./fonts/Bliss-Heavy.otf") format("opentype");
         font-display: auto;
-        }
-
-        $es-regular: "es-Gilroy";
+    }
+    @font-face {
+        font-family: "es-Gilroy-regular";
+        src: url("./fonts/Gilroy-Regular.otf") format("opentype");
+        font-display: auto;
+    }
+        $es-regular: "es-Gilroy-semibold";
+        $es-thin: "es-Gilroy-regular";
         $es-title: "es-Bliss-heavy";
 
     @mixin es-text-reset {
@@ -64,7 +69,7 @@ $es-main-text-light-color: #78a9df;
                 text-decoration: none;
                 color: $es-main-text-color;
                 position: relative;
-                font-family: 'es-Gilroy';
+                font-family: $es-regular;
                 font-size: 16px;
                 &::after{
                     content: '';
@@ -301,6 +306,27 @@ $es-main-text-light-color: #78a9df;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                &--badge{
+                    position: relative;
+                }
+            }
+            &__badge{
+                @include es-text-reset;
+                position: absolute;
+                top:-40px;
+                right: -20px;
+                background-color: #00b8bd;
+                border-radius: 50%;
+                color: #fff;
+                width: 70px;
+                height: 70px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 11px;
+                text-transform: uppercase;
+                font-family: $es-regular;
             }
             &__name{
                 @include es-text-reset;
@@ -613,17 +639,18 @@ $es-main-text-light-color: #78a9df;
             }
             &__answer{
                 @include es-text-reset;
-                font-family: $es-regular;
+                font-family: $es-thin;
                 color: $es-main-text-color;
                 padding: 0px 20px;
             }
             &__answerItem{
                 @include es-text-reset;
-                font-family: $es-regular;
+                font-family: $es-thin;
                 color: $es-main-text-color;
             }
         }
         .es-articles{
+            padding: 10px;
             &__title{
                 @include es-text-reset;
                 font-size: 25px;
@@ -631,9 +658,6 @@ $es-main-text-light-color: #78a9df;
                 font-family: $es-title;
                 color: $es-main-text-color;
             }
-        }
-
-        .es-articles{
             &__ctn{
                 display: flex;
                 flex-wrap: wrap;
@@ -670,6 +694,53 @@ $es-main-text-light-color: #78a9df;
                     outline: 2px solid $es-dark-color;
                     background-color: #fff;
                 }
+            }
+        }
+        .es-productsDesc{
+            padding: 10px;
+            &__item{
+                @include es-text-reset;
+                font-family: $es-thin;
+                color: $es-main-text-color;
+                font-size: 14px;
+                span{
+                    font-family: $es-regular;
+                }
+            }
+        }
+        .es-claims{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            &__title{
+                @include es-text-reset;
+                font-size: 16px;
+                font-family: $es-title;
+                color: $es-main-text-color;
+            }
+            &__claim{
+                @include es-text-reset;
+                font-size: 14px;
+                font-family: $es-thin;
+                color: $es-main-text-color;
+                padding: 0 10px
+            }
+            &__warning{
+                @include es-text-reset;
+                font-size: 25px;
+                font-family: $es-title;
+                color: $es-main-text-light-color;
+            }
+            &__number{
+                @include es-text-reset;
+                font-size: 14px;
+                font-family: $es-thin;
+                color: $es-main-text-color;
+            }
+            &__logo{
+                align-self: flex-end;
             }
         }
         @media (min-width: 750px){

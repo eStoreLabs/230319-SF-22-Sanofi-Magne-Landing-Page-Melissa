@@ -1,11 +1,16 @@
 @font-face {
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   src: url("./fonts/Gilroy-SemiBold.otf") format("opentype");
   font-display: auto;
 }
 @font-face {
   font-family: "es-Bliss-heavy";
   src: url("./fonts/Bliss-Heavy.otf") format("opentype");
+  font-display: auto;
+}
+@font-face {
+  font-family: "es-Gilroy-regular";
+  src: url("./fonts/Gilroy-Regular.otf") format("opentype");
   font-display: auto;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne {
@@ -54,7 +59,7 @@
   text-decoration: none;
   color: #001883;
   position: relative;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   font-size: 16px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__navLink::after {
@@ -145,7 +150,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-cross__name {
   font-size: 16px;
   line-height: 1.1;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   text-align: center;
   color: #001e61;
 }
@@ -155,7 +160,7 @@
   border: 2px solid #001e61;
   border-radius: 20px;
   padding: 5px 20px;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   font-size: 14px;
   transition: 0.4s ease-in-out;
 }
@@ -190,14 +195,14 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__title {
   font-size: 16px;
   line-height: 1.1;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   font-size: 30px;
   color: #001883;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__text {
   font-size: 16px;
   line-height: 1.1;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   font-size: 16px;
   color: #001883;
 }
@@ -216,7 +221,7 @@
   border: 2px solid #001e61;
   border-radius: 20px;
   padding: 5px 20px;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   font-size: 18px;
   transition: 0.4s ease-in-out;
 }
@@ -293,10 +298,32 @@
   justify-content: center;
   align-items: center;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__slide--badge {
+  position: relative;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__badge {
+  font-size: 16px;
+  line-height: 1.1;
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  background-color: #00b8bd;
+  border-radius: 50%;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-family: "es-Gilroy-semibold";
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__name {
   font-size: 16px;
   line-height: 1.1;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   text-align: center;
   color: #001e61;
 }
@@ -306,7 +333,7 @@
   border: 2px solid #001e61;
   border-radius: 20px;
   padding: 5px 20px;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   font-size: 18px;
   transition: 0.4s ease-in-out;
 }
@@ -329,7 +356,7 @@
   line-height: 1.1;
   font-size: 30px;
   text-align: center;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__howCtn {
@@ -376,7 +403,7 @@
   color: #fff;
   padding: 15px;
   border-radius: 40px;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   font-size: 12px;
   text-align: center;
 }
@@ -389,7 +416,7 @@
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-hide {
   display: none;
@@ -428,7 +455,7 @@
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
   background-color: #fff;
   cursor: pointer;
@@ -438,14 +465,14 @@
   font-size: 16px;
   line-height: 1.1;
   text-align: center;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__dataInput {
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
   background-color: #fff;
   cursor: pointer;
@@ -459,7 +486,7 @@
   background-color: transparent;
   border-radius: 20px;
   padding: 5px 30px;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   font-size: 14px;
   transition: 0.4s ease-in-out;
   width: 130px;
@@ -482,7 +509,7 @@
   font-size: 16px;
   line-height: 1.1;
   text-align: center;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__result {
@@ -502,7 +529,7 @@
   background-color: transparent;
   border-radius: 20px;
   padding: 5px 30px;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   font-size: 14px;
   transition: 0.4s ease-in-out;
   width: 200px;
@@ -562,7 +589,7 @@
   font-size: 16px;
   line-height: 1.1;
   max-width: 500px;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__imgCtn {
@@ -572,7 +599,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__listItem {
   font-size: 16px;
   line-height: 1.1;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq {
@@ -598,7 +625,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__question {
   font-size: 16px;
   line-height: 1.1;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -615,15 +642,18 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__answer {
   font-size: 16px;
   line-height: 1.1;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-regular";
   color: #001883;
   padding: 0px 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__answerItem {
   font-size: 16px;
   line-height: 1.1;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-regular";
   color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-articles {
+  padding: 10px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__title {
   font-size: 16px;
@@ -662,7 +692,7 @@
   color: #fff;
   border-radius: 20px;
   padding: 10px 20px;
-  font-family: "es-Gilroy";
+  font-family: "es-Gilroy-semibold";
   font-size: 14px;
   transition: 0.4s ease-in-out;
 }
@@ -670,6 +700,58 @@
   color: #001e61;
   outline: 2px solid #001e61;
   background-color: #fff;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-productsDesc {
+  padding: 10px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-productsDesc__item {
+  font-size: 16px;
+  line-height: 1.1;
+  font-family: "es-Gilroy-regular";
+  color: #001883;
+  font-size: 14px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-productsDesc__item span {
+  font-family: "es-Gilroy-semibold";
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-claims {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-claims__title {
+  font-size: 16px;
+  line-height: 1.1;
+  font-size: 16px;
+  font-family: "es-Bliss-heavy";
+  color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-claims__claim {
+  font-size: 16px;
+  line-height: 1.1;
+  font-size: 14px;
+  font-family: "es-Gilroy-regular";
+  color: #001883;
+  padding: 0 10px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-claims__warning {
+  font-size: 16px;
+  line-height: 1.1;
+  font-size: 25px;
+  font-family: "es-Bliss-heavy";
+  color: #78a9df;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-claims__number {
+  font-size: 16px;
+  line-height: 1.1;
+  font-size: 14px;
+  font-family: "es-Gilroy-regular";
+  color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-claims__logo {
+  align-self: flex-end;
 }
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-kv {
