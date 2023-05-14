@@ -10,12 +10,12 @@ const esNext3 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne 
 const esPrev3 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-prev3');
 
 
-let slideIndex = [1,1];
+let slideIndex = [1,1,1];
 /* Class the members of each slideshow group with different CSS classes */
-let slideId = ["es-mySlides", "es-mySlides-2"]
-showSlides(1, 0);
-showSlides(1, 1);
-//showSlides(1, 2);
+let slideId = ["es-mySlides", "es-mySlides-2", "es-mySlides-3"]
+showSlides(1, 0, 0);
+showSlides(1, 1, 1);
+showSlides(1, 2, 2);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
@@ -38,8 +38,13 @@ esPrev.addEventListener('click', ()=> plusSlides(-1,0));
 esNext2.addEventListener('click', ()=> plusSlides(1,1));
 esPrev2.addEventListener('click', ()=> plusSlides(-1,1));
 
-// esNext3.addEventListener('click', ()=> plusSlides(1,2));
-// esPrev3.addEventListener('click', ()=> plusSlides(-1,2));
+esNext3.addEventListener('click', ()=> plusSlides(1,2));
+esPrev3.addEventListener('click', ()=> plusSlides(-1,2));
+
+
+
+
+
 
 //show content
 

@@ -424,10 +424,7 @@
   display: none;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator {
-  background-image: url(./img/es-calculator-bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-image: none;
   width: 100%;
   padding: 40px 10px;
   min-height: 600px;
@@ -554,10 +551,7 @@
   display: none;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care {
-  background-image: url(./img/es-care-bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-image: none;
   width: 100%;
   min-height: 750px;
   padding: 20px 10px;
@@ -605,8 +599,8 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number {
   position: absolute;
-  top: 40px;
-  right: 0;
+  top: 20px;
+  right: -20px;
   width: 70px;
   height: 70px;
   background-image: url(./img/es-how-numberBg.png);
@@ -635,6 +629,7 @@
   font-size: 16px;
   font-family: "es-Gilroy-regular";
   color: #001883;
+  min-height: 110px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__link {
   display: block;
@@ -839,6 +834,10 @@
   font-family: "es-Bliss-heavy";
   color: #001883;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-claims__list {
+  margin: 0;
+  padding: 10px;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__claim {
   font-size: 16px;
   line-height: 1.1;
@@ -846,6 +845,7 @@
   font-family: "es-Gilroy-regular";
   color: #001883;
   padding: 0 10px;
+  margin: 0;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__warning {
   font-size: 16px;
@@ -947,6 +947,18 @@
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
     max-width: 450px;
   }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator {
+    background-image: url(./img/es-calculator-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-care {
+    background-image: url(./img/es-care-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care__title {
     font-size: 40px;
   }
@@ -961,10 +973,17 @@
     max-width: 400px;
     position: relative;
   }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-care__sliderDesc {
+    min-height: 60px;
+  }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care__link {
     position: absolute;
     bottom: -70px;
     right: -30px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number {
+    top: 40px;
+    right: 0;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-how {
     display: flex;
