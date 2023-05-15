@@ -399,7 +399,8 @@ $es-main-text-light-color: #78a9df;
                 justify-content: flex-start;
                 align-items: center;
                 min-width: 250px;
-                min-height: 300px;
+                min-height: 150px;
+                margin-top: 20px;
             }
             &__numberCtn{
                 height: 60px;
@@ -442,6 +443,12 @@ $es-main-text-light-color: #78a9df;
                 border-radius: 20px;
                 cursor: pointer;
                 font-family: $es-regular;
+                transition: .4s ease-in-out;
+                &:hover{
+                    background-color: #fff;
+                    outline: 2px solid $es-dark-color;
+                    color: $es-dark-color;
+                }
             }
         }
         .es-hide{
@@ -1319,6 +1326,9 @@ $es-main-text-light-color: #78a9df;
                 }
                 &__img{
                     max-width: 450px;
+                }
+                &__howItem{
+                    min-height: 300px;
                 }
             }
             .es-calculator{

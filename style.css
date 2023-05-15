@@ -406,7 +406,8 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 250px;
-  min-height: 300px;
+  min-height: 150px;
+  margin-top: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__numberCtn {
   height: 60px;
@@ -452,6 +453,12 @@
   border-radius: 20px;
   cursor: pointer;
   font-family: "es-Gilroy-semibold";
+  transition: 0.4s ease-in-out;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__button:hover {
+  background-color: #fff;
+  outline: 2px solid #001e61;
+  color: #001e61;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-hide {
   display: none;
@@ -1341,6 +1348,9 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
     max-width: 450px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__howItem {
+    min-height: 300px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator {
     background-image: url(./img/es-calculator-bg.webp);
