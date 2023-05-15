@@ -1,3 +1,5 @@
+(
+  ()=> {
 //slider
 
 const esNext = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-next');
@@ -169,3 +171,5 @@ faqQuestions.forEach(faqQuestion=> {
     esfaqArrow.classList.toggle('es-faq__rotate')
   })
 })
+
+})()

@@ -227,12 +227,16 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__text {
   font-size: 16px;
   line-height: 1.1;
-  font-family: "es-Gilroy-semibold";
+  font-family: "es-Gilroy-regular";
   font-size: 16px;
   color: #001883;
 }
-#es-sanofi.es-sanofi #es-magne.es-magne .es-may__text span {
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__text--line {
   text-decoration: underline;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__text--bold {
+  font-family: "es-Gilroy-semibold";
+  text-decoration: none;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__item {
   display: flex;
@@ -295,7 +299,7 @@
   color: #001883;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc {
-  background-image: url(./img/es-magneDesc-bg.png);
+  background-image: url(./img/es-magneDesc-bg.webp);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
@@ -403,7 +407,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__numberCtn {
   height: 60px;
   width: 60px;
-  background-image: url(./img/es-how-numberBg.png);
+  background-image: url(./img/es-how-numberBg.webp);
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -523,7 +527,7 @@
   color: #fff;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__submitBtn::after {
-  content: url(./img/es-line.png);
+  content: url(./img/es-line.webp);
   position: absolute;
   top: -30px;
   left: -150%;
@@ -566,7 +570,7 @@
   color: #fff;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__returnBtn::after {
-  content: url(./img/es-line.png);
+  content: url(./img/es-line.webp);
   position: absolute;
   top: -30px;
   left: -60%;
@@ -632,7 +636,7 @@
   right: -20px;
   width: 70px;
   height: 70px;
-  background-image: url(./img/es-how-numberBg.png);
+  background-image: url(./img/es-how-numberBg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -732,7 +736,7 @@
   align-items: center;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__infoCtn {
-  background-image: url(./img/es-why__bg.png);
+  background-image: url(./img/es-why__bg.webp);
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -783,13 +787,13 @@
   align-items: center;
   position: relative;
   padding: 50px 0;
-  background-image: url(./img/es-how-bg.png);
+  background-image: url(./img/es-how-bg.webp);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how::after {
-  content: url(./img/es-how-happyFace.png);
+  content: url(./img/es-how-happyFace.webp);
   display: block;
   position: absolute;
   right: 10%;
@@ -808,7 +812,7 @@
   position: relative;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__title::after {
-  content: url(./img/es-how-sadFace.png);
+  content: url(./img/es-how-sadFace.webp);
   display: block;
   position: absolute;
   right: 0;
@@ -855,14 +859,14 @@
   position: relative;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__text::before {
-  content: url(./img/es-symptoms-lineTop.png);
+  content: url(./img/es-symptoms-lineTop.webp);
   display: block;
   position: absolute;
   top: -30px;
   left: -40px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__text::after {
-  content: url(./img/es-symptoms-lineBottom.png);
+  content: url(./img/es-symptoms-lineBottom.webp);
   display: block;
   position: absolute;
   bottom: -30px;
@@ -877,7 +881,7 @@
   text-align: center;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bottomCtn {
-  background-image: url(./img/es-symptoms-bg.png);
+  background-image: url(./img/es-symptoms-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -983,7 +987,7 @@
   position: absolute;
   top: -50px;
   right: 0px;
-  background-image: url(./img/es-how-numberBg.png);
+  background-image: url(./img/es-how-numberBg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1316,13 +1320,13 @@
     max-width: 450px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator {
-    background-image: url(./img/es-calculator-bg.png);
+    background-image: url(./img/es-calculator-bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care {
-    background-image: url(./img/es-care-bg.png);
+    background-image: url(./img/es-care-bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1377,7 +1381,7 @@
     align-items: center;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__infoCtn {
-    background-image: url(./img/es-why__bg.png);
+    background-image: url(./img/es-why__bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -1467,7 +1471,7 @@
     border-radius: 100px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__ctn::after {
-    content: url(./img/es-active-line-top.png);
+    content: url(./img/es-active-line-top.webp);
     display: block;
     position: absolute;
     top: -50px;
@@ -1482,7 +1486,7 @@
     padding: 20px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomCtn::after {
-    content: url(./img/es-active-line-bottom.png);
+    content: url(./img/es-active-line-bottom.webp);
     display: block;
     position: absolute;
     bottom: 20px;
@@ -1493,7 +1497,7 @@
     position: absolute;
     top: -20px;
     left: -90px;
-    background-image: url(./img/es-how-numberBg.png);
+    background-image: url(./img/es-how-numberBg.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

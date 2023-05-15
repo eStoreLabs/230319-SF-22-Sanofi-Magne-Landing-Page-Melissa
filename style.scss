@@ -225,11 +225,15 @@ $es-main-text-light-color: #78a9df;
             }
             &__text{
                 @include es-text-reset;
-                font-family: $es-regular;
+                font-family: $es-thin;
                 font-size: 16px;
                 color: $es-main-text-color;
-                span{
+                &--line{
                     text-decoration: underline;
+                }
+                &--bold{
+                    font-family: $es-regular;
+                    text-decoration: none;
                 }
             }
             &__item{
@@ -292,7 +296,7 @@ $es-main-text-light-color: #78a9df;
             }
         }
         .es-magneDesc{
-            background-image: url(./img/es-magneDesc-bg.png);
+            background-image: url(./img/es-magneDesc-bg.webp);
             background-repeat: no-repeat;
             background-position: right center;
             background-size: contain;
@@ -396,7 +400,7 @@ $es-main-text-light-color: #78a9df;
             &__numberCtn{
                 height: 60px;
                 width: 60px;
-                background-image: url(./img/es-how-numberBg.png);
+                background-image: url(./img/es-how-numberBg.webp);
                 background-repeat: no-repeat;
                 background-size: contain;
                 display: flex;
@@ -511,7 +515,7 @@ $es-main-text-light-color: #78a9df;
                     color: #fff;
                 }
                 &::after{
-                    content: url(./img/es-line.png);
+                    content: url(./img/es-line.webp);
                     position: absolute;
                     top:-30px;
                     left: -150%;
@@ -553,7 +557,7 @@ $es-main-text-light-color: #78a9df;
                     color: #fff;
                 }
                 &::after{
-                    content: url(./img/es-line.png);
+                    content: url(./img/es-line.webp);
                     position: absolute;
                     top:-30px;
                     left: -60%;
@@ -619,7 +623,7 @@ $es-main-text-light-color: #78a9df;
                 right: -20px;
                 width: 70px;
                 height: 70px;
-                background-image: url(./img/es-how-numberBg.png);
+                background-image: url(./img/es-how-numberBg.webp);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
@@ -716,7 +720,7 @@ $es-main-text-light-color: #78a9df;
                 align-items: center;
             }
             &__infoCtn{
-                background-image: url(./img/es-why__bg.png);
+                background-image: url(./img/es-why__bg.webp);
                 background-repeat: no-repeat;
                 background-position: left;
                 background-size: contain;
@@ -767,12 +771,12 @@ $es-main-text-light-color: #78a9df;
             align-items: center;
             position: relative;
             padding: 50px 0;
-            background-image: url(./img/es-how-bg.png);
+            background-image: url(./img/es-how-bg.webp);
             background-repeat: no-repeat;
             background-position: right bottom;
             background-size:contain;
             &::after{
-                content: url(./img/es-how-happyFace.png);
+                content: url(./img/es-how-happyFace.webp);
                 display: block;
                 position: absolute;
                 right: 10%;
@@ -789,7 +793,7 @@ $es-main-text-light-color: #78a9df;
                 color: $es-main-text-color;
                 position: relative;
                 &::after{
-                    content: url(./img/es-how-sadFace.png);
+                    content: url(./img/es-how-sadFace.webp);
                     display: block;
                     position: absolute;
                     right: 0;
@@ -834,14 +838,14 @@ $es-main-text-light-color: #78a9df;
                 font-family: $es-regular;
                 position: relative;
                 &::before{
-                    content: url(./img/es-symptoms-lineTop.png);
+                    content: url(./img/es-symptoms-lineTop.webp);
                     display: block;
                     position: absolute;
                     top:-30px;
                     left:-40px;
                 }
                 &::after{
-                    content: url(./img/es-symptoms-lineBottom.png);
+                    content: url(./img/es-symptoms-lineBottom.webp);
                     display: block;
                     position: absolute;
                     bottom:-30px;
@@ -856,7 +860,7 @@ $es-main-text-light-color: #78a9df;
                 text-align: center;
             }
             &__bottomCtn{
-                background-image: url(./img/es-symptoms-bg.png);
+                background-image: url(./img/es-symptoms-bg.webp);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
@@ -963,7 +967,7 @@ $es-main-text-light-color: #78a9df;
                 position: absolute;
                 top:-50px;
                 right:0px;
-                background-image: url(./img/es-how-numberBg.png);
+                background-image: url(./img/es-how-numberBg.webp);
                 background-position: center;
                 background-repeat: no-repeat; 
                 background-size: contain;
@@ -1294,13 +1298,13 @@ $es-main-text-light-color: #78a9df;
                 }
             }
             .es-calculator{
-                background-image: url(./img/es-calculator-bg.png);
+                background-image: url(./img/es-calculator-bg.webp);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
             }
             .es-care{
-                background-image: url(./img/es-care-bg.png);
+                background-image: url(./img/es-care-bg.webp);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
@@ -1357,7 +1361,7 @@ $es-main-text-light-color: #78a9df;
                     align-items: center;
                 }
                 &__infoCtn{
-                background-image: url(./img/es-why__bg.png);
+                background-image: url(./img/es-why__bg.webp);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 100% 100%;
@@ -1449,7 +1453,7 @@ $es-main-text-light-color: #78a9df;
                     width: 70%;
                     border-radius: 100px;
                     &::after{
-                        content: url(./img/es-active-line-top.png);
+                        content: url(./img/es-active-line-top.webp);
                         display: block;
                         position: absolute;
                         top:-50px;
@@ -1464,7 +1468,7 @@ $es-main-text-light-color: #78a9df;
                     max-width: 600px;
                     padding: 20px;
                     &::after{
-                        content: url(./img/es-active-line-bottom.png);
+                        content: url(./img/es-active-line-bottom.webp);
                         display: block;
                         position: absolute;
                         bottom:20px;
@@ -1476,7 +1480,7 @@ $es-main-text-light-color: #78a9df;
                     position: absolute;
                     top:-20px;
                     left:-90px;
-                    background-image: url(./img/es-how-numberBg.png);
+                    background-image: url(./img/es-how-numberBg.webp);
                     background-position: center;
                     background-repeat: no-repeat; 
                     background-size: contain;
