@@ -203,6 +203,7 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
+  padding-top: 50px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__img {
   max-width: 350px;
@@ -265,6 +266,9 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow--next {
   align-self: flex-end;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow--prev {
+  align-self: flex-start;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-message {
   display: flex;
@@ -456,7 +460,7 @@
   background-image: none;
   width: 100%;
   padding: 40px 10px;
-  min-height: 600px;
+  min-height: 650px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__ctn {
   display: flex;
@@ -548,6 +552,17 @@
   font-family: "es-Bliss-heavy";
   color: #001883;
   margin: 0;
+  margin-bottom: 15px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__resultClaim {
+  font-size: 16px;
+  line-height: 1.1;
+  font-size: 12px;
+  text-align: center;
+  font-family: "es-Gilroy-regular";
+  color: #001883;
+  margin: 0;
+  max-width: 350px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__returnBtn {
   margin: 50px 0;
@@ -797,7 +812,8 @@
   display: block;
   position: absolute;
   right: 10%;
-  bottom: -10%;
+  bottom: -4%;
+  transform: scale(0.6);
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__content {
   width: 100%;
@@ -817,6 +833,7 @@
   position: absolute;
   right: 0;
   top: -150%;
+  transform: scale(0.6);
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__desc {
   font-size: 16px;
@@ -1271,10 +1288,16 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-may__slide--second {
+    padding-top: 0px;
+  }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow {
     cursor: pointer;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow--next {
+    align-self: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow--prev {
     align-self: center;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-message__title {
@@ -1377,7 +1400,7 @@
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__contentCtn {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__infoCtn {
@@ -1397,7 +1420,7 @@
     font-size: 25px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__slides {
-    min-width: 65%;
+    min-width: 50%;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__slideText {
     width: 400px;
@@ -1414,6 +1437,11 @@
     justify-content: space-between;
     align-items: center;
   }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-how::after {
+    right: 10%;
+    bottom: -10%;
+    transform: scale(1);
+  }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-how__content {
     width: 60%;
   }
@@ -1424,6 +1452,7 @@
   #es-sanofi.es-sanofi #es-magne.es-magne .es-how__title::after {
     top: 0;
     right: -10%;
+    transform: scale(1);
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-how__desc {
     font-size: 20px;
