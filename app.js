@@ -12,14 +12,17 @@ const esPrev3 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne 
 const esNext4 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-next4');
 const esPrev4 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-prev4');
 
+const esNext5 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-next5');
+const esPrev5 = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-prev5');
 
-let slideIndex = [1,1,1,1];
+let slideIndex = [1,1,1,1,1];
 /* Class the members of each slideshow group with different CSS classes */
-let slideId = ["es-mySlides", "es-mySlides-2", "es-mySlides-3", "es-mySlides-4"]
-showSlides(1, 0, 0, 0);
-showSlides(1, 1, 1, 1);
-showSlides(1, 2, 2, 2);
-showSlides(1, 3, 3, 3);
+let slideId = ["es-mySlides", "es-mySlides-2", "es-mySlides-3", "es-mySlides-4", "es-mySlides-5"]
+showSlides(1, 0, 0, 0, 0);
+showSlides(1, 1, 1, 1, 1);
+showSlides(1, 2, 2, 2, 2);
+showSlides(1, 3, 3, 3, 3);
+showSlides(1, 4, 4, 4, 4);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
@@ -48,7 +51,8 @@ esPrev3.addEventListener('click', ()=> plusSlides(-1,2));
 esNext4.addEventListener('click', ()=> plusSlides(1,3));
 esPrev4.addEventListener('click', ()=> plusSlides(-1,3));
 
-
+esNext5.addEventListener('click', ()=> plusSlides(1,4));
+esPrev5.addEventListener('click', ()=> plusSlides(-1,4));
 
 
 //show content

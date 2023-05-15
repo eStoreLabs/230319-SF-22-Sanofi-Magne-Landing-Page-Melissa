@@ -13,6 +13,31 @@
   src: url("./fonts/Gilroy-Regular.otf") format("opentype");
   font-display: auto;
 }
+@keyframes es-gelatine {
+  from, to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+@keyframes es-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
 #es-sanofi.es-sanofi #es-magne.es-magne {
   max-width: 1200px;
   margin: 0 auto;
@@ -746,6 +771,10 @@
   align-items: center;
   position: relative;
   padding: 50px 0;
+  background-image: url(./img/es-how-bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how::after {
   content: url(./img/es-how-happyFace.png);
@@ -789,6 +818,196 @@
   line-height: 1.1;
   font-family: "es-Gilroy-semibold";
   color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__title {
+  font-size: 16px;
+  line-height: 1.1;
+  font-size: 25px;
+  text-align: center;
+  font-family: "es-Bliss-heavy";
+  color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__textCtn {
+  background-color: #78a9df;
+  padding: 20px;
+  border-radius: 50px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__text {
+  font-size: 16px;
+  line-height: 1.1;
+  color: #fff;
+  text-align: center;
+  font-family: "es-Gilroy-semibold";
+  position: relative;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__text::before {
+  content: url(./img/es-symptoms-lineTop.png);
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: -40px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__text::after {
+  content: url(./img/es-symptoms-lineBottom.png);
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  right: -40px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__subtitle {
+  font-size: 16px;
+  line-height: 1.1;
+  color: #78a9df;
+  font-family: "es-Gilroy-semibold";
+  font-size: 20px;
+  text-align: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
+  margin: 50px 0;
+  padding: 10px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__mainCtn {
+  margin-top: -200px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__ctn {
+  background-color: #001883;
+  color: #fff;
+  border-radius: 70px;
+  padding: 20px 10px;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__ctn::after {
+  content: none;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__title {
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  font-size: 25px;
+  font-family: "es-Bliss-heavy";
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__title--blue {
+  color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__desc {
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  font-family: "es-Gilroy-regular";
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__desc--blue {
+  color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomCtn {
+  position: relative;
+  background-color: transparent;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomCtn::after {
+  content: none;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__questionCtn {
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  background-image: url(./img/es-how-numberBg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: es-gelatine 2s infinite;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__question {
+  font-size: 60px;
+  font-family: "es-Bliss-heavy";
+  color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomTitle {
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: left;
+  font-size: 20px;
+  font-family: "es-Gilroy-semibold";
+  color: #001883;
+  margin: 0;
+  padding: 0;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomDesc {
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: left;
+  font-family: "es-Gilroy-regular";
+  color: #001883;
+  margin: 5px 0;
+  padding: 0;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title {
+  font-size: 16px;
+  line-height: 1.1;
+  font-size: 25px;
+  text-align: center;
+  font-family: "es-Bliss-heavy";
+  color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__arrow {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descCtn {
+  padding: 20px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descTitle {
+  font-size: 16px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "es-Gilroy-semibold";
+  color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descTitle--bright {
+  color: #78a9df;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descList {
+  font-size: 16px;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+  color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descItem {
+  font-size: 16px;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+  color: #001883;
+  font-family: "es-Gilroy-regular";
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descItem--bold {
+  font-family: "es-Gilroy-semibold";
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq {
   margin-top: 80px;
@@ -1126,6 +1345,68 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-how__listItem {
     font-size: 20px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__title {
+    font-size: 40px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__subtitle {
+    font-size: 16px;
+    line-height: 1.1;
+    font-size: 25px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__mainCtn {
+    margin-top: -200px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__ctn {
+    padding: 20px 40px;
+    width: 70%;
+    border-radius: 100px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__ctn::after {
+    content: url(./img/es-active-line-top.png);
+    display: block;
+    position: absolute;
+    top: -50px;
+    right: -60px;
+    transform: scale(0.8);
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomCtn {
+    position: relative;
+    background-color: transparent;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomCtn::after {
+    content: url(./img/es-active-line-bottom.png);
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: -50px;
+    transform: scale(0.8);
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__questionCtn {
+    position: absolute;
+    top: -20px;
+    left: -90px;
+    background-image: url(./img/es-how-numberBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title {
+    font-size: 40px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__title {
     font-size: 40px;

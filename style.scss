@@ -25,6 +25,18 @@ $es-main-text-light-color: #78a9df;
         font-size: 16px;
         line-height: 1.1;
     }
+
+    @keyframes es-gelatine {
+        from, to { transform: scale(1, 1); }
+        25% { transform: scale(0.9, 1.1); }
+        50% { transform: scale(1.1, 0.9); }
+        75% { transform: scale(0.95, 1.05); }
+      }
+      @keyframes es-bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+        40% {transform: translateY(-10px);}
+        60% {transform: translateY(-5px);}
+    }
 #es-sanofi.es-sanofi{
     #es-magne.es-magne{
         max-width: 1200px;
@@ -743,6 +755,10 @@ $es-main-text-light-color: #78a9df;
             align-items: center;
             position: relative;
             padding: 50px 0;
+            background-image: url(./img/es-how-bg.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size:contain;
             &::after{
                 content: url(./img/es-how-happyFace.png);
                 display: block;
@@ -782,6 +798,195 @@ $es-main-text-light-color: #78a9df;
                 @include es-text-reset;
                 font-family: $es-regular;
                 color: $es-main-text-color;
+            }
+        }
+        .es-symptoms{
+            &__title{
+                @include es-text-reset;
+                font-size: 25px;
+                text-align: center;
+                font-family: $es-title;
+                color: $es-main-text-color;
+            }
+            &__textCtn{
+                background-color: $es-main-text-light-color;
+                padding: 20px;
+                border-radius: 50px;
+                max-width: 90%;
+                margin:  0 auto;
+            }
+            &__text{
+                @include es-text-reset;
+                color: #fff;
+                text-align: center;
+                font-family: $es-regular;
+                position: relative;
+                &::before{
+                    content: url(./img/es-symptoms-lineTop.png);
+                    display: block;
+                    position: absolute;
+                    top:-30px;
+                    left:-40px;
+                }
+                &::after{
+                    content: url(./img/es-symptoms-lineBottom.png);
+                    display: block;
+                    position: absolute;
+                    bottom:-30px;
+                    right:-40px;
+                }
+            }
+            &__subtitle{
+                @include es-text-reset;
+                color: $es-main-text-light-color;
+                font-family: $es-regular;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        .es-activeInfo{
+            margin: 50px 0;
+            padding: 10px;
+            &__img{
+
+            }
+            &__mainCtn{
+                margin-top: -200px;
+            }
+            &__ctn{
+                background-color: $es-main-text-color;
+                color: #fff;
+                border-radius: 70px;
+                padding: 20px 10px;
+                width: 85%;
+                margin: 0 auto;
+                position: relative;
+                &::after{
+                    content: none;
+                }
+            }
+
+            &__title{
+                @include es-text-reset;
+                text-align: center;
+                font-size: 25px;
+                font-family: $es-title;
+                &--blue{
+                    color: $es-main-text-color
+                }
+            }
+            &__desc{
+                @include es-text-reset;
+                text-align: center;
+                font-family: $es-thin;
+                &--blue{
+                    color: $es-main-text-color
+                }
+            }
+            &__bottomCtn{
+                position: relative;
+                background-color:transparent;
+                margin: 0 auto;
+                max-width: 600px;
+                padding: 20px;
+                &::after{
+                    content: none;
+                }
+            }
+            &__questionCtn{
+                position: absolute;
+                top:-50px;
+                right:0px;
+                background-image: url(./img/es-how-numberBg.png);
+                background-position: center;
+                background-repeat: no-repeat; 
+                background-size: contain;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: es-gelatine 2s infinite;
+                //animation: es-bounce 2s ease infinite;
+            }
+            &__question{
+                font-size: 60px;
+                font-family: $es-title;
+                color: $es-main-text-color;
+            }
+            &__bottomTitle{
+                @include es-text-reset;
+                text-align: left;
+                font-size: 20px;
+                font-family: $es-regular;
+                color: $es-main-text-color;
+                margin: 0;
+                padding: 0
+            }
+            &__bottomDesc{
+                @include es-text-reset;
+                text-align: left;
+                font-family: $es-thin;
+                color: $es-main-text-color;
+                margin: 5px 0;
+                padding: 0;
+            }
+        
+        }
+        .es-exercise{
+            &__title{
+                @include es-text-reset;
+                font-size: 25px;
+                text-align: center;
+                font-family: $es-title;
+                color: $es-main-text-color;
+            }
+            &__slides{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 450px;
+            }
+            &__slide{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            &__arrow{
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+                margin: 0;
+            }
+            &__descCtn{
+                padding: 20px;
+            }
+            &__descTitle{
+                @include es-text-reset;
+                text-transform: uppercase;
+                font-size: 25px;
+                font-family: $es-regular;
+                color: $es-main-text-color;
+                &--bright{
+                    color: $es-main-text-light-color;
+                }
+            }
+            &__descList{
+                @include es-text-reset;
+                margin: 0;
+                padding: 0;
+                color: $es-main-text-color;
+            }
+            &__descItem{
+                @include es-text-reset;
+                margin: 0;
+                padding: 0;
+                color: $es-main-text-color;
+                font-family: $es-thin;
+                &--bold{
+                    font-family: $es-regular;
+                }
             }
         }
         .es-faq{
@@ -1122,7 +1327,76 @@ $es-main-text-light-color: #78a9df;
                     font-size: 20px;
                 }
             }
+            .es-symptoms{
+                &__title{
+                    font-size: 40px;
+                }
+                &__subtitle{
+                    @include es-text-reset;
+                    font-size: 25px;
+                }
+            }
+            .es-activeInfo{
+                &__img{
 
+                }
+                &__mainCtn{
+                    margin-top: -200px;
+                }
+                &__ctn{
+                    padding: 20px 40px;
+                    width: 70%;
+                    border-radius: 100px;
+                    &::after{
+                        content: url(./img/es-active-line-top.png);
+                        display: block;
+                        position: absolute;
+                        top:-50px;
+                        right:-60px;
+                        transform: scale(.8);
+                    }
+                }
+                &__bottomCtn{
+                    position: relative;
+                    background-color:transparent;
+                    margin: 0 auto;
+                    max-width: 600px;
+                    padding: 20px;
+                    &::after{
+                        content: url(./img/es-active-line-bottom.png);
+                        display: block;
+                        position: absolute;
+                        bottom:20px;
+                        left:-50px;
+                        transform: scale(.8);
+                    }
+                }
+                &__questionCtn{
+                    position: absolute;
+                    top:-20px;
+                    left:-90px;
+                    background-image: url(./img/es-how-numberBg.png);
+                    background-position: center;
+                    background-repeat: no-repeat; 
+                    background-size: contain;
+                    width: 80px;
+                    height: 80px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .es-exercise{
+                &__title{
+                    font-size: 40px;
+                }
+                &__slide{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
             .es-faq{
                 &__title{
                     font-size: 40px;
