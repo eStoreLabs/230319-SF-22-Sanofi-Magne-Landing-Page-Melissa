@@ -621,6 +621,10 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__contentCtn {
   max-width: 400px;
+  min-height: 150px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-care__contentCtn--6 {
+  align-self: flex-start;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number {
   position: absolute;
@@ -640,6 +644,10 @@
   font-size: 40px;
   font-family: "es-Bliss-heavy";
   color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-care__number--6 {
+  top: -60px;
+  right: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__sliderTitle {
   font-size: 16px;
@@ -672,7 +680,11 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__link:hover {
   color: #001883;
   outline: 2px solid #001883;
-  background-color: #fff;
+  background-color: transparent;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-care__link--product {
+  margin: 0 auto;
+  align-self: center;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__arrow {
   cursor: pointer;
@@ -863,6 +875,61 @@
   font-family: "es-Gilroy-semibold";
   font-size: 20px;
   text-align: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bottomCtn {
+  background-image: url(./img/es-symptoms-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bodyCtn {
+  position: relative;
+  max-width: 250px;
+  z-index: 0;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
+  text-align: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bodyImg {
+  display: block;
+  margin: 0 auto;
+  z-index: 0;
+  max-width: 230px;
+  max-height: 480px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__magnifierGlass {
+  position: absolute;
+  border: 2px solid #001883;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleItem {
+  margin-left: -150px;
+  display: block;
+  z-index: 10;
+  position: relative;
+  color: #001883;
+  transition: 0.2s ease-in-out;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleItem:hover {
+  transform: translateX(10px);
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleText {
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: left;
+  font-family: "es-Bliss-heavy";
+  padding-left: 140px;
+  font-size: 14px;
+  margin: 10px 0;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
   margin: 50px 0;
@@ -1282,9 +1349,26 @@
     bottom: -70px;
     right: -30px;
   }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-care__link--product {
+    position: static;
+    max-width: 200px;
+    margin-top: 40px;
+    color: #001883;
+    outline: 2px solid #001883;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-care__link--product:hover {
+    background-color: #001883;
+    color: #fff;
+  }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number {
     top: 40px;
     right: 0;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number--6 {
+    top: -70px;
+    right: 20px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__contentCtn {
     display: flex;
@@ -1353,6 +1437,26 @@
     font-size: 16px;
     line-height: 1.1;
     font-size: 25px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bottomCtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
+    position: absolute;
+    right: 0%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleText {
+    font-size: 16px;
+    line-height: 1.1;
+    padding-left: 140px;
+    font-size: 18px;
+    margin: 30px 0;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
+    margin-top: 0px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__mainCtn {
     margin-top: -200px;
@@ -1481,5 +1585,21 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may__content {
     max-width: 40%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
+    position: absolute;
+    right: 5%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
+    margin-top: -150px;
+  }
+}
+@media (min-width: 1100px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
+    margin-top: -200px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
+    position: absolute;
+    right: 28%;
   }
 }/*# sourceMappingURL=style.css.map */
