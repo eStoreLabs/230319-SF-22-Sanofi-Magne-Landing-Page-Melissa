@@ -37,6 +37,7 @@ $es-main-text-light-color: #78a9df;
         40% {transform: translateY(-10px);}
         60% {transform: translateY(-5px);}
     }
+
 #es-sanofi.es-sanofi{
     #es-magne.es-magne{
         max-width: 1200px;
@@ -1633,6 +1634,14 @@ $es-main-text-light-color: #78a9df;
                 margin-top: -150px;
             }
         }
+        @media (min-width: 1000px){
+            .es-symptoms{
+                &__contentCtn{
+                    position: absolute;
+                    right: 10%;
+                }
+            }
+        }
         @media (min-width: 1100px){
             .es-activeInfo{
                 margin-top: -200px;
@@ -1640,7 +1649,7 @@ $es-main-text-light-color: #78a9df;
             .es-symptoms{
                 &__contentCtn{
                     position: absolute;
-                    right: 28%;
+                    right: 20%;
                 }
             }
         }

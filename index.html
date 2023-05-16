@@ -235,61 +235,64 @@
                 </div>
             </section>
 
-            <form class="es-calculator" id="sprawdz-ile-magnezu-potrzebujesz">
+            <section class="es-calculator" id="sprawdz-ile-magnezu-potrzebujesz">
                 <p class="es-calculator__title">
                     Sprawdź dawkowanie <br> poszczególnych wariantów Magne B<sub>6</sub>
                 </p>
-                <div class="es-calculator__ctn es-calculator__ctn--inputs">
-                    <div class="es-calculator__item">
-                        <label class="es-calculator__selectLabel" for="es-calculator-product">wybierz wariant leku:</label>
-                        <select required name="es-product" id="es-calculator-product" class="es-calculator__select">
-                            <option value="100">MAGNE B<sub>6</sub> FORTE 100 TABL. POWLEKANYCH</option>
-                            <option value="60">MAGNE B<sub>6</sub> FORTE 60 TABL. POWLEKANYCH</option>
-                            <option value="60">MAGNE B<sub>6</sub> 60 TABL. POWLEKANYCH</option>
-                        </select>
-                    </div>
-
-                    <div class="es-calculator__item">
-                        <label class="es-calculator__selectLabel" for="es-calculator-who">wybierz dla kogo:</label>
-                        <select required name="es-product" id="es-calculator-who" class="es-calculator__select">
-                            <option value="dorosly">Dorosły</option>
-                            <option value="dziecko">Dzieci i młodzież</option>
-                        </select>
-                    </div>
-
-                    <div class="es-calculator__item">
-                        <label class="es-calculator__selectLabel" for="es-calculator-data">wybierz datę zakupu:</label>
-                        <input required class="es-calculator__dataInput" type="date" name="es-calculator-data" id="es-calculator-data">
-                    </div>
-
-                    <button class="es-calculator__submitBtn" type="submit">Oblicz</button>
-                </div>
-
-                <div class="es-calculator__ctn es-calculator__ctn--results es-hide">
-                    <div class="es-calculator__item">
-                        <p class="es-calculator__resultText">
-                            zalecana ilość tabletek na dobę:
-                        </p>
-                        <p class="es-calculator__result es-calculator__result--tabs">XXX*</p>
-                        <p class="es-calculator__resultClaim">* - ChPl Magne B6 Forte 04.2022</p>
-                    </div>
-
+                <form>
                     
-
-                    <div class="es-calculator__item">
-                       <p class="es-calculator__resultText">
-                        przy zalecanym dawkowaniu opakowanie wystarczy do:
-                       </p>
-                       <p class="es-calculator__result es-calculator__result--date">04.05.2023r.**</p>
-                       <p class="es-calculator__resultClaim">* - ChPl Magne B6 Forte 04.2022</p>
-                       <p class="es-calculator__resultClaim">** - Podana data jest orientacyjnym terminem, do&nbsp;którego wystarczy dane opakowanie Magne B6 i&nbsp;jest wyliczona w&nbsp;oparciu o zalecaną maksymalną ilość</p>
+                    <div class="es-calculator__ctn es-calculator__ctn--inputs">
+                        <div class="es-calculator__item">
+                            <label class="es-calculator__selectLabel" for="es-calculator-product">wybierz wariant leku:</label>
+                            <select required name="es-product" id="es-calculator-product" class="es-calculator__select">
+                                <option value="100" data-product-id ="magne-forte-100">MAGNE B<sub>6</sub> FORTE 100 TABL. POWLEKANYCH</option>
+                                <option value="60" data-product-id ="magne-forte-60">MAGNE B<sub>6</sub> FORTE 60 TABL. POWLEKANYCH</option>
+                                <option value="60" data-product-id ="magne-60">MAGNE B<sub>6</sub> 60 TABL. POWLEKANYCH</option>
+                            </select>
+                        </div>
+    
+                        <div class="es-calculator__item">
+                            <label class="es-calculator__selectLabel" for="es-calculator-who">wybierz dla kogo:</label>
+                            <select required name="es-product" id="es-calculator-who" class="es-calculator__select">
+                                <option value="4" data-person-id ="adults">Dorosły</option>
+                                <option value="2" data-person-id ="kids">Dzieci i młodzież</option>
+                            </select>
+                        </div>
+    
+                        <div class="es-calculator__item">
+                            <label class="es-calculator__selectLabel" for="es-calculator-data">wybierz datę zakupu:</label>
+                            <input required class="es-calculator__dataInput" type="date" name="es-calculator-data" id="es-calculator-date">
+                        </div>
+    
+                        <button class="es-calculator__submitBtn" type="button">Oblicz</button>
                     </div>
-
-                    <button class="es-calculator__returnBtn" type="button">Oblicz jeszcze raz</button>
-                </div>
+    
+                    <div class="es-calculator__ctn es-calculator__ctn--results es-hide">
+                        <div class="es-calculator__item">
+                            <p class="es-calculator__resultText">
+                                zalecana ilość tabletek na dobę:
+                            </p>
+                            <p class="es-calculator__result es-calculator__result--tabs">XXX*</p>
+                            <p class="es-calculator__resultClaim">* - ChPl Magne B6 Forte 04.2022</p>
+                        </div>
+    
+                        
+    
+                        <div class="es-calculator__item">
+                           <p class="es-calculator__resultText">
+                            przy zalecanym dawkowaniu opakowanie wystarczy do:
+                           </p>
+                           <p class="es-calculator__result es-calculator__result--date">04.05.2023r.**</p>
+                           <p class="es-calculator__resultClaim">* - ChPl Magne B6 Forte 04.2022</p>
+                           <p class="es-calculator__resultClaim">** - Podana data jest orientacyjnym terminem, do&nbsp;którego wystarczy dane opakowanie Magne B6 i&nbsp;jest wyliczona w&nbsp;oparciu o zalecaną maksymalną ilość</p>
+                        </div>
+    
+                        <button class="es-calculator__returnBtn" type="button">Oblicz jeszcze raz</button>
+                    </div>
+                </form>
 
                 
-            </form>
+            </section>
 
             <section class="es-care" id="jak-zadbac-o-dobrostan-psychiczny">
                 <p class="es-care__title">Jak zadbać <br> o&nbsp;dobrostan psychiczny?</p>

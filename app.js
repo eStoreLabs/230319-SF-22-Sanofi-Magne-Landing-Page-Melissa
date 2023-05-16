@@ -80,9 +80,11 @@ const calculatorInputsCtn = document.querySelector('#es-sanofi.es-sanofi #es-mag
 const calculatorResutlsCtn = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__ctn--results');
 
 
+
 const showCalculatorResults= (input, result) => {
   input.classList.add("es-hide")
   result.classList.remove("es-hide")
+  
 }
 
 const returnToCalculator= (input, result) => {
@@ -92,6 +94,53 @@ const returnToCalculator= (input, result) => {
 
 calculatorSubmitBtn.addEventListener('click', () => showCalculatorResults(calculatorInputsCtn, calculatorResutlsCtn));
 calculatorReturnBtn.addEventListener('click', () => returnToCalculator(calculatorInputsCtn, calculatorResutlsCtn));
+
+//main calculator logic
+const data = {
+  variant: 0,
+  person: 0,
+  date: 0, // change to days
+  product: ''
+}
+
+
+const esProductOption = document.getElementById('es-calculator-product')
+console.log(esProductOption.options[esProductOption.selectedIndex].value)
+
+const esProductAttr = document.getElementById('es-calculator-product')
+console.log(esProductAttr.options[esProductOption.selectedIndex].dataset.productId)
+
+const esPersonOption = document.getElementById('es-calculator-who')
+console.log(esPersonOption .options[esPersonOption.selectedIndex].value)
+
+const esDateOption = document.getElementById('es-calculator-date')
+
+
+const getProductVariant = (event) => {
+  let selectedProductValue = event.target.value
+  data.variant = selectedProductValue
+  console.log(data)
+ }
+
+const getPersonValue = (event) => {
+  let selectedPersonValue = event.target.value
+  data.person = selectedPersonValue
+ 
+  console.log(data)
+ }
+
+ const getDateValue = (event) => {
+  let dateValue = event.target.value
+  let selectedDateValue = new Date(dateValue)
+  data.date = selectedDateValue.toLocaleDateString("en-US")
+ 
+  console.log(data)
+ }
+
+
+esProductOption.addEventListener('change', () => getProductVariant(event));
+esPersonOption.addEventListener('change', () => getPersonValue(event));
+esDateOption.addEventListener('change', () => getDateValue(event));
 
 
 //magnifier glass

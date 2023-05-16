@@ -1638,12 +1638,18 @@
     margin-top: -150px;
   }
 }
+@media (min-width: 1000px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
+    position: absolute;
+    right: 10%;
+  }
+}
 @media (min-width: 1100px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
     margin-top: -200px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
     position: absolute;
-    right: 28%;
+    right: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
