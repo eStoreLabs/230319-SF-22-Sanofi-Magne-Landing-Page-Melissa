@@ -76,6 +76,7 @@ $es-main-text-light-color: #78a9df;
                 text-align: center;
                 list-style: none;
                 padding: 10px;
+                
             }
             &__navLink{
                 @include es-text-reset;
@@ -404,6 +405,7 @@ $es-main-text-light-color: #78a9df;
                 min-height: 150px;
                 margin-top: 20px;
             }
+
             &__numberCtn{
                 height: 60px;
                 width: 60px;
@@ -452,6 +454,9 @@ $es-main-text-light-color: #78a9df;
                     color: $es-dark-color;
                 }
             }
+        }
+       .es-magneDesc__howItem:hover .es-magneDesc__numberCtn{
+            animation: es-gelatine 2s infinite;
         }
         .es-hide{
             display: none;

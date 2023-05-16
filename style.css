@@ -461,6 +461,9 @@
   outline: 2px solid #001e61;
   color: #001e61;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__howItem:hover .es-magneDesc__numberCtn {
+  animation: es-gelatine 2s infinite;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-hide {
   display: none;
 }
