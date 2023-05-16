@@ -77,14 +77,67 @@ const calculatorSubmitBtn = document.querySelector('#es-sanofi.es-sanofi #es-mag
 const calculatorReturnBtn = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__returnBtn');
 
 const calculatorInputsCtn = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__ctn--inputs');
-const calculatorResutlsCtn = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__ctn--results');
+const calculatorResultsCtn = document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__ctn--results');
 
-
+const doseMatrix = {
+  'F-100' : {
+    'amount' : 100,
+    'adult' : {
+      'dose' : 4,
+      'text' : '3-4'
+    },
+    'young' : {
+      'dose' : 4,
+      'text' : '2-4'
+    }
+  },
+  'F-60' : {
+    'amount' : 60,
+    'adult' : {
+      'dose' : 4,
+      'text' : '3-4'
+    },
+    'young' : {
+      'dose' : 4,
+      'text' : '2-4'
+    }
+  },
+  'N-60' : {
+    'amount' : 60,
+    'adult' : {
+      'dose' : 8,
+      'text' : '8'
+    },
+    'young' : {
+      'dose' : 6,
+      'text' : '6'
+    }
+  },
+}
 
 const showCalculatorResults= (input, result) => {
   input.classList.add("es-hide")
   result.classList.remove("es-hide")
-  
+
+  const data = {
+    variant: esProductOption.value,
+    age: esPersonOption.value,
+    date: esDateOption.valueAsDate,
+  }
+
+  const diffTime = Math.abs(new Date() - data.date);
+  const diffDays = Math.ceil(diffTime / 86400000);
+  const totalAmountTaken = diffDays * doseMatrix[data.variant][data.age].dose
+  const amountLeft = doseMatrix[data.variant].amount - totalAmountTaken
+  const daysLeft = Math.floor(amountLeft / doseMatrix[data.variant][data.age].dose)
+  const endDate = new Date((new Date()).getTime() + 86400000 * daysLeft)
+  const endDateFormatted = new Intl.DateTimeFormat('pl', {year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(endDate)
+
+  document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__result--tabs').innerHTML = doseMatrix[data.variant][data.age].text
+  document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__result--data-container').innerHTML = ''
+  for (let i in endDateFormatted) {
+    document.querySelector('#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__result--data-container').innerHTML += endDateFormatted[i].value
+  }
 }
 
 const returnToCalculator= (input, result) => {
@@ -92,55 +145,14 @@ const returnToCalculator= (input, result) => {
   result.classList.add("es-hide")
 }
 
-calculatorSubmitBtn.addEventListener('click', () => showCalculatorResults(calculatorInputsCtn, calculatorResutlsCtn));
-calculatorReturnBtn.addEventListener('click', () => returnToCalculator(calculatorInputsCtn, calculatorResutlsCtn));
-
-//main calculator logic
-const data = {
-  variant: 0,
-  person: 0,
-  date: 0, // change to days
-  product: ''
-}
-
+calculatorSubmitBtn.addEventListener('click', () => showCalculatorResults(calculatorInputsCtn, calculatorResultsCtn));
+calculatorReturnBtn.addEventListener('click', () => returnToCalculator(calculatorInputsCtn, calculatorResultsCtn));
 
 const esProductOption = document.getElementById('es-calculator-product')
-console.log(esProductOption.options[esProductOption.selectedIndex].value)
-
-const esProductAttr = document.getElementById('es-calculator-product')
-console.log(esProductAttr.options[esProductOption.selectedIndex].dataset.productId)
-
 const esPersonOption = document.getElementById('es-calculator-who')
-console.log(esPersonOption .options[esPersonOption.selectedIndex].value)
-
 const esDateOption = document.getElementById('es-calculator-date')
+esDateOption.valueAsDate = new Date()
 
-
-const getProductVariant = (event) => {
-  let selectedProductValue = event.target.value
-  data.variant = selectedProductValue
-  console.log(data)
- }
-
-const getPersonValue = (event) => {
-  let selectedPersonValue = event.target.value
-  data.person = selectedPersonValue
- 
-  console.log(data)
- }
-
- const getDateValue = (event) => {
-  let dateValue = event.target.value
-  let selectedDateValue = new Date(dateValue)
-  data.date = selectedDateValue.toLocaleDateString("en-US")
- 
-  console.log(data)
- }
-
-
-esProductOption.addEventListener('change', () => getProductVariant(event));
-esPersonOption.addEventListener('change', () => getPersonValue(event));
-esDateOption.addEventListener('change', () => getDateValue(event));
 
 
 //magnifier glass
@@ -215,10 +227,10 @@ const faqQuestions = document.querySelectorAll("[data-esquestion-id]");
 
 faqQuestions.forEach(faqQuestion=> {
   faqQuestion.addEventListener("click", () => {
-    const esquestionId = faqQuestion.dataset.esquestionId 
+    const esquestionId = faqQuestion.dataset.esquestionId
     const esfaqArrow= document.getElementById(esquestionId )
     esfaqArrow.classList.toggle('es-faq__rotate')
   })
 })
 
-})()
+})(document)
