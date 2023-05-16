@@ -15,7 +15,7 @@ $es-main-text-light-color: #78a9df;
     @font-face {
         font-family: "es-Gilroy-regular";
         src: url("./fonts/Gilroy-Regular.otf") format("opentype");
-        font-display: auto;
+        font-displaneDy: auto;
     }
         $es-regular: "es-Gilroy-semibold";
         $es-thin: "es-Gilroy-regular";
@@ -85,6 +85,7 @@ $es-main-text-light-color: #78a9df;
                 position: relative;
                 font-family: $es-regular;
                 font-size: 16px;
+                cursor: pointer;
                 &::after{
                     content: '';
                     display: block;
@@ -1533,7 +1534,7 @@ $es-main-text-light-color: #78a9df;
                     position: relative;
                     background-color:transparent;
                     margin: 0 auto;
-                    max-width: 600px;
+                    max-width: 500px;
                     padding: 20px;
                     &::after{
                         content: url(./img/es-active-line-bottom.webp);

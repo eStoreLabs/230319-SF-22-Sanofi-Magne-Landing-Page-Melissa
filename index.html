@@ -13,22 +13,22 @@
             <header class="es-kv">
                 <nav class="es-kv__nav">
                     <ul class="es-kv__navCtn">
-                        <a href="#sprawdz-ile-magnezu-potrzebujesz" class="es-kv__navLink">
+                        <a data-href="#sprawdz-ile-magnezu-potrzebujesz" class="es-kv__navLink">
                             <li class="es-kv__navItem">Sprawdź, ile magnezu <br> potrzebujesz</li>
                         </a>
-                        <a href="#jak-zadbac-o-dobrostan-psychiczny" class="es-kv__navLink">
+                        <a data-href="#jak-zadbac-o-dobrostan-psychiczny" class="es-kv__navLink">
                             <li  class="es-kv__navItem">Jak zadbać <br> o&nbsp;dobrostan psychiczny?</li>
                         </a>
-                        <a href="#dlaczego-warto-brac-magnez" class="es-kv__navLink">
+                        <a data-href="#dlaczego-warto-brac-magnez" class="es-kv__navLink">
                             <li class="es-kv__navItem">Dlaczego warto <br> brać magnez?</li>
                         </a>
-                        <a href="#jak-ukoic-nerwy-i-radzic-sobie-ze-stresem" class="es-kv__navLink">
+                        <a data-href="#jak-ukoic-nerwy-i-radzic-sobie-ze-stresem" class="es-kv__navLink">
                             <li class="es-kv__navItem">Jak ukoić nerwy i&nbsp;pozbyć <br> się stresu?</li>
                         </a>
-                        <a href="#cwiczenia-relaksacyjne" class="es-kv__navLink">
+                        <a data-href="#cwiczenia-relaksacyjne" class="es-kv__navLink">
                             <li class="es-kv__navItem">Ćwiczenia <br> relaksacyjne</li>
                         </a>
-                        <a href="#faq" class="es-kv__navLink">
+                        <a data-href="#faq" class="es-kv__navLink">
                             <li class="es-kv__navItem">FAQ</li>
                         </a>
                     </ul>
@@ -897,5 +897,7 @@
         </div>
     </div>
     <script src="app.js"></script>
+    <script defer> $(".es-kv__navLink").click(function() { var idik = $(this).attr('data-href'); $('html, body').animate({ scrollTop: $(idik).offset().top -110+'px' }); });</script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"> </script>
 </body>
 </html>
