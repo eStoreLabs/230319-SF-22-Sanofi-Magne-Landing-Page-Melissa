@@ -787,6 +787,9 @@ $es-main-text-light-color: #78a9df;
             }
 
         }
+        .es-container{
+            background-image: none;
+        }
         .es-how{
             display: flex;
             flex-direction: column;
@@ -794,10 +797,7 @@ $es-main-text-light-color: #78a9df;
             align-items: center;
             position: relative;
             padding: 50px 0;
-            background-image: url(./img/es-how-bg.webp);
-            background-repeat: no-repeat;
-            background-position: right bottom;
-            background-size:contain;
+            
             &::after{
                 content: url(./img/es-how-happyFace.webp);
                 display: block;
@@ -1270,9 +1270,21 @@ $es-main-text-light-color: #78a9df;
             }
             .es-may{
                 &__slide{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    gap:20px;
                     &--second{
                         padding-top: 0px;
                     }
+                    
+                }
+                &__content{
+                    max-width: 50%;
+                }
+                &__img{
+                    max-width: 250px;
                 }
                 &__arrow{
                     cursor: pointer;
@@ -1327,7 +1339,7 @@ $es-main-text-light-color: #78a9df;
                     min-width: 300px;
                 }
                 &__img{
-                    max-width: 450px;
+                    max-width: 300px;
                 }
                 &__howItem{
                     min-height: 300px;
@@ -1381,11 +1393,11 @@ $es-main-text-light-color: #78a9df;
                 }
                 
                 &__number{
-                    top:40px;
+                    top:0px;
                     right:0;
                     &--6{
                         top:-70px;
-                        right: 20px;
+                        right: 0px;
                         }
                 }
             }
@@ -1424,6 +1436,12 @@ $es-main-text-light-color: #78a9df;
                         min-height: 40px;
                     }
                 }
+            }
+            .es-container{
+                background-image: url(./img/es-how-bg.webp);
+                background-repeat: no-repeat;
+                background-position: right top;
+                background-size:45%;
             }
             .es-how{
                 display: flex;
@@ -1622,6 +1640,24 @@ $es-main-text-light-color: #78a9df;
                 }
                 &__content{
                     max-width: 40%;
+                }
+                &__img{
+                    max-width: 350px;
+                }
+            }
+            .es-magneDesc{
+                &__img{
+                    max-width: 450px;
+                }
+            }
+            .es-care{
+                &__number{
+                    top:40px;
+                    right:0;
+                    &--6{
+                        top:-70px;
+                        right: 20px;
+                        }
                 }
             }
             .es-symptoms{

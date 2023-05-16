@@ -803,6 +803,9 @@
   background-color: transparent;
   margin: 0;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-container {
+  background-image: none;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how {
   display: flex;
   flex-direction: column;
@@ -810,10 +813,6 @@
   align-items: center;
   position: relative;
   padding: 50px 0;
-  background-image: url(./img/es-how-bg.webp);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: contain;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how::after {
   content: url(./img/es-how-happyFace.webp);
@@ -1296,8 +1295,21 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-may__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+  }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may__slide--second {
     padding-top: 0px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-may__content {
+    max-width: 50%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-may__img {
+    max-width: 250px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow {
     cursor: pointer;
@@ -1348,7 +1360,7 @@
     min-width: 300px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
-    max-width: 450px;
+    max-width: 300px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__howItem {
     min-height: 300px;
@@ -1401,12 +1413,12 @@
     color: #fff;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number {
-    top: 40px;
+    top: 0px;
     right: 0;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number--6 {
     top: -70px;
-    right: 20px;
+    right: 0px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__contentCtn {
     display: flex;
@@ -1441,6 +1453,12 @@
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__slideText--title {
     font-size: 25px;
     min-height: 40px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-container {
+    background-image: url(./img/es-how-bg.webp);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 45%;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-how {
     display: flex;
@@ -1629,6 +1647,20 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may__content {
     max-width: 40%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-may__img {
+    max-width: 350px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
+    max-width: 450px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number {
+    top: 40px;
+    right: 0;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number--6 {
+    top: -70px;
+    right: 20px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
     position: absolute;
