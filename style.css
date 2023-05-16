@@ -341,8 +341,8 @@
   font-size: 16px;
   line-height: 1.1;
   position: absolute;
-  top: -40px;
-  right: -20px;
+  top: -10px;
+  right: 0px;
   background-color: #00b8bd;
   border-radius: 50%;
   color: #fff;
@@ -386,6 +386,9 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
   max-width: 300px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__packshot {
+  width: 310px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__title {
   font-size: 16px;
@@ -462,7 +465,7 @@
   color: #001e61;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__howItem:hover .es-magneDesc__numberCtn {
-  animation: es-gelatine 2s infinite;
+  animation: es-bounce 2s infinite;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-hide {
   display: none;
@@ -502,7 +505,7 @@
   color: #001883;
   background-color: #fff;
   cursor: pointer;
-  min-width: 300px;
+  min-width: 320px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__selectLabel {
   font-size: 16px;
@@ -519,7 +522,7 @@
   color: #001883;
   background-color: #fff;
   cursor: pointer;
-  min-width: 300px;
+  min-width: 320px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__submitBtn {
   margin: 50px 0;
@@ -1391,7 +1394,7 @@
     flex-direction: row;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care__contentCtn {
-    max-width: 400px;
+    max-width: 350px;
     position: relative;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care__sliderDesc {

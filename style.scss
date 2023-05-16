@@ -338,8 +338,8 @@ $es-main-text-light-color: #78a9df;
             &__badge{
                 @include es-text-reset;
                 position: absolute;
-                top:-40px;
-                right: -20px;
+                top:-10px;
+                right: 0px;
                 background-color: #00b8bd;
                 border-radius: 50%;
                 color: #fff;
@@ -382,6 +382,9 @@ $es-main-text-light-color: #78a9df;
             }
             &__img{
                 max-width: 300px;
+            }
+            &__packshot{
+                width: 310px
             }
             &__title{
                 @include es-text-reset;
@@ -456,7 +459,7 @@ $es-main-text-light-color: #78a9df;
             }
         }
        .es-magneDesc__howItem:hover .es-magneDesc__numberCtn{
-            animation: es-gelatine 2s infinite;
+            animation: es-bounce 2s infinite;
         }
         .es-hide{
             display: none;
@@ -494,8 +497,9 @@ $es-main-text-light-color: #78a9df;
                 color: $es-main-text-color;
                 background-color: #fff;
                 cursor: pointer;
-                min-width: 300px;
+                min-width: 320px;
             }
+            
             &__selectLabel{
                 @include es-text-reset;
                 text-align: center;
@@ -511,7 +515,7 @@ $es-main-text-light-color: #78a9df;
                 color: $es-main-text-color;
                 background-color: #fff;
                 cursor: pointer;
-                min-width: 300px;
+                min-width: 320px;
             }
             &__submitBtn{
                 margin: 50px 0;
@@ -1007,7 +1011,6 @@ $es-main-text-light-color: #78a9df;
                 justify-content: center;
                 align-items: center;
                 animation: es-gelatine 2s infinite;
-                //animation: es-bounce 2s ease infinite;
             }
             &__question{
                 font-size: 60px;
@@ -1372,7 +1375,7 @@ $es-main-text-light-color: #78a9df;
                     flex-direction: row;
                 }
                 &__contentCtn{
-                    max-width: 400px;
+                    max-width: 350px;
                     position: relative;
                 }
                 &__sliderDesc{
