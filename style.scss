@@ -499,6 +499,12 @@ $es-main-text-light-color: #78a9df;
                 background-color: #fff;
                 cursor: pointer;
                 min-width: 320px;
+                position: relative;
+                appearance: none;
+                background-image: url(./img/es-select-arrow.png);
+                background-repeat: no-repeat;
+                background-position: 99%;
+                background-size: 8%;
             }
             
             &__selectLabel{

@@ -507,6 +507,14 @@
   background-color: #fff;
   cursor: pointer;
   min-width: 320px;
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(./img/es-select-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 99%;
+  background-size: 8%;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__selectLabel {
   font-size: 16px;
