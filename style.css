@@ -928,6 +928,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bodyCtn {
   position: relative;
@@ -946,13 +947,20 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__magnifierGlass {
   position: absolute;
-  border: 2px solid #001883;
-  border-radius: 50%;
   cursor: none;
-  /*Set the size of the magnifier glass:*/
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
+  width: 510px;
+  height: 510px;
+  margin-left: -255px;
+  margin-top: -255px;
+  transition: left 0.2s ease, top 0.2s ease;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__magnifierGlass img {
+  transition: opacity 0.2s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleItem {
   margin-left: -150px;
@@ -962,8 +970,8 @@
   color: #001883;
   transition: 0.2s ease-in-out;
 }
-#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleItem:hover {
-  transform: translateX(10px);
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleItem.es-currentlySelected {
+  transform: scale(1.15);
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleText {
   font-size: 16px;
@@ -1694,9 +1702,5 @@
 @media (min-width: 1100px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
     margin-top: -200px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
-    position: absolute;
-    right: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
