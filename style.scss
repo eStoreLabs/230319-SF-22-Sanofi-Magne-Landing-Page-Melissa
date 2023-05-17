@@ -966,6 +966,8 @@ $es-main-text-light-color: #78a9df;
         .es-activeInfo{
             margin: 50px 0;
             padding: 10px;
+            z-index: 10;
+            position: relative;
             &__img{
 
             }
@@ -1260,7 +1262,7 @@ $es-main-text-light-color: #78a9df;
                 &__navCtn{
                     display: flex;
                     flex-direction: row;
-                    flex-wrap: wrap;
+                    //flex-wrap: wrap;
                 }
                 &__navItem{
                     min-width: 100px;
@@ -1603,7 +1605,7 @@ $es-main-text-light-color: #78a9df;
                 &__navCtn{
                     display: flex;
                     flex-direction: row;
-                    flex-wrap: wrap;
+                    //flex-wrap: wrap;
                 }
                 &__nav{
                     position: absolute;
