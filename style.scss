@@ -68,6 +68,7 @@ $es-title: "es-Bliss-heavy";
     sup {
       font-size: x-small;
     }
+    
     img {
       max-width: 100%;
     }
@@ -1086,7 +1087,7 @@ $es-title: "es-Bliss-heavy";
       &__slides {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         min-height: 450px;
       }
       &__slide {
@@ -1099,7 +1100,7 @@ $es-title: "es-Bliss-heavy";
         cursor: pointer;
         border: none;
         background-color: transparent;
-        margin: 0;
+        margin-top: 35px;
       }
       &__descCtn {
         padding: 20px;
@@ -1237,8 +1238,12 @@ $es-title: "es-Bliss-heavy";
         font-family: $es-thin;
         color: $es-main-text-color;
         font-size: 14px;
+        line-height: 1.4;
         span {
           font-family: $es-regular;
+        }
+        sub {
+          font-size: x-small;
         }
       }
     }
@@ -1264,7 +1269,10 @@ $es-title: "es-Bliss-heavy";
         font-family: $es-thin;
         color: $es-main-text-color;
         padding: 0 10px;
-        margin: 0;
+        margin-top: 5px;
+        sub {
+          font-size: x-small;
+        }
       }
       &__warning {
         @include es-text-reset;
@@ -1479,6 +1487,9 @@ $es-title: "es-Bliss-heavy";
           width: 400px;
           font-size: 20px;
           min-height: 150px;
+          sup {
+            font-size: 14px;
+          }
           &--title {
             font-size: 25px;
             min-height: 40px;
@@ -1601,6 +1612,15 @@ $es-title: "es-Bliss-heavy";
       .es-exercise {
         &__title {
           font-size: 40px;
+          sup {
+            font-size: 18px;
+          }
+        }
+        &__slides {
+          align-items: center;
+        }
+        &__arrow {
+          margin-top: unset;
         }
         &__slide {
           display: flex;
