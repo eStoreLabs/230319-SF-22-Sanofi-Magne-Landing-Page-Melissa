@@ -1,1712 +1,1730 @@
-$es-main-text-color:#001883;
+$es-main-text-color: #001883;
 $es-dark-color: #001e61;
 $es-main-text-light-color: #78a9df;
 
 @font-face {
-    font-family: "es-Gilroy-semibold";
-    src: url("./fonts/Gilroy-SemiBold.otf") format("opentype");
-    font-display: auto;
-    }
-    @font-face {
-        font-family: "es-Bliss-heavy";
-        src: url("./fonts/Bliss-Heavy.otf") format("opentype");
-        font-display: auto;
-    }
-    @font-face {
-        font-family: "es-Gilroy-regular";
-        src: url("./fonts/Gilroy-Regular.otf") format("opentype");
-        font-displaneDy: auto;
-    }
-        $es-regular: "es-Gilroy-semibold";
-        $es-thin: "es-Gilroy-regular";
-        $es-title: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
+  src: url("./fonts/Gilroy-SemiBold.otf") format("opentype");
+  font-display: auto;
+}
+@font-face {
+  font-family: "es-Bliss-heavy";
+  src: url("./fonts/Bliss-Heavy.otf") format("opentype");
+  font-display: auto;
+}
+@font-face {
+  font-family: "es-Gilroy-regular";
+  src: url("./fonts/Gilroy-Regular.otf") format("opentype");
+  font-displanedy: auto;
+}
+$es-regular: "es-Gilroy-semibold";
+$es-thin: "es-Gilroy-regular";
+$es-title: "es-Bliss-heavy";
 
-    @mixin es-text-reset {
-        font-size: 16px;
-        line-height: 1.1;
-    }
+@mixin es-text-reset {
+  font-size: 16px;
+  line-height: 1.1;
+  margin-top: 10px;
+}
 
-    @keyframes es-gelatine {
-        from, to { transform: scale(1, 1); }
-        25% { transform: scale(0.9, 1.1); }
-        50% { transform: scale(1.1, 0.9); }
-        75% { transform: scale(0.95, 1.05); }
+@keyframes es-gelatine {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+@keyframes es-bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+#es-sanofi.es-sanofi {
+  #es-magne.es-magne {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    img {
+      max-width: 100%;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .es-kv {
+      background-image: url(./img/kv-bg.webp);
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: contain;
+      min-height: 500px;
+      position: relative;
+      &__nav {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.678);
+        border-radius: 100% 0% 48% 52% / 0% 34% 66% 100%;
+        padding: 10px 5px;
+        width: 100%;
       }
-      @keyframes es-bounce {
-        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-        40% {transform: translateY(-10px);}
-        60% {transform: translateY(-5px);}
+      &__navCtn {
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+      }
+      &__navItem {
+        min-width: 160px;
+        text-align: center;
+        list-style: none;
+        padding: 10px;
+      }
+      &__navLink {
+        @include es-text-reset;
+        text-decoration: none;
+        color: $es-main-text-color;
+        position: relative;
+        font-family: $es-regular;
+        font-size: 16px;
+        cursor: pointer;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 1.5px;
+          width: 100%;
+          background-color: $es-main-text-color;
+        }
+        &:nth-child(1) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+      &__content {
+        display: flex;
+        flex-direction: column;
+      }
+      &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-family: $es-title;
+        color: $es-main-text-color;
+      }
+      &__title {
+        @include es-text-reset;
+        font-size: 25px;
+        margin-bottom: 60px;
+      }
+      &__subtitleCtn {
+        background-image: url(./img/es-kv-text-bg.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-width: 300px;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      &__subtitleBadge {
+        width: 90px;
+        position: absolute;
+        top: -40px;
+        left: 40px;
+      }
+      &__subtitle {
+        @include es-text-reset;
+        font-size: 20px;
+      }
+      &__imgCtn {
+        &::after {
+          content: url(./img/es-header-line.webp);
+          display: block;
+          position: absolute;
+          bottom: -10px;
+          right: 0;
+        }
+      }
+      &__img {
+        clip-path: circle(39.6% at 50% 50%);
+        width: 100%;
+        max-height: 550px;
+      }
+    }
+    .es-cross {
+      padding: 20px;
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 300px;
+      }
+      &__img {
+        max-width: 280px;
+      }
+      &__name {
+        @include es-text-reset;
+        font-family: $es-regular;
+        text-align: center;
+        color: $es-dark-color;
+      }
+      &__link {
+        text-decoration: none;
+        color: $es-dark-color;
+        border: 2px solid $es-dark-color;
+        border-radius: 20px;
+        padding: 5px 20px;
+        font-family: $es-regular;
+        font-size: 18px;
+        transition: 0.4s ease-in-out;
+        &:hover {
+          background-color: $es-dark-color;
+          color: #fff;
+        }
+      }
     }
 
-#es-sanofi.es-sanofi{
-    #es-magne.es-magne{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0;
-        overflow: hidden;
+    .es-may {
+      &__slide {
+        display: flex;
+        flex-direction: column;
+        min-height: 500px;
+        &--second {
+          background-image: url(./img/es-may-slider-bg.webp);
+          background-repeat: no-repeat;
+          background-position: top right;
+          background-size: contain;
+          padding-top: 50px;
+        }
+      }
+      &__img {
+        max-width: 350px;
+      }
+      &__packshot {
+        max-height: 200px;
+      }
+      &__packshotCtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      &__title {
+        @include es-text-reset;
+        font-family: $es-regular;
+        font-size: 30px;
+        color: $es-main-text-color;
+      }
+      &__text {
+        @include es-text-reset;
+        font-family: $es-thin;
+        font-size: 16px;
+        color: $es-main-text-color;
+        &--line {
+          text-decoration: underline;
+        }
+        &--bold {
+          font-family: $es-regular;
+          text-decoration: none;
+        }
+      }
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+      }
+      &__link {
+        text-decoration: none;
+        color: $es-dark-color;
+        border: 2px solid $es-dark-color;
+        border-radius: 20px;
+        padding: 5px 20px;
+        font-family: $es-regular;
+        font-size: 18px;
+        transition: 0.4s ease-in-out;
+        &:hover {
+          background-color: $es-dark-color;
+          color: #fff;
+        }
+      }
+      &__arrow {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        &--next {
+          align-self: flex-end;
+        }
+        &--prev {
+          align-self: flex-start;
+        }
+      }
+    }
+    .es-message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__title {
+        @include es-text-reset;
+        font-size: 30px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-light-color;
+        position: relative;
+        &:after {
+          content: url(./img/kv-sun.webp);
+          display: block;
+          position: absolute;
+          right: -150px;
+          top: -50px;
+          transform: scale(0.7);
+          display: none;
+        }
+      }
+      &__text {
+        @include es-text-reset;
+        font-size: 16px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-color;
+      }
+    }
+    .es-magneDesc {
+      background-image: url(./img/es-magneDesc-bg.webp);
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+      &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &--secondary {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      &__slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      &__slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 200px;
+        min-height: 350px;
+        &--badge {
+          position: relative;
+        }
+      }
+      &__badge {
+        @include es-text-reset;
+        position: absolute;
+        top: -10px;
+        right: 0px;
+        background-color: #00b8bd;
+        border-radius: 50%;
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-family: $es-regular;
+      }
+      &__name {
+        @include es-text-reset;
+        font-family: $es-regular;
+        text-align: center;
+        color: $es-dark-color;
+      }
+      &__link {
+        text-decoration: none;
+        color: $es-dark-color;
+        border: 2px solid $es-dark-color;
+        border-radius: 20px;
+        padding: 5px 20px;
+        font-family: $es-regular;
+        font-size: 18px;
+        transition: 0.4s ease-in-out;
+        &:hover {
+          background-color: $es-dark-color;
+          color: #fff;
+        }
+      }
+      &__arrow {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        align-self: flex-start;
+        margin-top: 40px;
+      }
+      &__img {
+        max-width: 300px;
+      }
+      &__packshot {
+        width: 310px;
+      }
+      &__title {
+        @include es-text-reset;
+        font-size: 30px;
+        text-align: center;
+        font-family: $es-regular;
+        color: $es-main-text-color;
+      }
+      &__howCtn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      &__howItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 250px;
+        min-height: 150px;
+        margin-top: 20px;
+      }
+
+      &__numberCtn {
+        height: 60px;
+        width: 60px;
+        background-image: url(./img/es-how-numberBg.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__number {
+        @include es-text-reset;
+        font-size: 30px;
+        font-family: $es-title;
+        color: $es-dark-color;
+        margin: 0;
+      }
+      &__how-text {
+        @include es-text-reset;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-color;
+        min-height: 60px;
+        &--hidden {
+          @include es-text-reset;
+          background-color: $es-main-text-light-color;
+          color: #fff;
+          padding: 15px;
+          border-radius: 40px;
+          font-family: $es-regular;
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+      &__button {
+        @include es-text-reset;
+        border: none;
+        background-color: $es-dark-color;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: $es-regular;
+        transition: 0.4s ease-in-out;
+        &:hover {
+          background-color: #fff;
+          outline: 2px solid $es-dark-color;
+          color: $es-dark-color;
+        }
+      }
+    }
+    .es-magneDesc__howItem:hover .es-magneDesc__numberCtn {
+      animation: es-bounce 2s infinite;
+    }
+    .es-hide {
+      display: none;
+    }
+    .es-calculator {
+      background-image: none;
+      width: 100%;
+      padding: 40px 10px;
+      min-height: 650px;
+      &__ctn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      &__title {
+        @include es-text-reset;
+        font-size: 30px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-color;
+      }
+      &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__select {
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+        font-family: $es-regular;
+        color: $es-main-text-color;
         background-color: #fff;
-        img{
-            max-width: 100%;
-        }
-        *{
-            box-sizing: border-box;
-        }
-        .es-kv{
-            background-image: url(./img/kv-bg.webp);
-            background-repeat: no-repeat;
-            background-position: top left;
-            background-size: contain;
-            min-height: 500px;
-            position: relative;
-            &__nav{
-                display: flex;
-                justify-content: center;
-                background-color: rgba(255, 255, 255, 0.678);
-                border-radius: 100% 0% 48% 52% / 0% 34% 66% 100%;
-                padding: 10px 5px;
-                width: 100%;
-            }
-            &__navCtn{
-                display: flex;
-                flex-direction: column;
-                z-index: 10;
-            }
-            &__navItem{
-                min-width: 160px;
-                text-align: center;
-                list-style: none;
-                padding: 10px;
-                
-            }
-            &__navLink{
-                @include es-text-reset;
-                text-decoration: none;
-                color: $es-main-text-color;
-                position: relative;
-                font-family: $es-regular;
-                font-size: 16px;
-                cursor: pointer;
-                &::after{
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    top:0;
-                    left: 0;
-                    height: 1.5px;
-                    width: 100%;
-                    background-color: $es-main-text-color;
-                }
-                &:nth-child(1){
-                    &::after{
-                        display: none;
-                    }
-                }
-            }
-            &__content{
-                display: flex;
-                flex-direction: column;
-            }
-            &__text{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                font-family: $es-title;
-                color: $es-main-text-color;
-            }
-            &__title{
-                @include es-text-reset;
-                font-size: 25px;
-                margin-bottom: 60px;
-            }
-            &__subtitleCtn{
-                background-image: url(./img/es-kv-text-bg.webp);
-                background-repeat: no-repeat;
-                background-size: contain;
-                min-width: 300px;
-                min-height: 200px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-            }
-            &__subtitleBadge{
-                width: 90px;
-                position: absolute;
-                top:-40px;
-                left: 40px;
-            }
-            &__subtitle{
-                @include es-text-reset;
-                font-size:20px;
-            }
-            &__imgCtn{
-                &::after{
-                    content: url(./img/es-header-line.webp);
-                    display: block;
-                    position: absolute;
-                    bottom: -10px;
-                    right: 0;
-                }
-            }
-            &__img{
-                clip-path: circle(39.6% at 50% 50%);
-                width: 100%;
-                max-height: 550px;
-            }
-        }
-        .es-cross{
-            padding: 20px;
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap:20px;
-            &__item{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                min-width: 300px;
-            }
-            &__img{
-                max-width: 280px;
-            }
-            &__name{
-                @include es-text-reset;
-                font-family: $es-regular;
-                text-align: center;
-                color: $es-dark-color;
-            }
-            &__link{
-                text-decoration: none;
-                color: $es-dark-color;
-                border: 2px solid $es-dark-color;
-                border-radius: 20px;
-                padding: 5px 20px;
-                font-family: $es-regular;
-                font-size: 18px;
-                transition: .4s ease-in-out;
-                &:hover{
-                    background-color: $es-dark-color;
-                    color: #fff;
-                }
-            }
-        }
+        cursor: pointer;
+        min-width: 320px;
+        position: relative;
+        appearance: none;
+        background-image: url(./img/es-select-arrow.png);
+        background-repeat: no-repeat;
+        background-position: 99%;
+        background-size: 8%;
+      }
 
-        .es-may{
-            &__slide{
-                display: flex;
-                flex-direction: column;
-                min-height: 500px;
-                &--second{
-                    background-image: url(./img/es-may-slider-bg.webp);
-                    background-repeat: no-repeat;
-                    background-position: top right;
-                    background-size: contain;
-                    padding-top: 50px;
-                }
-            }
-            &__img{
-                max-width: 350px;
-            }
-            &__packshot{
-                max-height: 200px;
-            }
-            &__packshotCtn{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap:20px;
-            }
-            &__title{
-                @include es-text-reset;
-                font-family: $es-regular;
-                font-size: 30px;
-                color: $es-main-text-color;
-            }
-            &__text{
-                @include es-text-reset;
-                font-family: $es-thin;
-                font-size: 16px;
-                color: $es-main-text-color;
-                &--line{
-                    text-decoration: underline;
-                }
-                &--bold{
-                    font-family: $es-regular;
-                    text-decoration: none;
-                }
-            }
-            &__item{
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                gap: 20px;
-            }
-            &__link{
-                text-decoration: none;
-                color: $es-dark-color;
-                border: 2px solid $es-dark-color;
-                border-radius: 20px;
-                padding: 5px 20px;
-                font-family: $es-regular;
-                font-size: 18px;
-                transition: .4s ease-in-out;
-                &:hover{
-                    background-color: $es-dark-color;
-                    color: #fff;
-                }
-            }
-            &__arrow{
-                cursor: pointer;
-                border: none;
-                background-color: transparent;
-                &--next{
-                    align-self: flex-end;
-                }
-                &--prev{
-                    align-self: flex-start;
-                }
-            }
+      &__selectLabel {
+        @include es-text-reset;
+        text-align: center;
+        font-family: $es-regular;
+        color: $es-main-text-color;
+      }
+      &__dataInput {
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+        font-family: $es-regular;
+        color: $es-main-text-color;
+        background-color: #fff;
+        cursor: pointer;
+        min-width: 320px;
+      }
+      &__submitBtn {
+        margin: 50px 0;
+        text-decoration: none;
+        color: $es-dark-color;
+        border: 2px solid $es-dark-color;
+        background-color: transparent;
+        border-radius: 20px;
+        padding: 5px 30px;
+        font-family: $es-regular;
+        font-size: 14px;
+        transition: 0.4s ease-in-out;
+        width: 130px;
+        height: 30px;
+        cursor: pointer;
+        position: relative;
+        &:hover {
+          background-color: $es-dark-color;
+          color: #fff;
         }
-        .es-message{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            &__title{
-                @include es-text-reset;
-                font-size: 30px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-light-color;
-                position: relative;
-                &:after{
-                    content: url(./img/kv-sun.webp);
-                    display: block;
-                    position: absolute;
-                    right: -150px;
-                    top:-50px;
-                    transform: scale(.7);
-                    display: none;
-                }
-            }
-            &__text{
-                @include es-text-reset;
-                font-size: 16px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-color;
-            }
+        &::after {
+          content: url(./img/es-line.webp);
+          position: absolute;
+          top: -30px;
+          left: -150%;
+          transform: scale(0.6);
         }
-        .es-magneDesc{
-            background-image: url(./img/es-magneDesc-bg.webp);
-            background-repeat: no-repeat;
-            background-position: right center;
-            background-size: contain;
-            &__container{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                &--secondary{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-            &__slider{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 20px;
-            }
-            &__slide{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                min-width: 200px;
-                min-height: 350px;
-                &--badge{
-                    position: relative;
-                }
-            }
-            &__badge{
-                @include es-text-reset;
-                position: absolute;
-                top:-10px;
-                right: 0px;
-                background-color: #00b8bd;
-                border-radius: 50%;
-                color: #fff;
-                width: 70px;
-                height: 70px;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 11px;
-                text-transform: uppercase;
-                font-family: $es-regular;
-            }
-            &__name{
-                @include es-text-reset;
-                font-family: $es-regular;
-                text-align: center;
-                color: $es-dark-color;
-            }
-            &__link{
-                text-decoration: none;
-                color: $es-dark-color;
-                border: 2px solid $es-dark-color;
-                border-radius: 20px;
-                padding: 5px 20px;
-                font-family: $es-regular;
-                font-size: 18px;
-                transition: .4s ease-in-out;
-                &:hover{
-                    background-color: $es-dark-color;
-                    color: #fff;
-                }
-            }
-            &__arrow{
-                cursor: pointer;
-                border: none;
-                background-color: transparent;
-                align-self: flex-start;
-                margin-top: 40px;
-            }
-            &__img{
-                max-width: 300px;
-            }
-            &__packshot{
-                width: 310px
-            }
-            &__title{
-                @include es-text-reset;
-                font-size: 30px;
-                text-align: center;
-                font-family: $es-regular;
-                color: $es-main-text-color;
-            }
-            &__howCtn{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-            }
-            &__howItem{
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                min-width: 250px;
-                min-height: 150px;
-                margin-top: 20px;
-            }
-
-            &__numberCtn{
-                height: 60px;
-                width: 60px;
-                background-image: url(./img/es-how-numberBg.webp);
-                background-repeat: no-repeat;
-                background-size: contain;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            &__number{
-                @include es-text-reset;
-                font-size: 30px;
-                font-family: $es-title;
-                color: $es-dark-color;
-            }
-            &__how-text{
-                @include es-text-reset;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-color;
-                min-height: 60px;
-                &--hidden{
-                    background-color: $es-main-text-light-color;
-                    color: #fff;
-                    padding: 15px;
-                    border-radius: 40px;
-                    font-family: $es-regular;
-                    font-size: 12px;
-                    text-align: center;
-                }
-            }
-            &__button{
-                @include es-text-reset;
-                border: none;
-                background-color: $es-dark-color;
-                color: #fff;
-                padding: 10px 20px;
-                border-radius: 20px;
-                cursor: pointer;
-                font-family: $es-regular;
-                transition: .4s ease-in-out;
-                &:hover{
-                    background-color: #fff;
-                    outline: 2px solid $es-dark-color;
-                    color: $es-dark-color;
-                }
-            }
+      }
+      &__resultText {
+        @include es-text-reset;
+        text-align: center;
+        font-family: $es-regular;
+        color: $es-main-text-color;
+      }
+      &__result {
+        @include es-text-reset;
+        font-size: 30px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-color;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      &__resultClaim {
+        @include es-text-reset;
+        font-size: 12px;
+        text-align: center;
+        font-family: $es-thin;
+        color: $es-main-text-color;
+        margin: 0;
+        max-width: 350px;
+      }
+      &__returnBtn {
+        margin: 50px 0;
+        text-decoration: none;
+        color: $es-dark-color;
+        border: 2px solid $es-dark-color;
+        background-color: transparent;
+        border-radius: 20px;
+        padding: 5px 30px;
+        font-family: $es-regular;
+        font-size: 14px;
+        transition: 0.4s ease-in-out;
+        width: 200px;
+        height: 30px;
+        cursor: pointer;
+        position: relative;
+        &:hover {
+          background-color: $es-dark-color;
+          color: #fff;
         }
-       .es-magneDesc__howItem:hover .es-magneDesc__numberCtn{
-            animation: es-bounce 2s infinite;
+        &::after {
+          content: url(./img/es-line.webp);
+          position: absolute;
+          top: -30px;
+          left: -60%;
+          transform: scale(0.6);
         }
-        .es-hide{
-            display: none;
-        }
-        .es-calculator{
-            background-image: none;
-            width: 100%;
-            padding: 40px 10px;
-            min-height: 650px;
-            &__ctn{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-            }
-            &__title{
-                @include es-text-reset;
-                font-size: 30px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-color;
-            }
-            &__item{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            &__select{
-                border-radius: 20px;
-                padding: 10px;
-                margin: 10px;
-                font-family: $es-regular;
-                color: $es-main-text-color;
-                background-color: #fff;
-                cursor: pointer;
-                min-width: 320px;
-                position: relative;
-                appearance: none;
-                background-image: url(./img/es-select-arrow.png);
-                background-repeat: no-repeat;
-                background-position: 99%;
-                background-size: 8%;
-            }
-            
-            &__selectLabel{
-                @include es-text-reset;
-                text-align: center;
-                font-family: $es-regular;
-                color: $es-main-text-color;
-                
-            }
-            &__dataInput{
-                border-radius: 20px;
-                padding: 10px;
-                margin: 10px;
-                font-family: $es-regular;
-                color: $es-main-text-color;
-                background-color: #fff;
-                cursor: pointer;
-                min-width: 320px;
-            }
-            &__submitBtn{
-                margin: 50px 0;
-                text-decoration: none;
-                color: $es-dark-color;
-                border: 2px solid $es-dark-color;
-                background-color: transparent;
-                border-radius: 20px;
-                padding: 5px 30px;
-                font-family: $es-regular;
-                font-size: 14px;
-                transition: .4s ease-in-out;
-                width: 130px;
-                height: 30px;
-                cursor: pointer;
-                position: relative;
-                &:hover{
-                    background-color: $es-dark-color;
-                    color: #fff;
-                }
-                &::after{
-                    content: url(./img/es-line.webp);
-                    position: absolute;
-                    top:-30px;
-                    left: -150%;
-                    transform: scale(.6)
-                }
-            }
-            &__resultText{
-                @include es-text-reset;
-                text-align: center;
-                font-family: $es-regular;
-                color: $es-main-text-color;
-                
-            }
-            &__result{
-                @include es-text-reset;
-                font-size: 30px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-color;
-                margin: 0;
-                margin-bottom: 15px;
-            }
-            &__resultClaim{
-                @include es-text-reset;
-                font-size: 12px;
-                text-align: center;
-                font-family: $es-thin;
-                color: $es-main-text-color;
-                margin: 0;
-                max-width: 350px;
-            }
-            &__returnBtn{
-                margin: 50px 0;
-                text-decoration: none;
-                color: $es-dark-color;
-                border: 2px solid $es-dark-color;
-                background-color: transparent;
-                border-radius: 20px;
-                padding: 5px 30px;
-                font-family: $es-regular;
-                font-size: 14px;
-                transition: .4s ease-in-out;
-                width: 200px;
-                height: 30px;
-                cursor: pointer;
-                position: relative;
-                &:hover{
-                    background-color: $es-dark-color;
-                    color: #fff;
-                }
-                &::after{
-                    content: url(./img/es-line.webp);
-                    position: absolute;
-                    top:-30px;
-                    left: -60%;
-                    transform: scale(.6)
-                }
-            }
-        }
-        .es-hide{
-            display: none;
-        }
-        .es-care{
-            background-image: none;
-            width: 100%;
-            min-height: 750px;
-            padding: 20px 10px;
-            &__title{
-                @include es-text-reset;
-                font-size: 30px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-color;
-            }
-            &__desc{
-                @include es-text-reset;
-                font-size: 16px;
-                text-align: center;
-                font-family: $es-thin;
-                color: $es-main-text-color;
-                margin: 15px auto;
-                span{
-                    font-family: $es-regular;
-                }
-            }
-            &__slides{
-                min-height: 400px;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-
-            }
-            &__slide{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap:20px;
-            }
-            &__imgCtn{
-                max-width: 300px;
-                position: relative;
-            }
-            &__contentCtn{
-                max-width: 400px;
-                min-height: 150px;
-                &--6{
-                    align-self: flex-start;
-                }
-            }
-            &__number{
-                position: absolute;
-                top:20px;
-                right: -20px;
-                width: 70px;
-                height: 70px;
-                background-image: url(./img/es-how-numberBg.webp);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                @include es-text-reset;
-                font-size: 40px;
-                font-family: $es-title;
-                color: $es-main-text-color;
-                &--6{
-                top:-60px;
-                right: 20px;
-                }
-            }
-            &__sliderTitle{
-                @include es-text-reset;
-                font-size: 20px;
-                font-family: $es-regular;
-                color: $es-main-text-color;
-            }
-            &__sliderDesc{
-                @include es-text-reset;
-                font-size: 16px;
-                font-family: $es-thin;
-                color: $es-main-text-color;
-                min-height: 110px;
-            }
-            &__link{
-                display: block;
-                text-decoration: none;
-                background-color: $es-main-text-color;
-                color: #fff;
-                border-radius: 40px;
-                padding: 10px 30px;
-                font-family: $es-regular;
-                font-size: 14px;
-                text-align: center;
-                transition: .4s ease-in-out;
-                max-width: 250px;
-                &:hover{
-                    color: $es-main-text-color;
-                    outline: 2px solid $es-main-text-color;
-                    background-color: transparent;
-                }
-                &--product{
-                    margin: 0 auto;
-                    align-self: center;
-                }
-            }
-            &__arrow{
-                cursor: pointer;
-                border: none;
-                background-color: transparent;
-                &--next{
-                    align-self: flex-end;
-                }
-            }
-        }
-        .es-why{
-            &__title{
-                @include es-text-reset;
-                font-size: 30px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-light-color;
-            }
-            &__textCtn{
-                @include es-text-reset;
-                background-color: $es-main-text-light-color;
-                width: 90%;
-                margin: 0 auto;
-                padding: 20px;
-                border-radius: 50px;
-                min-height: 100px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            &__text{
-                color: #fff;
-                font-family: $es-regular;
-                text-align: center;
-                margin: 0;
-                &--light{
-                    font-family: $es-thin;
-                }
-            }
-            &__contentCtn{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            &__infoCtn{
-                background-image: url(./img/es-why__bg.webp);
-                background-repeat: no-repeat;
-                background-position: left;
-                background-size: contain;
-                min-height: 200px;
-                padding: 10px;
-                margin-top: -10px;
-                width: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;                
-            }
-            &__info{
-                @include es-text-reset;
-                color: $es-main-text-color;
-                font-family: $es-regular;
-            }
-            &__slides{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            }
-            &__slideText{
-                @include es-text-reset;
-                color: $es-main-text-color;
-                font-family: $es-thin;
-                text-align: center;
-                padding: 10px;
-                width: 250px;
-                min-height: 100px;
-                &--title{
-                    font-family: $es-regular;
-                    min-height: 40px;
-                }
-            }
-            &__arrow{
-                cursor: pointer;
-                border: none;
-                background-color: transparent;
-                margin: 0;
-            }
-
-        }
-        .es-container{
-            background-image: none;
-        }
-        .es-how{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            padding: 50px 0;
-            
-            &::after{
-                content: url(./img/es-how-happyFace.webp);
-                display: block;
-                position: absolute;
-                right: 10%;
-                bottom:-4%;
-                transform: scale(.6);
-            }
-            &__content{
-                width: 100%;
-            }
-            &__title{
-                @include es-text-reset;
-                font-size: 30px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-color;
-                position: relative;
-                &::after{
-                    content: url(./img/es-how-sadFace.webp);
-                    display: block;
-                    position: absolute;
-                    right: 0;
-                    top:-150%;
-                    transform: scale(.6);
-                }
-            }
-            &__desc{
-                @include es-text-reset;
-                max-width: 500px;
-                font-family: $es-regular;
-                color: $es-main-text-color;
-            }
-            &__imgCtn{
-                max-width: 300px;
-                align-self: flex-end;
-            }
-            &__listItem{
-                @include es-text-reset;
-                font-family: $es-regular;
-                color: $es-main-text-color;
-            }
-        }
-        .es-symptoms{
-            &__title{
-                @include es-text-reset;
-                font-size: 25px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-color;
-            }
-            &__textCtn{
-                background-color: $es-main-text-light-color;
-                padding: 20px;
-                border-radius: 50px;
-                max-width: 90%;
-                margin:  0 auto;
-            }
-            &__text{
-                @include es-text-reset;
-                color: #fff;
-                text-align: center;
-                font-family: $es-regular;
-                position: relative;
-                &::before{
-                    content: url(./img/es-symptoms-lineTop.webp);
-                    display: block;
-                    position: absolute;
-                    top:-30px;
-                    left:-40px;
-                }
-                &::after{
-                    content: url(./img/es-symptoms-lineBottom.webp);
-                    display: block;
-                    position: absolute;
-                    bottom:-30px;
-                    right:-40px;
-                }
-            }
-            &__subtitle{
-                @include es-text-reset;
-                color: $es-main-text-light-color;
-                font-family: $es-regular;
-                font-size: 20px;
-                text-align: center;
-            }
-            &__bottomCtn{
-                background-image: url(./img/es-symptoms-bg.webp);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                position:relative;
-            }
-            &__bodyCtn{
-                position: relative;
-                max-width: 250px;
-                z-index: 0;
-            }
-            &__contentCtn{
-                text-align: center;
-            }
-            &__bodyImg{
-                display: block;
-                margin: 0 auto;
-                z-index: 0;
-                max-width: 230px;
-                max-height:480px;
-            }
-            &__magnifierGlass{
-                position: absolute;
-                cursor: none;
-                width:510px;
-                height:510px;
-                margin-left:-255px;
-                margin-top:-255px;
-                transition:left 0.2s ease, top 0.2s ease;
-                img {
-                    transition: opacity 0.2s;
-                    position:absolute;
-                    left:0;
-                    top:0;
-                    width:100%;
-                    height:100%;
-                }
-            }
-            &__singleItem{
-                margin-left: -150px;
-                display: block;
-                z-index: 10;
-                position: relative;
-                color: $es-main-text-color;
-                transition: .2s ease-in-out;
-                &.es-currentlySelected {
-                    transform: scale(1.15);
-                }
-            }
-            &__singleText{
-                @include es-text-reset;
-                text-align: left;
-                font-family: $es-title;
-                padding-left: 140px;
-                font-size: 14px;
-                margin: 10px 0;
-            }
-        }
-        .es-activeInfo{
-            margin: 50px 0;
-            padding: 10px;
-            z-index: 10;
-            position: relative;
-            &__img{
-
-            }
-            &__mainCtn{
-                margin-top: -200px;
-            }
-            &__ctn{
-                background-color: $es-main-text-color;
-                color: #fff;
-                border-radius: 70px;
-                padding: 20px 10px;
-                width: 85%;
-                margin: 0 auto;
-                position: relative;
-                &::after{
-                    content: none;
-                }
-            }
-
-            &__title{
-                @include es-text-reset;
-                text-align: center;
-                font-size: 25px;
-                font-family: $es-title;
-                &--blue{
-                    color: $es-main-text-color
-                }
-            }
-            &__desc{
-                @include es-text-reset;
-                text-align: center;
-                font-family: $es-thin;
-                &--blue{
-                    color: $es-main-text-color
-                }
-            }
-            &__bottomCtn{
-                position: relative;
-                background-color:transparent;
-                margin: 0 auto;
-                max-width: 600px;
-                padding: 20px;
-                &::after{
-                    content: none;
-                }
-            }
-            &__questionCtn{
-                position: absolute;
-                top:-50px;
-                right:0px;
-                background-image: url(./img/es-how-numberBg.webp);
-                background-position: center;
-                background-repeat: no-repeat; 
-                background-size: contain;
-                width: 80px;
-                height: 80px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                animation: es-gelatine 2s infinite;
-            }
-            &__question{
-                font-size: 60px;
-                font-family: $es-title;
-                color: $es-main-text-color;
-            }
-            &__bottomTitle{
-                @include es-text-reset;
-                text-align: left;
-                font-size: 20px;
-                font-family: $es-regular;
-                color: $es-main-text-color;
-                margin: 0;
-                padding: 0
-            }
-            &__bottomDesc{
-                @include es-text-reset;
-                text-align: left;
-                font-family: $es-thin;
-                color: $es-main-text-color;
-                margin: 5px 0;
-                padding: 0;
-            }
-        
-        }
-        .es-exercise{
-            &__title{
-                @include es-text-reset;
-                font-size: 25px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-color;
-            }
-            &__slides{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 450px;
-            }
-            &__slide{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            &__arrow{
-                cursor: pointer;
-                border: none;
-                background-color: transparent;
-                margin: 0;
-            }
-            &__descCtn{
-                padding: 20px;
-            }
-            &__descTitle{
-                @include es-text-reset;
-                text-transform: uppercase;
-                font-size: 25px;
-                font-family: $es-regular;
-                color: $es-main-text-color;
-                &--bright{
-                    color: $es-main-text-light-color;
-                }
-            }
-            &__descList{
-                @include es-text-reset;
-                margin: 0;
-                padding: 0;
-                color: $es-main-text-color;
-            }
-            &__descItem{
-                @include es-text-reset;
-                margin: 0;
-                padding: 0;
-                color: $es-main-text-color;
-                font-family: $es-thin;
-                &--bold{
-                    font-family: $es-regular;
-                }
-            }
-        }
-        .es-faq{
-            margin-top: 80px;
-            &__title{
-                @include es-text-reset;
-                font-size: 25px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-color;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            &__item{
-                cursor: pointer;
-                margin: 10px
-            }
-            &__question{
-                @include es-text-reset;
-                font-family: $es-regular;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                text-align: center;
-                width: 100%;
-                background: $es-main-text-color;
-                color: #fff;
-                padding: 10px 20px;
-                border-radius: 30px;
-            }
-            &__arrow{
-            }
-            &__rotate{
-                transform: rotate(-180deg);
-            }
-            &__answer{
-                @include es-text-reset;
-                font-family: $es-thin;
-                color: $es-main-text-color;
-                padding: 0px 20px;
-            }
-            &__answerItem{
-                @include es-text-reset;
-                font-family: $es-thin;
-                color: $es-main-text-color;
-            }
-        }
-        .es-articles{
-            padding: 10px;
-            &__title{
-                @include es-text-reset;
-                font-size: 25px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-color;
-            }
-            &__ctn{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                gap: 50px;
-            }
-            &__item{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                min-width: 300px;
-                max-width: 500px;
-            }
-            &__subtitle{
-                @include es-text-reset;
-                font-size: 25px;
-                text-align: center;
-                font-family: $es-title;
-                color: $es-main-text-color;
-            }
-            &__link{
-                text-decoration: none;
-                background-color: $es-dark-color;
-                color: #fff;
-                border-radius: 20px;
-                padding: 10px 20px;
-                font-family: $es-regular;
-                font-size: 14px;
-                transition: .4s ease-in-out;
-                &:hover{
-                    color: $es-dark-color;
-                    outline: 2px solid $es-dark-color;
-                    background-color: #fff;
-                }
-            }
-        }
-        .es-productsDesc{
-            padding: 10px;
-            &__item{
-                @include es-text-reset;
-                font-family: $es-thin;
-                color: $es-main-text-color;
-                font-size: 14px;
-                span{
-                    font-family: $es-regular;
-                }
-            }
-        }
-        .es-claims{
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            &__title{
-                @include es-text-reset;
-                font-size: 16px;
-                font-family: $es-title;
-                color: $es-main-text-color;
-            }
-            &__list{
-                margin: 0;
-                padding: 10px;
-            }
-            &__claim{
-                @include es-text-reset;
-                font-size: 14px;
-                font-family: $es-thin;
-                color: $es-main-text-color;
-                padding: 0 10px;
-                margin: 0;
-            }
-            &__warning{
-                @include es-text-reset;
-                font-size: 25px;
-                font-family: $es-title;
-                color: $es-main-text-light-color;
-            }
-            &__number{
-                @include es-text-reset;
-                font-size: 14px;
-                font-family: $es-thin;
-                color: $es-main-text-color;
-            }
-            &__logo{
-                align-self: flex-end;
-            }
-        }
-        @media (min-width: 750px){
-            .es-kv{
-                max-height: 600px;
-                &__navCtn{
-                    display: flex;
-                    flex-direction: row;
-                    //flex-wrap: wrap;
-                }
-                &__navItem{
-                    min-width: 100px;
-                    max-width: 100px;
-                    padding: 5px;
-                }
-                &__navLink{
-                    font-size: 12px;
-                    &::after{
-                        content: '';
-                        display: block;
-                        position: absolute;
-                        top:0;
-                        left: 0;
-                        width: 2px;
-                        height: 100%;
-                        background-color: $es-main-text-color;
-                    }
-                    &:nth-child(1){
-                        &::after{
-                            display: none;
-                        }
-                    }
-                }
-                &__content{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                }
-            }
-            .es-may{
-                &__slide{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: row;
-                    gap:20px;
-                    &--second{
-                        padding-top: 0px;
-                    }
-                    
-                }
-                &__content{
-                    max-width: 50%;
-                }
-                &__img{
-                    max-width: 250px;
-                }
-                &__arrow{
-                    cursor: pointer;
-                    &--next{
-                        align-self: center;
-                    }
-                    &--prev{
-                        align-self: center;
-                    }
-                }
-            }
-            .es-message{
-                &__title{
-                    margin-bottom: 20px;
-                    font-size: 40px;
-                    &:after{
-                        content: url(./img/kv-sun.webp);
-                        display: block;
-                        position: absolute;
-                        right: -150px;
-                        top:-50px;
-                        transform: scale(.7);
-                    }
-                }
-                &__text{
-                    font-size: 20px;
-                    text-align: center;
-                    font-family: $es-title;
-                    color: $es-main-text-color;
-                    margin-top: 0;
-                }
-            }
-            .es-magneDesc{
-                &__container{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    &--secondary{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                }
-                &__slider{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                &__slide{
-                    min-width: 300px;
-                }
-                &__img{
-                    max-width: 300px;
-                }
-                &__howItem{
-                    min-height: 300px;
-                }
-            }
-            .es-calculator{
-                background-image: url(./img/es-calculator-bg.webp);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-            }
-            .es-care{
-                background-image: url(./img/es-care-bg.webp);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                &__title{
-                    font-size: 40px;
-                }
-                &__desc{
-                    font-size: 20px;
-                    width: 80%;
-                }
-                &__slide{
-                    flex-direction: row;
-                }
-                &__contentCtn{
-                    max-width: 350px;
-                    position: relative;
-                }
-                &__sliderDesc{
-                    min-height: 60px;
-                }
-                &__link{
-                position: absolute;
-                bottom: -70px;
-                right: -30px;
-                &--product{
-                    position: static;
-                    max-width: 200px;
-                    margin-top: 40px;
-                    color: $es-main-text-color;
-                    outline: 2px solid $es-main-text-color;
-                    background-color: transparent;
-                    font-size: 16px;
-                    &:hover{
-                        background-color: $es-main-text-color;
-                        color: #fff;
-                    }
-                }
-                }
-                
-                &__number{
-                    top:0px;
-                    right:0;
-                    &--6{
-                        top:-70px;
-                        right: 0px;
-                        }
-                }
-            }
-            .es-why{
-                &__contentCtn{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-start;
-                    align-items: center;
-                }
-                &__infoCtn{
-                background-image: url(./img/es-why__bg.webp);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 100% 100%;
-                max-width: 35%;
-                margin-top: -20px;
-                min-height: 350px;
-                display: flex;
-                justify-content: center;
-                align-items: flex-start; 
-                padding: 20px;
-                }
-                &__info{
-                    font-size: 25px;
-                }
-                &__slides{
-                    min-width: 50%;
-                }
-                &__slideText{
-                    width: 400px;
-                    font-size: 20px;
-                    min-height: 150px;
-                    &--title{
-                        font-size: 25px;
-                        min-height: 40px;
-                    }
-                }
-            }
-            .es-container{
-                background-image: url(./img/es-how-bg.webp);
-                background-repeat: no-repeat;
-                background-position: right top;
-                background-size:45%;
-            }
-            .es-how{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                &::after{
-                    right: 10%;
-                    bottom:-10%;
-                    transform: scale(1);
-                }
-                &__content{
-                    width: 60%;
-                }
-                &__title{
-                    font-size: 40px;
-                    text-align: left;
-                    &::after{
-                        top:0;
-                        right:-10%;
-                        transform: scale(1);
-                    }
-                }
-                &__desc{
-                    font-size: 20px;
-                }
-                &__imgCtn{
-                    max-width: 400px;
-                }
-                &__listItem{
-                    font-size: 20px;
-                }
-            }
-            .es-symptoms{
-                &__title{
-                    font-size: 40px;
-                }
-                &__subtitle{
-                    @include es-text-reset;
-                    font-size: 25px;
-                }
-                &__bottomCtn{
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                }
-                &__contentCtn{
-                    position: absolute;
-                    right: 0%;
-                }
-                &__singleText{
-                    @include es-text-reset;
-                    padding-left: 140px;
-                    font-size: 18px;
-                    margin: 30px 0;
-                }
-            }
-            .es-activeInfo{
-                margin-top: 0px;
-                &__img{
-
-                }
-                &__mainCtn{
-                    margin-top: -200px;
-                }
-                &__ctn{
-                    padding: 20px 40px;
-                    width: 70%;
-                    border-radius: 100px;
-                    &::after{
-                        content: url(./img/es-active-line-top.webp);
-                        display: block;
-                        position: absolute;
-                        top:-50px;
-                        right:-60px;
-                        transform: scale(.8);
-                    }
-                }
-                &__bottomCtn{
-                    position: relative;
-                    background-color:transparent;
-                    margin: 0 auto;
-                    max-width: 500px;
-                    padding: 20px;
-                    &::after{
-                        content: url(./img/es-active-line-bottom.webp);
-                        display: block;
-                        position: absolute;
-                        bottom:20px;
-                        left:-50px;
-                        transform: scale(.8);
-                    }
-                }
-                &__questionCtn{
-                    position: absolute;
-                    top:-20px;
-                    left:-90px;
-                    background-image: url(./img/es-how-numberBg.webp);
-                    background-position: center;
-                    background-repeat: no-repeat; 
-                    background-size: contain;
-                    width: 80px;
-                    height: 80px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-            .es-exercise{
-                &__title{
-                    font-size: 40px;
-                }
-                &__slide{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-            .es-faq{
-                &__title{
-                    font-size: 40px;
-                }
-            }
-            .es-articles{
-                &__title{
-                    font-size: 40px;
-
-                }
-            }
-        }
-        @media (min-width: 950px) {
-            .es-kv{
-                max-height: 600px;
-                &__navCtn{
-                    display: flex;
-                    flex-direction: row;
-                    //flex-wrap: wrap;
-                }
-                &__nav{
-                    position: absolute;
-                    &::after{
-                        content: url(./img/nav-line.webp);
-                        display: block;
-                        position: absolute;
-                        bottom: 0;
-                        right: 0;
-                    }
-                }
-                &__navItem{
-                    min-width: 160px;
-                    max-width: 160px;
-                    padding: 10px;
-                }
-                &__navLink{
-                    font-size: 16px;
-                }
-                &__img{
-                    clip-path: none;
-                }
-                &__text{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 50%;
-                    font-family: $es-title;
-                    color: $es-main-text-color;
-                    position: relative;
-                }
-                &__title{
-                    font-size: 40px;
-                    margin-bottom: 0;
-                    margin-top: -80px;
-                }
-                &__subtitleCtn{
-                    position: absolute;
-                    bottom: -20px;
-                    right: -100px;
-                    &::after{
-                        display: block;
-                        content: url(./img/kv-sun.webp);
-                        position: absolute;
-                        left:-200px;
-                    }
-                }
-            }
-            .es-may{
-                &__slide{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: row;
-                    gap: 20px;
-                }
-                &__content{
-                    max-width: 40%;
-                }
-                &__img{
-                    max-width: 350px;
-                }
-            }
-            .es-magneDesc{
-                &__img{
-                    max-width: 450px;
-                }
-            }
-            .es-care{
-                &__number{
-                    top:40px;
-                    right:0;
-                    &--6{
-                        top:-70px;
-                        right: 20px;
-                        }
-                }
-            }
-            .es-symptoms{
-                &__contentCtn{
-                    position: absolute;
-                    right: 5%;
-                }
-            }
-            .es-activeInfo{
-                margin-top: -150px;
-            }
-        }
-        @media (min-width: 1000px){
-            .es-symptoms{
-                &__contentCtn{
-                    position: absolute;
-                    right: 10%;
-                }
-            }
-        }
-        @media (min-width: 1100px){
-            .es-activeInfo{
-                margin-top: -200px;
-            }
-        }
+      }
     }
+    .es-hide {
+      display: none;
+    }
+    .es-care {
+      background-image: none;
+      width: 100%;
+      min-height: 750px;
+      padding: 20px 10px;
+      &__title {
+        @include es-text-reset;
+        font-size: 30px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-color;
+      }
+      &__desc {
+        @include es-text-reset;
+        font-size: 16px;
+        text-align: center;
+        font-family: $es-thin;
+        color: $es-main-text-color;
+        margin: 15px auto;
+        span {
+          font-family: $es-regular;
+        }
+      }
+      &__slides {
+        min-height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      &__slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      &__imgCtn {
+        max-width: 300px;
+        position: relative;
+      }
+      &__contentCtn {
+        max-width: 400px;
+        min-height: 150px;
+        &--6 {
+          align-self: flex-start;
+        }
+      }
+      &__number {
+        position: absolute;
+        top: 20px;
+        right: -20px;
+        width: 70px;
+        height: 70px;
+        background-image: url(./img/es-how-numberBg.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include es-text-reset;
+        font-size: 40px;
+        font-family: $es-title;
+        color: $es-main-text-color;
+        &--6 {
+          top: -60px;
+          right: 20px;
+        }
+      }
+      &__sliderTitle {
+        @include es-text-reset;
+        font-size: 20px;
+        font-family: $es-regular;
+        color: $es-main-text-color;
+      }
+      &__sliderDesc {
+        @include es-text-reset;
+        font-size: 16px;
+        font-family: $es-thin;
+        color: $es-main-text-color;
+        min-height: 110px;
+      }
+      &__link {
+        display: block;
+        text-decoration: none;
+        background-color: $es-main-text-color;
+        color: #fff;
+        border-radius: 40px;
+        padding: 10px 30px;
+        font-family: $es-regular;
+        font-size: 14px;
+        text-align: center;
+        transition: 0.4s ease-in-out;
+        max-width: 250px;
+        &:hover {
+          color: $es-main-text-color;
+          outline: 2px solid $es-main-text-color;
+          background-color: transparent;
+        }
+        &--product {
+          margin: 0 auto;
+          align-self: center;
+        }
+      }
+      &__arrow {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        &--next {
+          align-self: flex-end;
+        }
+      }
+    }
+    .es-why {
+      &__title {
+        @include es-text-reset;
+        font-size: 30px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-light-color;
+      }
+      &__textCtn {
+        @include es-text-reset;
+        background-color: $es-main-text-light-color;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 50px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__text {
+        color: #fff;
+        font-family: $es-regular;
+        text-align: center;
+        margin: 0;
+        &--light {
+          font-family: $es-thin;
+        }
+      }
+      &__contentCtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__infoCtn {
+        background-image: url(./img/es-why__bg.webp);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        min-height: 200px;
+        padding: 10px;
+        margin-top: -10px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      &__info {
+        @include es-text-reset;
+        color: $es-main-text-color;
+        font-family: $es-regular;
+      }
+      &__slides {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      &__slideText {
+        @include es-text-reset;
+        color: $es-main-text-color;
+        font-family: $es-thin;
+        text-align: center;
+        padding: 10px;
+        width: 250px;
+        min-height: 100px;
+        &--title {
+          font-family: $es-regular;
+          min-height: 40px;
+        }
+      }
+      &__arrow {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        margin: 0;
+      }
+    }
+    .es-container {
+      background-image: none;
+    }
+    .es-how {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 50px 0;
+
+      &::after {
+        content: url(./img/es-how-happyFace.webp);
+        display: block;
+        position: absolute;
+        right: 10%;
+        bottom: -4%;
+        transform: scale(0.6);
+      }
+      &__content {
+        width: 100%;
+      }
+      &__title {
+        @include es-text-reset;
+        font-size: 30px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-color;
+        position: relative;
+        &::after {
+          content: url(./img/es-how-sadFace.webp);
+          display: block;
+          position: absolute;
+          right: 0;
+          top: -150%;
+          transform: scale(0.6);
+        }
+      }
+      &__desc {
+        @include es-text-reset;
+        max-width: 500px;
+        font-family: $es-regular;
+        color: $es-main-text-color;
+      }
+      &__imgCtn {
+        max-width: 300px;
+        align-self: flex-end;
+      }
+      &__listItem {
+        @include es-text-reset;
+        font-family: $es-regular;
+        color: $es-main-text-color;
+      }
+    }
+    .es-symptoms {
+      &__title {
+        @include es-text-reset;
+        font-size: 25px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-color;
+      }
+      &__textCtn {
+        background-color: $es-main-text-light-color;
+        padding: 20px;
+        border-radius: 50px;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      &__text {
+        @include es-text-reset;
+        color: #fff;
+        text-align: center;
+        font-family: $es-regular;
+        position: relative;
+        &::before {
+          content: url(./img/es-symptoms-lineTop.webp);
+          display: block;
+          position: absolute;
+          top: -30px;
+          left: -40px;
+        }
+        &::after {
+          content: url(./img/es-symptoms-lineBottom.webp);
+          display: block;
+          position: absolute;
+          bottom: -30px;
+          right: -40px;
+        }
+      }
+      &__subtitle {
+        @include es-text-reset;
+        color: $es-main-text-light-color;
+        font-family: $es-regular;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      &__bottomCtn {
+        background-image: url(./img/es-symptoms-bg.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+      }
+      &__bodyCtn {
+        position: relative;
+        max-width: 250px;
+        z-index: 0;
+      }
+      &__contentCtn {
+        text-align: center;
+      }
+      &__bodyImg {
+        display: block;
+        margin: 0 auto;
+        z-index: 0;
+        max-width: 230px;
+        max-height: 480px;
+      }
+      &__magnifierGlass {
+        position: absolute;
+        cursor: none;
+        width: 510px;
+        height: 510px;
+        margin-left: -255px;
+        margin-top: -255px;
+        transition: left 0.2s ease, top 0.2s ease;
+        img {
+          transition: opacity 0.2s;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__singleItem {
+        margin-left: -150px;
+        display: block;
+        z-index: 10;
+        position: relative;
+        color: $es-main-text-color;
+        transition: 0.2s ease-in-out;
+        &.es-currentlySelected {
+          transform: scale(1.15);
+        }
+      }
+      &__singleText {
+        @include es-text-reset;
+        text-align: left;
+        font-family: $es-title;
+        padding-left: 140px;
+        font-size: 14px;
+        margin: 10px 0;
+      }
+    }
+    .es-activeInfo {
+      margin: 50px 0;
+      padding: 10px;
+      z-index: 10;
+      position: relative;
+      &__img {
+      }
+      &__mainCtn {
+        margin-top: -200px;
+      }
+      &__ctn {
+        background-color: $es-main-text-color;
+        color: #fff;
+        border-radius: 70px;
+        padding: 20px 10px;
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+        &::after {
+          content: none;
+        }
+      }
+
+      &__title {
+        @include es-text-reset;
+        text-align: center;
+        font-size: 25px;
+        font-family: $es-title;
+        &--blue {
+          color: $es-main-text-color;
+        }
+      }
+      &__desc {
+        @include es-text-reset;
+        text-align: center;
+        font-family: $es-thin;
+        &--blue {
+          color: $es-main-text-color;
+        }
+      }
+      &__bottomCtn {
+        position: relative;
+        background-color: transparent;
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 20px;
+        &::after {
+          content: none;
+        }
+      }
+      &__questionCtn {
+        position: absolute;
+        top: -50px;
+        right: 0px;
+        background-image: url(./img/es-how-numberBg.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: es-gelatine 2s infinite;
+      }
+      &__question {
+        font-size: 60px;
+        font-family: $es-title;
+        color: $es-main-text-color;
+        margin: 0;
+      }
+      &__bottomTitle {
+        @include es-text-reset;
+        text-align: left;
+        font-size: 20px;
+        font-family: $es-regular;
+        color: $es-main-text-color;
+        margin: 0;
+        padding: 0;
+      }
+      &__bottomDesc {
+        @include es-text-reset;
+        text-align: left;
+        font-family: $es-thin;
+        color: $es-main-text-color;
+        margin: 5px 0;
+        padding: 0;
+      }
+    }
+    .es-exercise {
+      &__title {
+        @include es-text-reset;
+        font-size: 25px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-color;
+      }
+      &__slides {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 450px;
+      }
+      &__slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__arrow {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        margin: 0;
+      }
+      &__descCtn {
+        padding: 20px;
+      }
+      &__descTitle {
+        @include es-text-reset;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family: $es-regular;
+        color: $es-main-text-color;
+        margin-top: 20px;
+        &--bright {
+          color: $es-main-text-light-color;
+        }
+      }
+      &__descList {
+        @include es-text-reset;
+        margin: 0;
+        padding: 0;
+        color: $es-main-text-color;
+      }
+      &__descItem {
+        @include es-text-reset;
+        margin: 0;
+        padding: 0;
+        color: $es-main-text-color;
+        font-family: $es-thin;
+        &--bold {
+          font-family: $es-regular;
+        }
+      }
+    }
+    .es-faq {
+      margin-top: 80px;
+      &__title {
+        @include es-text-reset;
+        font-size: 25px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-color;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__item {
+        cursor: pointer;
+        margin: 10px;
+      }
+      &__question {
+        @include es-text-reset;
+        font-family: $es-regular;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        background: $es-main-text-color;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 30px;
+      }
+      &__arrow {
+      }
+      &__rotate {
+        transform: rotate(-180deg);
+      }
+      &__answer {
+        @include es-text-reset;
+        font-family: $es-thin;
+        color: $es-main-text-color;
+        padding: 0px 20px;
+        margin-top: 10px;
+      }
+      &__answerItem {
+        @include es-text-reset;
+        font-family: $es-thin;
+        color: $es-main-text-color;
+      }
+    }
+    .es-articles {
+      padding: 10px;
+      &__title {
+        @include es-text-reset;
+        font-size: 25px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-color;
+      }
+      &__ctn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+      &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 300px;
+        max-width: 500px;
+        min-height: 450px;
+      }
+      &__subtitle {
+        @include es-text-reset;
+        font-size: 25px;
+        text-align: center;
+        font-family: $es-title;
+        color: $es-main-text-color;
+        margin-top: 20px;
+      }
+      &__link {
+        text-decoration: none;
+        background-color: $es-dark-color;
+        color: #fff;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-family: $es-regular;
+        font-size: 14px;
+        transition: 0.4s ease-in-out;
+        &:hover {
+          color: $es-dark-color;
+          outline: 2px solid $es-dark-color;
+          background-color: #fff;
+        }
+      }
+    }
+    .es-productsDesc {
+      padding: 10px;
+      &__item {
+        @include es-text-reset;
+        font-family: $es-thin;
+        color: $es-main-text-color;
+        font-size: 14px;
+        span {
+          font-family: $es-regular;
+        }
+      }
+    }
+    .es-claims {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      &__title {
+        @include es-text-reset;
+        font-size: 16px;
+        font-family: $es-title;
+        color: $es-main-text-color;
+      }
+      &__list {
+        margin: 0;
+        padding: 10px;
+      }
+      &__claim {
+        @include es-text-reset;
+        font-size: 14px;
+        font-family: $es-thin;
+        color: $es-main-text-color;
+        padding: 0 10px;
+        margin: 0;
+      }
+      &__warning {
+        @include es-text-reset;
+        font-size: 25px;
+        font-family: $es-title;
+        color: $es-main-text-light-color;
+      }
+      &__number {
+        @include es-text-reset;
+        font-size: 14px;
+        font-family: $es-thin;
+        color: $es-main-text-color;
+      }
+      &__logo {
+        align-self: flex-end;
+      }
+    }
+    @media (min-width: 750px) {
+      .es-kv {
+        max-height: 600px;
+        &__navCtn {
+          display: flex;
+          flex-direction: row;
+          //flex-wrap: wrap;
+        }
+        &__navItem {
+          min-width: 100px;
+          max-width: 100px;
+          padding: 5px;
+        }
+        &__navLink {
+          font-size: 12px;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background-color: $es-main-text-color;
+          }
+          &:nth-child(1) {
+            &::after {
+              display: none;
+            }
+          }
+        }
+        &__content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+      .es-may {
+        &__slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          gap: 20px;
+          &--second {
+            padding-top: 0px;
+          }
+        }
+        &__content {
+          max-width: 50%;
+        }
+        &__img {
+          max-width: 250px;
+        }
+        &__arrow {
+          cursor: pointer;
+          &--next {
+            align-self: center;
+          }
+          &--prev {
+            align-self: center;
+          }
+        }
+      }
+      .es-message {
+        &__title {
+          margin-bottom: 20px;
+          font-size: 40px;
+          &:after {
+            content: url(./img/kv-sun.webp);
+            display: block;
+            position: absolute;
+            right: -150px;
+            top: -50px;
+            transform: scale(0.7);
+          }
+        }
+        &__text {
+          font-size: 20px;
+          text-align: center;
+          font-family: $es-title;
+          color: $es-main-text-color;
+          margin-top: 0;
+        }
+      }
+      .es-magneDesc {
+        &__container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          &--secondary {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        &__slider {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &__slide {
+          min-width: 300px;
+        }
+        &__img {
+          max-width: 300px;
+        }
+        &__howItem {
+          min-height: 300px;
+        }
+      }
+      .es-calculator {
+        background-image: url(./img/es-calculator-bg.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .es-care {
+        background-image: url(./img/es-care-bg.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        &__title {
+          font-size: 40px;
+        }
+        &__desc {
+          font-size: 20px;
+          width: 80%;
+        }
+        &__slide {
+          flex-direction: row;
+        }
+        &__contentCtn {
+          max-width: 350px;
+          position: relative;
+        }
+        &__sliderDesc {
+          min-height: 60px;
+        }
+        &__link {
+          position: absolute;
+          bottom: -70px;
+          right: -30px;
+          &--product {
+            position: static;
+            max-width: 200px;
+            margin-top: 40px;
+            color: $es-main-text-color;
+            outline: 2px solid $es-main-text-color;
+            background-color: transparent;
+            font-size: 16px;
+            &:hover {
+              background-color: $es-main-text-color;
+              color: #fff;
+            }
+          }
+        }
+
+        &__number {
+          top: 0px;
+          right: 0;
+          &--6 {
+            top: -70px;
+            right: 0px;
+          }
+        }
+      }
+      .es-why {
+        &__contentCtn {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        &__infoCtn {
+          background-image: url(./img/es-why__bg.webp);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
+          max-width: 35%;
+          margin-top: -20px;
+          min-height: 350px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 20px;
+        }
+        &__info {
+          font-size: 25px;
+        }
+        &__slides {
+          min-width: 50%;
+        }
+        &__slideText {
+          width: 400px;
+          font-size: 20px;
+          min-height: 150px;
+          &--title {
+            font-size: 25px;
+            min-height: 40px;
+          }
+        }
+      }
+      .es-container {
+        background-image: url(./img/es-how-bg.webp);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 45%;
+      }
+      .es-how {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &::after {
+          right: 10%;
+          bottom: -10%;
+          transform: scale(1);
+        }
+        &__content {
+          width: 60%;
+        }
+        &__title {
+          font-size: 40px;
+          text-align: left;
+          &::after {
+            top: 0;
+            right: -10%;
+            transform: scale(1);
+          }
+        }
+        &__desc {
+          font-size: 20px;
+        }
+        &__imgCtn {
+          max-width: 400px;
+        }
+        &__listItem {
+          font-size: 20px;
+        }
+      }
+      .es-symptoms {
+        &__title {
+          font-size: 40px;
+        }
+        &__subtitle {
+          @include es-text-reset;
+          font-size: 25px;
+        }
+        &__bottomCtn {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+        }
+        &__contentCtn {
+          position: absolute;
+          right: 0%;
+        }
+        &__singleText {
+          @include es-text-reset;
+          padding-left: 140px;
+          font-size: 18px;
+          margin: 30px 0;
+        }
+      }
+      .es-activeInfo {
+        margin-top: 0px;
+        &__img {
+        }
+        &__mainCtn {
+          margin-top: -200px;
+        }
+        &__ctn {
+          padding: 20px 40px;
+          width: 70%;
+          border-radius: 100px;
+          &::after {
+            content: url(./img/es-active-line-top.webp);
+            display: block;
+            position: absolute;
+            top: -50px;
+            right: -60px;
+            transform: scale(0.8);
+          }
+        }
+        &__bottomCtn {
+          position: relative;
+          background-color: transparent;
+          margin: 0 auto;
+          max-width: 500px;
+          padding: 20px;
+          &::after {
+            content: url(./img/es-active-line-bottom.webp);
+            display: block;
+            position: absolute;
+            bottom: 20px;
+            left: -50px;
+            transform: scale(0.8);
+          }
+        }
+        &__questionCtn {
+          position: absolute;
+          top: -20px;
+          left: -90px;
+          background-image: url(./img/es-how-numberBg.webp);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 80px;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .es-exercise {
+        &__title {
+          font-size: 40px;
+        }
+        &__slide {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .es-faq {
+        &__title {
+          font-size: 40px;
+        }
+      }
+      .es-articles {
+        &__title {
+          font-size: 40px;
+        }
+      }
+    }
+    @media (min-width: 950px) {
+      .es-kv {
+        max-height: 600px;
+        &__navCtn {
+          display: flex;
+          flex-direction: row;
+          //flex-wrap: wrap;
+        }
+        &__nav {
+          position: absolute;
+          &::after {
+            content: url(./img/nav-line.webp);
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+        }
+        &__navItem {
+          min-width: 160px;
+          max-width: 160px;
+          padding: 10px;
+        }
+        &__navLink {
+          font-size: 16px;
+        }
+        &__img {
+          clip-path: none;
+        }
+        &__text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+          font-family: $es-title;
+          color: $es-main-text-color;
+          position: relative;
+        }
+        &__title {
+          font-size: 40px;
+          margin-bottom: 0;
+          margin-top: -80px;
+        }
+        &__subtitleCtn {
+          position: absolute;
+          bottom: -20px;
+          right: -100px;
+          &::after {
+            display: block;
+            content: url(./img/kv-sun.webp);
+            position: absolute;
+            left: -200px;
+          }
+        }
+      }
+      .es-may {
+        &__slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          gap: 20px;
+        }
+        &__content {
+          max-width: 40%;
+        }
+        &__img {
+          max-width: 350px;
+        }
+      }
+      .es-magneDesc {
+        &__img {
+          max-width: 450px;
+        }
+      }
+      .es-care {
+        &__number {
+          top: 40px;
+          right: 0;
+          &--6 {
+            top: -70px;
+            right: 20px;
+          }
+        }
+      }
+      .es-symptoms {
+        &__contentCtn {
+          position: absolute;
+          right: 5%;
+        }
+      }
+      .es-activeInfo {
+        margin-top: -150px;
+      }
+    }
+    @media (min-width: 1000px) {
+      .es-symptoms {
+        &__contentCtn {
+          position: absolute;
+          right: 10%;
+        }
+      }
+    }
+    @media (min-width: 1100px) {
+      .es-activeInfo {
+        margin-top: -200px;
+      }
+    }
+  }
 }

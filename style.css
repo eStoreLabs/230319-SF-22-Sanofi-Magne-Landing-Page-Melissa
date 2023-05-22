@@ -11,7 +11,7 @@
 @font-face {
   font-family: "es-Gilroy-regular";
   src: url("./fonts/Gilroy-Regular.otf") format("opentype");
-  font-displaneDy: auto;
+  font-displanedy: auto;
 }
 @keyframes es-gelatine {
   from, to {
@@ -81,6 +81,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__navLink {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   text-decoration: none;
   color: #001883;
   position: relative;
@@ -117,6 +118,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 25px;
   margin-bottom: 60px;
 }
@@ -140,6 +142,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__subtitle {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__imgCtn::after {
@@ -176,6 +179,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-cross__name {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-family: "es-Gilroy-semibold";
   text-align: center;
   color: #001e61;
@@ -222,6 +226,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-family: "es-Gilroy-semibold";
   font-size: 30px;
   color: #001883;
@@ -229,6 +234,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__text {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-family: "es-Gilroy-regular";
   font-size: 16px;
   color: #001883;
@@ -280,6 +286,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-message__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 30px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -298,6 +305,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-message__text {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 16px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -341,6 +349,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__badge {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   position: absolute;
   top: -10px;
   right: 0px;
@@ -360,6 +369,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__name {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-family: "es-Gilroy-semibold";
   text-align: center;
   color: #001e61;
@@ -394,6 +404,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 30px;
   text-align: center;
   font-family: "es-Gilroy-semibold";
@@ -427,19 +438,25 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__number {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 30px;
   font-family: "es-Bliss-heavy";
   color: #001e61;
+  margin: 0;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__how-text {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   text-align: center;
   font-family: "es-Bliss-heavy";
   color: #001883;
   min-height: 60px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__how-text--hidden {
+  font-size: 16px;
+  line-height: 1.1;
+  margin-top: 10px;
   background-color: #78a9df;
   color: #fff;
   padding: 15px;
@@ -451,6 +468,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__button {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   border: none;
   background-color: #001e61;
   color: #fff;
@@ -487,6 +505,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 30px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -519,6 +538,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__selectLabel {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   text-align: center;
   font-family: "es-Gilroy-semibold";
   color: #001883;
@@ -563,6 +583,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__resultText {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   text-align: center;
   font-family: "es-Gilroy-semibold";
   color: #001883;
@@ -570,6 +591,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__result {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 30px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -580,6 +602,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__resultClaim {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 12px;
   text-align: center;
   font-family: "es-Gilroy-regular";
@@ -626,6 +649,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 30px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -634,6 +658,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__desc {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 16px;
   text-align: center;
   font-family: "es-Gilroy-regular";
@@ -683,6 +708,7 @@
   align-items: center;
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 40px;
   font-family: "es-Bliss-heavy";
   color: #001883;
@@ -694,6 +720,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__sliderTitle {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 20px;
   font-family: "es-Gilroy-semibold";
   color: #001883;
@@ -701,6 +728,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__sliderDesc {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 16px;
   font-family: "es-Gilroy-regular";
   color: #001883;
@@ -739,6 +767,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 30px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -747,6 +776,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__textCtn {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   background-color: #78a9df;
   width: 90%;
   margin: 0 auto;
@@ -789,6 +819,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__info {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   color: #001883;
   font-family: "es-Gilroy-semibold";
 }
@@ -801,6 +832,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__slideText {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   color: #001883;
   font-family: "es-Gilroy-regular";
   text-align: center;
@@ -843,6 +875,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 30px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -860,6 +893,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__desc {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   max-width: 500px;
   font-family: "es-Gilroy-semibold";
   color: #001883;
@@ -871,12 +905,14 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__listItem {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-family: "es-Gilroy-semibold";
   color: #001883;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 25px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -892,6 +928,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__text {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   color: #fff;
   text-align: center;
   font-family: "es-Gilroy-semibold";
@@ -914,10 +951,12 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__subtitle {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   color: #78a9df;
   font-family: "es-Gilroy-semibold";
   font-size: 20px;
   text-align: center;
+  margin-top: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bottomCtn {
   background-image: url(./img/es-symptoms-bg.webp);
@@ -976,6 +1015,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleText {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   text-align: left;
   font-family: "es-Bliss-heavy";
   padding-left: 140px;
@@ -1006,6 +1046,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   text-align: center;
   font-size: 25px;
   font-family: "es-Bliss-heavy";
@@ -1016,6 +1057,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__desc {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   text-align: center;
   font-family: "es-Gilroy-regular";
 }
@@ -1051,10 +1093,12 @@
   font-size: 60px;
   font-family: "es-Bliss-heavy";
   color: #001883;
+  margin: 0;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomTitle {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   text-align: left;
   font-size: 20px;
   font-family: "es-Gilroy-semibold";
@@ -1065,6 +1109,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomDesc {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   text-align: left;
   font-family: "es-Gilroy-regular";
   color: #001883;
@@ -1074,6 +1119,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 25px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -1103,10 +1149,12 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descTitle {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   text-transform: uppercase;
   font-size: 25px;
   font-family: "es-Gilroy-semibold";
   color: #001883;
+  margin-top: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descTitle--bright {
   color: #78a9df;
@@ -1114,6 +1162,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descList {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   margin: 0;
   padding: 0;
   color: #001883;
@@ -1121,6 +1170,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descItem {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   margin: 0;
   padding: 0;
   color: #001883;
@@ -1135,6 +1185,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 25px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -1152,6 +1203,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__question {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-family: "es-Gilroy-semibold";
   display: flex;
   justify-content: space-between;
@@ -1169,13 +1221,16 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__answer {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-family: "es-Gilroy-regular";
   color: #001883;
   padding: 0px 20px;
+  margin-top: 10px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__answerItem {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-family: "es-Gilroy-regular";
   color: #001883;
 }
@@ -1185,6 +1240,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 25px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -1200,18 +1256,21 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   min-width: 300px;
   max-width: 500px;
+  min-height: 450px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__subtitle {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 25px;
   text-align: center;
   font-family: "es-Bliss-heavy";
   color: #001883;
+  margin-top: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__link {
   text-decoration: none;
@@ -1234,6 +1293,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-productsDesc__item {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-family: "es-Gilroy-regular";
   color: #001883;
   font-size: 14px;
@@ -1251,6 +1311,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__title {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 16px;
   font-family: "es-Bliss-heavy";
   color: #001883;
@@ -1262,6 +1323,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__claim {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 14px;
   font-family: "es-Gilroy-regular";
   color: #001883;
@@ -1271,6 +1333,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__warning {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 25px;
   font-family: "es-Bliss-heavy";
   color: #78a9df;
@@ -1278,6 +1341,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__number {
   font-size: 16px;
   line-height: 1.1;
+  margin-top: 10px;
   font-size: 14px;
   font-family: "es-Gilroy-regular";
   color: #001883;
@@ -1522,6 +1586,7 @@
   #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__subtitle {
     font-size: 16px;
     line-height: 1.1;
+    margin-top: 10px;
     font-size: 25px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bottomCtn {
@@ -1537,6 +1602,7 @@
   #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleText {
     font-size: 16px;
     line-height: 1.1;
+    margin-top: 10px;
     padding-left: 140px;
     font-size: 18px;
     margin: 30px 0;
