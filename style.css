@@ -45,6 +45,9 @@
   overflow: hidden;
   background-color: #fff;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne sup {
+  font-size: x-small;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne img {
   max-width: 100%;
 }
@@ -71,6 +74,7 @@
   display: flex;
   flex-direction: column;
   z-index: 10;
+  padding: 0;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__navItem {
   min-width: 160px;
@@ -80,7 +84,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__navLink {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   text-decoration: none;
   color: #001883;
@@ -117,7 +121,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 25px;
   margin-bottom: 60px;
@@ -141,7 +145,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__subtitle {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 20px;
 }
@@ -178,7 +182,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-cross__name {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-family: "es-Gilroy-semibold";
   text-align: center;
@@ -225,7 +229,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-family: "es-Gilroy-semibold";
   font-size: 30px;
@@ -233,7 +237,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__text {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-family: "es-Gilroy-regular";
   font-size: 16px;
@@ -285,7 +289,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-message__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 30px;
   text-align: center;
@@ -304,7 +308,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-message__text {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 16px;
   text-align: center;
@@ -348,7 +352,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__badge {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   position: absolute;
   top: -10px;
@@ -368,7 +372,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__name {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-family: "es-Gilroy-semibold";
   text-align: center;
@@ -403,7 +407,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 30px;
   text-align: center;
@@ -437,7 +441,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__number {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 30px;
   font-family: "es-Bliss-heavy";
@@ -446,7 +450,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__how-text {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   text-align: center;
   font-family: "es-Bliss-heavy";
@@ -455,7 +459,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__how-text--hidden {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   background-color: #78a9df;
   color: #fff;
@@ -467,7 +471,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__button {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   border: none;
   background-color: #001e61;
@@ -492,7 +496,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator {
   background-image: none;
   width: 100%;
-  padding: 40px 10px;
+  padding: 70px 10px;
   min-height: 650px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__ctn {
@@ -504,7 +508,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 30px;
   text-align: center;
@@ -537,7 +541,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__selectLabel {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   text-align: center;
   font-family: "es-Gilroy-semibold";
@@ -582,7 +586,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__resultText {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   text-align: center;
   font-family: "es-Gilroy-semibold";
@@ -590,7 +594,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__result {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 30px;
   text-align: center;
@@ -601,7 +605,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__resultClaim {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 12px;
   text-align: center;
@@ -648,7 +652,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 30px;
   text-align: center;
@@ -657,7 +661,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__desc {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 16px;
   text-align: center;
@@ -707,7 +711,7 @@
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 40px;
   font-family: "es-Bliss-heavy";
@@ -719,7 +723,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__sliderTitle {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 20px;
   font-family: "es-Gilroy-semibold";
@@ -727,7 +731,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__sliderDesc {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 16px;
   font-family: "es-Gilroy-regular";
@@ -766,7 +770,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 30px;
   text-align: center;
@@ -775,7 +779,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__textCtn {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   background-color: #78a9df;
   width: 90%;
@@ -809,16 +813,15 @@
   background-position: left;
   background-size: contain;
   min-height: 200px;
-  padding: 10px;
+  padding: 0px 30px;
   margin-top: -10px;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__info {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   color: #001883;
   font-family: "es-Gilroy-semibold";
@@ -831,7 +834,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__slideText {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   color: #001883;
   font-family: "es-Gilroy-regular";
@@ -874,7 +877,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 30px;
   text-align: center;
@@ -892,7 +895,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__desc {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   max-width: 500px;
   font-family: "es-Gilroy-semibold";
@@ -904,14 +907,14 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__listItem {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-family: "es-Gilroy-semibold";
   color: #001883;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 25px;
   text-align: center;
@@ -927,7 +930,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__text {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   color: #fff;
   text-align: center;
@@ -950,7 +953,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__subtitle {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   color: #78a9df;
   font-family: "es-Gilroy-semibold";
@@ -1014,7 +1017,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleText {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   text-align: left;
   font-family: "es-Bliss-heavy";
@@ -1045,7 +1048,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   text-align: center;
   font-size: 25px;
@@ -1056,7 +1059,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__desc {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   text-align: center;
   font-family: "es-Gilroy-regular";
@@ -1097,7 +1100,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomTitle {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   text-align: left;
   font-size: 20px;
@@ -1108,7 +1111,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomDesc {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   text-align: left;
   font-family: "es-Gilroy-regular";
@@ -1118,7 +1121,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 25px;
   text-align: center;
@@ -1148,7 +1151,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descTitle {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   text-transform: uppercase;
   font-size: 25px;
@@ -1161,7 +1164,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descList {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   margin: 0;
   padding: 0;
@@ -1169,7 +1172,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descItem {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   margin: 0;
   padding: 0;
@@ -1184,7 +1187,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 25px;
   text-align: center;
@@ -1202,7 +1205,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__question {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-family: "es-Gilroy-semibold";
   display: flex;
@@ -1220,7 +1223,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__answer {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-family: "es-Gilroy-regular";
   color: #001883;
@@ -1229,7 +1232,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__answerItem {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-family: "es-Gilroy-regular";
   color: #001883;
@@ -1239,7 +1242,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 25px;
   text-align: center;
@@ -1264,7 +1267,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__subtitle {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 25px;
   text-align: center;
@@ -1292,7 +1295,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-productsDesc__item {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-family: "es-Gilroy-regular";
   color: #001883;
@@ -1310,7 +1313,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__title {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 16px;
   font-family: "es-Bliss-heavy";
@@ -1322,7 +1325,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__claim {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 14px;
   font-family: "es-Gilroy-regular";
@@ -1332,7 +1335,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__warning {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 25px;
   font-family: "es-Bliss-heavy";
@@ -1340,7 +1343,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__number {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-top: 10px;
   font-size: 14px;
   font-family: "es-Gilroy-regular";
@@ -1464,6 +1467,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    padding-top: 70px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care__title {
     font-size: 40px;
@@ -1515,17 +1519,12 @@
     align-items: center;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__infoCtn {
-    background-image: url(./img/es-why__bg.webp);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     max-width: 35%;
     margin-top: -20px;
     min-height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
+    padding-inline: 50px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__info {
     font-size: 25px;
@@ -1585,7 +1584,7 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__subtitle {
     font-size: 16px;
-    line-height: 1.1;
+    line-height: 1.3;
     margin-top: 10px;
     font-size: 25px;
   }
@@ -1601,7 +1600,7 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleText {
     font-size: 16px;
-    line-height: 1.1;
+    line-height: 1.3;
     margin-top: 10px;
     padding-left: 140px;
     font-size: 18px;
