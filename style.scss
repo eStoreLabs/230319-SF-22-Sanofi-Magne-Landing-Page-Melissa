@@ -221,10 +221,13 @@ $es-title: "es-Bliss-heavy";
     }
 
     .es-may {
+      
       &__slide {
         display: flex;
         flex-direction: column;
-        min-height: 500px;
+        justify-content: center;
+        min-height: 400px;
+        padding-inline: 20px;
         &--second {
           background-image: url(./img/es-may-slider-bg.webp);
           background-repeat: no-repeat;
@@ -235,6 +238,8 @@ $es-title: "es-Bliss-heavy";
       }
       &__img {
         max-width: 350px;
+        display: block;
+        margin: auto;
       }
       &__packshot {
         max-height: 200px;
@@ -295,6 +300,13 @@ $es-title: "es-Bliss-heavy";
         &--prev {
           align-self: flex-start;
         }
+      }
+      &__buttonsCtn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-block: 10px;
       }
     }
     .es-message {
@@ -1328,6 +1340,10 @@ $es-title: "es-Bliss-heavy";
         }
       }
       .es-may {
+        
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        
         &__slide {
           display: flex;
           justify-content: center;
@@ -1338,12 +1354,17 @@ $es-title: "es-Bliss-heavy";
             padding-top: 0px;
           }
         }
-        &__content {
+        &__content--second {
           max-width: 50%;
+        }
+        &__item {
+          //max-width: 60%;
         }
         &__img {
           max-width: 250px;
+          margin: unset;
         }
+        
         &__arrow {
           cursor: pointer;
           &--next {
@@ -1698,14 +1719,14 @@ $es-title: "es-Bliss-heavy";
       }
       .es-may {
         &__slide {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: row;
-          gap: 20px;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          // flex-direction: row;
+          // gap: 20px;
         }
         &__content {
-          max-width: 40%;
+          max-width: 70%;
         }
         &__img {
           max-width: 350px;

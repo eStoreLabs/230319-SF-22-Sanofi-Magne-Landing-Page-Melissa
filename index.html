@@ -143,17 +143,20 @@
         </section>
 
         <section class="es-may">
-          <!-- Slideshow container -->
+          <div>
+            <img
+            class="es-may__img"
+            src="./img/es-may-slider-img.webp"
+            alt="Źdźbła trawy w zbliżeniu makro, niedobór magnezu zwiększa podatność na stres i może skutkować uczuciem zmęczenia. Uśmiechnięta kobieta w kapeluszu. W czym pomaga magnez? Magnez pomaga na skurcze mięśni, na stres i na nerwowość."
+          />
+          </div>
+          <div class="es-slides__Ctn">
+            <!-- Slideshow container -->
           <div class="es-slideshow-container">
             <!-- Full-width images with number and caption text -->
             <div class="es-mySlides">
               <div class="es-may__slide">
-                <img
-                  class="es-may__img"
-                  src="./img/es-may-slider-img.webp"
-                  alt="Źdźbła trawy w zbliżeniu makro, niedobór magnezu zwiększa podatność na stres i może skutkować uczuciem zmęczenia. Uśmiechnięta kobieta w kapeluszu. W czym pomaga magnez? Magnez pomaga na skurcze mięśni, na stres i na nerwowość."
-                />
-                <div class="es-may es-may__content">
+                <div class="es-may__content">
                   <p class="es-may__title">
                     Nie pozwól, by stres zepsuł <br />
                     Twoją Majówkę!
@@ -185,23 +188,10 @@
                     >Sprawdź</a
                   >
                 </div>
-                <button
-                  type="button"
-                  class="es-may__arrow es-may__arrow--next es-next"
-                >
-                  <img src="./img/es-slider-arrow-next.webp" alt="" />
-                </button>
               </div>
             </div>
-
             <div class="es-mySlides">
               <div class="es-may__slide es-may__slide--second">
-                <button
-                  type="button"
-                  class="es-may__arrow es-may__arrow--prev es-prev"
-                >
-                  <img src="./img/es-slider-arrow-prev.webp" alt="" />
-                </button>
                 <div class="es-may__packshotCtn">
                   <img
                     class="es-may__packshot"
@@ -215,7 +205,7 @@
                     >Sprawdź</a
                   >
                 </div>
-                <div class="es-may es-may__content">
+                <div class="es-may__content--second">
                   <div class="es-may__item">
                     <img
                       src="./img/es-may-badge.webp"
@@ -240,7 +230,24 @@
                 </div>
               </div>
             </div>
+            <div class="es-may__buttonsCtn">
+              <button
+              type="button"
+              class="es-may__arrow es-may__arrow--prev es-prev"
+            >
+              <img src="./img/es-slider-arrow-prev.webp" alt="" />
+            </button>
+            <button
+              type="button"
+              class="es-may__arrow es-may__arrow--next es-next"
+            >
+              <img src="./img/es-slider-arrow-next.webp" alt="" />
+            </button>
+            </div>
+            
           </div>
+          </div>
+          
         </section>
 
         <section class="es-message">
@@ -398,9 +405,8 @@
                   <p class="es-magneDesc__number">2</p>
                 </div>
                 <p class="es-magneDesc__how-text">
-                  Wybierz <br/>
-                  odpowiedni 
-                  preparat
+                  Wybierz <br />
+                  odpowiedni preparat
                 </p>
                 <button
                   data-esshow-id="es-content-second"
@@ -1554,10 +1560,13 @@
             <li class="es-claims__claim">
               Występowanie nerwowości może wskazywać na niedobór magnezu.
             </li>
-            <li class="es-claims__claim">ChPl Magne B<sub>6</sub> Forte 04.2022.</li>
             <li class="es-claims__claim">
-              Magne B<sub>6</sub> Forte zawiera podwójną dawkę magnezu w 1 tabl. w
-              porównaniu do Magne B<sub>6</sub>. ChPL Magne B<sub>6</sub> i Magne B<sub>6</sub> Forte, 04.2022.
+              ChPl Magne B<sub>6</sub> Forte 04.2022.
+            </li>
+            <li class="es-claims__claim">
+              Magne B<sub>6</sub> Forte zawiera podwójną dawkę magnezu w 1 tabl.
+              w porównaniu do Magne B<sub>6</sub>. ChPL Magne B<sub>6</sub> i
+              Magne B<sub>6</sub> Forte, 04.2022.
             </li>
             <li class="es-claims__claim">
               Halina Bojarowicz, Paulina Dźwigulska. Suplementy diety. Część II.
