@@ -507,7 +507,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator {
   background-image: none;
   width: 100%;
-  padding: 70px 10px;
+  margin: 70px 10px;
   min-height: 650px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__ctn {
@@ -1484,6 +1484,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    display: grid;
+    align-content: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__returnBtn {
+    margin: 20px 0 0 0;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__submitBtn {
+    margin: 20px 0 0 0;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care {
     background-image: url(./img/es-care-bg.webp);
