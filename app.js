@@ -159,11 +159,11 @@ esDateOption.valueAsDate = new Date()
 
 const zoomGlassPositions = [
     [50, 12],
-    [50, 16],
     [50, 14],
-    [50, 33],
+    [50, 16],
     [50, 23],
     [61, 26],
+    [50, 33],
     [50, 40],
     [60, 79],
 ]
@@ -191,7 +191,7 @@ function esMagnifyNextItem() {
   magnifierGlass.style.left = `${zoomGlassPositions[currentMagnifiedItem][0]}%`
   magnifierGlass.style.top = `${zoomGlassPositions[currentMagnifiedItem][1]}%`
 
-  setTimeout(esMagnifyNextItem, 3000)
+  setTimeout(esMagnifyNextItem, 2000)
 }
 esMagnifyNextItem()
 

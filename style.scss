@@ -969,9 +969,9 @@ $es-title: "es-Bliss-heavy";
         height: 510px;
         margin-left: -255px;
         margin-top: -255px;
-        transition: left 0.2s ease, top 0.2s ease;
+        transition: left 0.4s ease-in, top 0.4s ease-in;
         img {
-          transition: opacity 0.2s;
+          transition: all 0.4s ease-in;
           position: absolute;
           left: 0;
           top: 0;
