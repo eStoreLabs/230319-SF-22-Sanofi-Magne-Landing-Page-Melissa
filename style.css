@@ -54,6 +54,11 @@
 #es-sanofi.es-sanofi #es-magne.es-magne * {
   box-sizing: border-box;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-btn--arrow {
+  width: 32px;
+  margin: 16px;
+  cursor: pointer;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv {
   background-image: url(./img/kv-bg.webp);
   background-repeat: no-repeat;
