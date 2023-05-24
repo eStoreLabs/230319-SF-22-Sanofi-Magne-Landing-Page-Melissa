@@ -510,10 +510,14 @@
   display: none;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator {
-  background-image: none;
+  background-image: url(./img/es-calculator-bg.webp);
+  background-position: center;
+  background-size: cover;
   width: 100%;
-  margin: 70px 10px;
+  margin-block: 50px;
   min-height: 650px;
+  display: grid;
+  align-content: center;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__ctn {
   display: flex;
@@ -530,6 +534,7 @@
   text-align: center;
   font-family: "es-Bliss-heavy";
   color: #001883;
+  word-wrap: normal;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__item {
   display: flex;
@@ -539,6 +544,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__select {
   border-radius: 20px;
+  border: 1px solid #001e61;
   padding: 10px;
   margin: 10px;
   font-family: "es-Gilroy-semibold";
@@ -555,6 +561,10 @@
   background-position: 99%;
   background-size: 8%;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__select:focus, #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__select:active {
+  outline: 2px solid #dfae78;
+  border-color: #dfae78;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__selectLabel {
   font-size: 16px;
   line-height: 1.3;
@@ -565,6 +575,7 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__dataInput {
   border-radius: 20px;
+  border: 1px solid #001e61;
   padding: 10px;
   margin: 10px;
   font-family: "es-Gilroy-semibold";
@@ -572,6 +583,14 @@
   background-color: #fff;
   cursor: pointer;
   min-width: 320px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__dataInput:focus {
+  outline: 2px solid #dfae78;
+  border-color: #dfae78;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__dataInput:active {
+  outline: 2px solid #dfae78;
+  border-color: #dfae78;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__submitBtn {
   margin: 50px 0;
@@ -706,6 +725,11 @@
   max-width: 300px;
   position: relative;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-care__img--height {
+  height: 300px;
+  display: grid;
+  place-items: center;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__contentCtn {
   max-width: 400px;
   min-height: 150px;
@@ -716,7 +740,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number {
   position: absolute;
   top: 20px;
-  right: -20px;
+  right: 50px;
   width: 70px;
   height: 70px;
   background-image: url(./img/es-how-numberBg.webp);
@@ -732,10 +756,6 @@
   font-size: 40px;
   font-family: "es-Bliss-heavy";
   color: #001883;
-}
-#es-sanofi.es-sanofi #es-magne.es-magne .es-care__number--6 {
-  top: -60px;
-  right: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__sliderTitle {
   font-size: 16px;
@@ -766,6 +786,7 @@
   text-align: center;
   transition: 0.4s ease-in-out;
   max-width: 250px;
+  margin: auto;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__link:hover {
   color: #001883;
@@ -783,6 +804,9 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__arrow--next {
   align-self: flex-end;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-why {
+  margin-top: 50px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__title {
   font-size: 16px;
@@ -1484,13 +1508,8 @@
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__howItem {
     min-height: 300px;
   }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator {
-    background-image: url(./img/es-calculator-bg.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: grid;
-    align-content: center;
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__title {
+    padding-top: unset;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__returnBtn {
     margin: 20px 0 0 0;

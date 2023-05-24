@@ -515,16 +515,23 @@ $es-btn--arrow--mobile: 32px;
       display: none;
     }
     .es-calculator {
-      background-image: none;
+      //background-image: none;
+      background-image: url(./img/es-calculator-bg.webp);
+      background-position: center;
+      background-size: cover;
       width: 100%;
-      margin: 70px 10px;
+      margin-block: 50px;
       min-height: 650px;
+      display: grid;
+        align-content: center;
+      
       &__ctn {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
+        
       }
       &__title {
         @include es-text-reset;
@@ -532,6 +539,8 @@ $es-btn--arrow--mobile: 32px;
         text-align: center;
         font-family: $es-title;
         color: $es-main-text-color;
+        word-wrap: normal;
+        //padding-top: 50px;
       }
       &__item {
         display: flex;
@@ -541,6 +550,7 @@ $es-btn--arrow--mobile: 32px;
       }
       &__select {
         border-radius: 20px;
+        border: 1px solid $es-dark-color;
         padding: 10px;
         margin: 10px;
         font-family: $es-regular;
@@ -554,6 +564,10 @@ $es-btn--arrow--mobile: 32px;
         background-repeat: no-repeat;
         background-position: 99%;
         background-size: 8%;
+        &:focus, &:active {
+          outline: 2px solid #dfae78;
+          border-color: #dfae78;
+        }
       }
 
       &__selectLabel {
@@ -564,6 +578,7 @@ $es-btn--arrow--mobile: 32px;
       }
       &__dataInput {
         border-radius: 20px;
+        border: 1px solid $es-dark-color;
         padding: 10px;
         margin: 10px;
         font-family: $es-regular;
@@ -571,6 +586,14 @@ $es-btn--arrow--mobile: 32px;
         background-color: #fff;
         cursor: pointer;
         min-width: 320px;
+        &:focus {
+          outline: 2px solid #dfae78;
+          border-color: #dfae78;
+        }
+        &:active {
+          outline: 2px solid #dfae78;
+          border-color: #dfae78;
+        }
       }
       &__submitBtn {
         margin: 50px 0;
@@ -694,6 +717,12 @@ $es-btn--arrow--mobile: 32px;
       &__imgCtn {
         max-width: 300px;
         position: relative;
+        
+      }
+      &__img--height {
+        height: 300px;
+        display: grid;
+        place-items: center;
       }
       &__contentCtn {
         max-width: 400px;
@@ -705,7 +734,7 @@ $es-btn--arrow--mobile: 32px;
       &__number {
         position: absolute;
         top: 20px;
-        right: -20px;
+        right: 50px;
         width: 70px;
         height: 70px;
         background-image: url(./img/es-how-numberBg.webp);
@@ -719,10 +748,7 @@ $es-btn--arrow--mobile: 32px;
         font-size: 40px;
         font-family: $es-title;
         color: $es-main-text-color;
-        &--6 {
-          top: -60px;
-          right: 20px;
-        }
+        
       }
       &__sliderTitle {
         @include es-text-reset;
@@ -749,6 +775,7 @@ $es-btn--arrow--mobile: 32px;
         text-align: center;
         transition: 0.4s ease-in-out;
         max-width: 250px;
+        margin: auto;
         &:hover {
           color: $es-main-text-color;
           outline: 2px solid $es-main-text-color;
@@ -769,6 +796,7 @@ $es-btn--arrow--mobile: 32px;
       }
     }
     .es-why {
+      margin-top: 50px;
       &__title {
         @include es-text-reset;
         font-size: 30px;
@@ -1435,13 +1463,10 @@ $es-btn--arrow--mobile: 32px;
         }
       }
       .es-calculator {
-        background-image: url(./img/es-calculator-bg.webp);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        display: grid;
-        align-content: center;
         
+        &__title {
+        padding-top: unset;
+        }
         &__returnBtn {
           margin: 20px 0 0 0;
         }
