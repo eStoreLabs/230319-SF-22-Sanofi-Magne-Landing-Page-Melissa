@@ -1,0 +1,18 @@
+//container for the slider, positions it in the center of a page
+.es-slider__container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+//bounding box for the slides
+.es-slider {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    //margin: 20px;
+    text-align: center;
+    overflow: hidden; // hide side scroll
+    position: relative;
+}
