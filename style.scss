@@ -231,7 +231,9 @@ $es-btn--arrow--mobile: 32px;
     }
 
     .es-may {
-      
+      .es-slideshow-container {
+        position: relative;
+      }
       &__slide {
         display: flex;
         flex-direction: column;
@@ -253,6 +255,7 @@ $es-btn--arrow--mobile: 32px;
       }
       &__packshot {
         max-height: 200px;
+        max-width: 80%;
       }
       &__packshotCtn {
         display: flex;
@@ -316,7 +319,12 @@ $es-btn--arrow--mobile: 32px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin-block: 10px;
+        //margin-block: 10px;
+    //     position: absolute;
+    //     left: 50%;
+    // top: 50%;
+    // transform: translate(-50%,-50%);
+    //     width: 100%;
       }
     }
     .es-message {
@@ -1390,6 +1398,7 @@ $es-btn--arrow--mobile: 32px;
           gap: 20px;
           &--second {
             padding-top: 0px;
+            //padding-inline: 40px;
           }
         }
         &__content--second {
@@ -1400,7 +1409,7 @@ $es-btn--arrow--mobile: 32px;
         }
         &__img {
           max-width: 250px;
-          margin: unset;
+          //margin: unset;
         }
         
         &__arrow {
@@ -1412,6 +1421,7 @@ $es-btn--arrow--mobile: 32px;
             align-self: center;
           }
         }
+        
       }
       .es-message {
         &__title {
@@ -1705,6 +1715,21 @@ $es-btn--arrow--mobile: 32px;
         }
       }
     }
+    @media (min-width: 870px) {
+      .es-may {
+        &__content {
+          max-width: 70%;
+        }
+        &__buttonsCtn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+      }
+      }
+      
+    }
     @media (min-width: 950px) {
       .es-kv {
         max-height: 600px;
@@ -1769,9 +1794,7 @@ $es-btn--arrow--mobile: 32px;
           // flex-direction: row;
           // gap: 20px;
         }
-        &__content {
-          max-width: 70%;
-        }
+        
         &__img {
           max-width: 350px;
         }
