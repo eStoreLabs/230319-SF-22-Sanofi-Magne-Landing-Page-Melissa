@@ -1,3 +1,44 @@
+// pure CSS slider, supports swiping on mobile
+/*
+how to use
+
+<div class="es-slider__container">
+  <div class="es-slider">
+    <!-- container with all slides -->
+    <div class="es-slides">
+      <div class="es-slide" id="es-slides__1">
+        Slide content goes here
+        <a class="es-slide__prev" href="#es-slides__4" title="Next"></a> //link to previous slide
+        <a class="es-slide__next" href="#es-slides__2" title="Next"></a> //link to next slide
+      </div>
+      <div class="es-slide" id="es-slides__2">
+        Slide content goes here
+        <a class="es-slide__prev" href="#es-slides__1" title="Next"></a> //link to previous slide
+        <a class="es-slide__next" href="#es-slides__3" title="Next"></a> //link to next slide
+      </div>
+      <div class="es-slide" id="es-slides__3">
+        Slide content goes here
+        <a class="es-slide__prev" href="#es-slides__2" title="Next"></a> //link to previous slide
+        <a class="es-slide__next" href="#es-slides__4" title="Next"></a> //link to next slide
+      </div>
+      <div class="es-slide" id="es-slides__4">
+        Slide content goes here
+        <a class="es-slide__prev" href="#es-slides__3" title="Next"></a> //link to previous slide
+        <a class="es-slide__next" href="#es-slides__1" title="Next"></a> //link to next slide
+      </div>
+    </div>
+    <!-- container with navigation arrows -->
+    <div class="es-slider__nav">
+      <a class="es-slider__navlink" href="#es-slides__1"></a>
+      <a class="es-slider__navlink" href="#es-slides__2"></a>
+      <a class="es-slider__navlink" href="#es-slides__3"></a>
+      <a class="es-slider__navlink" href="#es-slides__4"></a>
+    </div>
+  </div>
+</div>
+
+*/
+
 //container for the slider, positions it in the center of a page
 .es-slider__container {
     display: flex;
@@ -15,4 +56,94 @@
     text-align: center;
     overflow: hidden; // hide side scroll
     position: relative;
+}
+
+.es-slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  //scroll-snap-align: center;
+}
+
+.es-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  scroll-snap-align: center;
+  margin-right: 0px;
+  box-sizing: border-box;
+  background: white;
+  transform-origin: center center;
+  transform: scale(1);
+}
+
+//arrows, styles needed to prevent some odd visual effects
+.es-slide a {
+  background: none;
+  border: none;
+}
+
+//position srrows
+a.es-slide__prev,
+.es-slider::before {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 5%;
+}
+
+a.es-slide__next,
+.es-slider::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 5%;
+}
+
+// render slider arrows - draw them
+.es-slider::before,
+.es-slider::after,
+.es-slide__prev,
+.es-slide__next {
+  position: absolute;
+  top: 48%;
+  width: 35px;
+  height: 35px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.es-slider::before,
+.es-slider::after {
+  content: "";
+  z-index: 1;
+  background: none;
+  pointer-events: none;
+}
+
+//bottom breadcrumbs container
+.es-slider__nav {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+//bottom breadcrumbs entities
+.es-slider__navlink {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 10px 0 10px;
 }
