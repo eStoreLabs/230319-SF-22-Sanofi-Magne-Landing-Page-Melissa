@@ -4,17 +4,17 @@ $es-main-text-light-color: #78a9df;
 
 @font-face {
   font-family: "es-Gilroy-semibold";
-  src: url("../fonts/Gilroy-SemiBold.otf") format("opentype");
+  src: url("./fonts/Gilroy-SemiBold.otf") format("opentype");
   font-display: auto;
 }
 @font-face {
   font-family: "es-Bliss-heavy";
-  src: url("../fonts/Bliss-Heavy.otf") format("opentype");
+  src: url("./fonts/Bliss-Heavy.otf") format("opentype");
   font-display: auto;
 }
 @font-face {
   font-family: "es-Gilroy-regular";
-  src: url("../fonts/Gilroy-Regular.otf") format("opentype");
+  src: url("./fonts/Gilroy-Regular.otf") format("opentype");
   font-displanedy: auto;
 }
 $es-regular: "es-Gilroy-semibold";
@@ -86,7 +86,7 @@ $es-btn--arrow--mobile: 32px;
       @include es-btn--arrow;
     }
     .es-kv {
-      background-image: url(../img/kv-bg.webp);
+      background-image: url(./img/kv-bg.webp);
       background-repeat: no-repeat;
       background-position: top left;
       background-size: contain;
@@ -156,7 +156,7 @@ $es-btn--arrow--mobile: 32px;
         margin-bottom: 60px;
       }
       &__subtitleCtn {
-        background-image: url(../img/es-kv-text-bg.webp);
+        background-image: url(./img/es-kv-text-bg.webp);
         background-repeat: no-repeat;
         background-size: contain;
         min-width: 300px;
@@ -178,7 +178,7 @@ $es-btn--arrow--mobile: 32px;
       }
       &__imgCtn {
         &::after {
-          content: url(../img/es-header-line.webp);
+          content: url(./img/es-header-line.webp);
           display: block;
           position: absolute;
           bottom: -10px;
@@ -239,7 +239,7 @@ $es-btn--arrow--mobile: 32px;
         min-height: 400px;
         padding-inline: 20px;
         &--second {
-          background-image: url(../img/es-may-slider-bg.webp);
+          background-image: url(./img/es-may-slider-bg.webp);
           background-repeat: no-repeat;
           background-position: top right;
           background-size: contain;
@@ -332,7 +332,7 @@ $es-btn--arrow--mobile: 32px;
         color: $es-main-text-light-color;
         position: relative;
         &:after {
-          content: url(../img/kv-sun.webp);
+          content: url(./img/kv-sun.webp);
           display: block;
           position: absolute;
           right: -150px;
@@ -350,7 +350,7 @@ $es-btn--arrow--mobile: 32px;
       }
     }
     .es-magneDesc {
-      background-image: url(../img/es-magneDesc-bg.webp);
+      background-image: url(./img/es-magneDesc-bg.webp);
       background-repeat: no-repeat;
       background-position: right center;
       background-size: contain;
@@ -460,7 +460,7 @@ $es-btn--arrow--mobile: 32px;
       &__numberCtn {
         height: 60px;
         width: 60px;
-        background-image: url(../img/es-how-numberBg.webp);
+        background-image: url(./img/es-how-numberBg.webp);
         background-repeat: no-repeat;
         background-size: contain;
         display: flex;
@@ -516,7 +516,7 @@ $es-btn--arrow--mobile: 32px;
     }
     .es-calculator {
       //background-image: none;
-      background-image: url(../img/es-calculator-bg.webp);
+      background-image: url(./img/es-calculator-bg.webp);
       background-position: center;
       background-size: cover;
       width: 100%;
@@ -560,7 +560,7 @@ $es-btn--arrow--mobile: 32px;
         min-width: 320px;
         position: relative;
         appearance: none;
-        background-image: url(../img/es-select-arrow.png);
+        background-image: url(./img/es-select-arrow.png);
         background-repeat: no-repeat;
         background-position: 99%;
         background-size: 8%;
@@ -615,7 +615,7 @@ $es-btn--arrow--mobile: 32px;
           color: #fff;
         }
         &::after {
-          content: url(../img/es-line.webp);
+          content: url(./img/es-line.webp);
           position: absolute;
           top: -30px;
           left: -150%;
@@ -666,7 +666,7 @@ $es-btn--arrow--mobile: 32px;
           color: #fff;
         }
         &::after {
-          content: url(../img/es-line.webp);
+          content: url(./img/es-line.webp);
           position: absolute;
           top: -30px;
           left: -60%;
@@ -737,7 +737,7 @@ $es-btn--arrow--mobile: 32px;
         right: 50px;
         width: 70px;
         height: 70px;
-        background-image: url(../img/es-how-numberBg.webp);
+        background-image: url(./img/es-how-numberBg.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -833,7 +833,7 @@ $es-btn--arrow--mobile: 32px;
         align-items: center;
       }
       &__infoCtn {
-        background-image: url(../img/es-why__bg.webp);
+        background-image: url(./img/es-why__bg.webp);
         background-repeat: no-repeat;
         background-position: left;
         background-size: contain;
@@ -888,7 +888,7 @@ $es-btn--arrow--mobile: 32px;
       padding: 50px 0;
 
       &::after {
-        content: url(../img/es-how-happyFace.webp);
+        content: url(./img/es-how-happyFace.webp);
         display: block;
         position: absolute;
         right: 10%;
@@ -906,7 +906,7 @@ $es-btn--arrow--mobile: 32px;
         color: $es-main-text-color;
         position: relative;
         &::after {
-          content: url(../img/es-how-sadFace.webp);
+          content: url(./img/es-how-sadFace.webp);
           display: block;
           position: absolute;
           right: 0;
@@ -952,14 +952,14 @@ $es-btn--arrow--mobile: 32px;
         font-family: $es-regular;
         position: relative;
         &::before {
-          content: url(../img/es-symptoms-lineTop.webp);
+          content: url(./img/es-symptoms-lineTop.webp);
           display: block;
           position: absolute;
           top: -30px;
           left: -40px;
         }
         &::after {
-          content: url(../img/es-symptoms-lineBottom.webp);
+          content: url(./img/es-symptoms-lineBottom.webp);
           display: block;
           position: absolute;
           bottom: -30px;
@@ -975,7 +975,7 @@ $es-btn--arrow--mobile: 32px;
         margin-top: 20px;
       }
       &__bottomCtn {
-        background-image: url(../img/es-symptoms-bg.webp);
+        background-image: url(./img/es-symptoms-bg.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -1091,7 +1091,7 @@ $es-btn--arrow--mobile: 32px;
         position: absolute;
         top: -50px;
         right: 0px;
-        background-image: url(../img/es-how-numberBg.webp);
+        background-image: url(./img/es-how-numberBg.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -1418,7 +1418,7 @@ $es-btn--arrow--mobile: 32px;
           margin-bottom: 20px;
           font-size: 40px;
           &:after {
-            content: url(../img/kv-sun.webp);
+            content: url(./img/kv-sun.webp);
             display: block;
             position: absolute;
             right: -150px;
@@ -1475,7 +1475,7 @@ $es-btn--arrow--mobile: 32px;
         }
       }
       .es-care {
-        background-image: url(../img/es-care-bg.webp);
+        background-image: url(./img/es-care-bg.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -1533,7 +1533,7 @@ $es-btn--arrow--mobile: 32px;
           align-items: center;
         }
         &__infoCtn {
-          // background-image: url(../img/es-why__bg.webp);
+          // background-image: url(./img/es-why__bg.webp);
           // background-repeat: no-repeat;
           background-position: center;
           background-size: 100% 100%;
@@ -1562,7 +1562,7 @@ $es-btn--arrow--mobile: 32px;
         }
       }
       .es-container {
-        background-image: url(../img/es-how-bg.webp);
+        background-image: url(./img/es-how-bg.webp);
         background-repeat: no-repeat;
         background-position: right top;
         background-size: 45%;
@@ -1636,7 +1636,7 @@ $es-btn--arrow--mobile: 32px;
           width: 70%;
           border-radius: 100px;
           &::after {
-            content: url(../img/es-active-line-top.webp);
+            content: url(./img/es-active-line-top.webp);
             display: block;
             position: absolute;
             top: -50px;
@@ -1651,7 +1651,7 @@ $es-btn--arrow--mobile: 32px;
           max-width: 500px;
           padding: 20px;
           &::after {
-            content: url(../img/es-active-line-bottom.webp);
+            content: url(./img/es-active-line-bottom.webp);
             display: block;
             position: absolute;
             bottom: 20px;
@@ -1663,7 +1663,7 @@ $es-btn--arrow--mobile: 32px;
           position: absolute;
           top: -20px;
           left: -90px;
-          background-image: url(../img/es-how-numberBg.webp);
+          background-image: url(./img/es-how-numberBg.webp);
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
@@ -1716,7 +1716,7 @@ $es-btn--arrow--mobile: 32px;
         &__nav {
           position: absolute;
           &::after {
-            content: url(../img/nav-line.webp);
+            content: url(./img/nav-line.webp);
             display: block;
             position: absolute;
             bottom: 0;
@@ -1755,7 +1755,7 @@ $es-btn--arrow--mobile: 32px;
           right: -100px;
           &::after {
             display: block;
-            content: url(../img/kv-sun.webp);
+            content: url(./img/kv-sun.webp);
             position: absolute;
             left: -200px;
           }
