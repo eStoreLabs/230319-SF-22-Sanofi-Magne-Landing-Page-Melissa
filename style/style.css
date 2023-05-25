@@ -23,6 +23,153 @@
     transform: translateY(-5px);
   }
 }
+/*
+how to use
+
+<div class="es-slider__container">
+  <div class="es-slider">
+    <!-- container with all slides -->
+    <div class="es-slides">
+      <div class="es-slide" id="es-slides__1">
+        Slide content goes here
+        <a class="es-slide__prev" href="#es-slides__4" title="Next"></a> //link to previous slide
+        <a class="es-slide__next" href="#es-slides__2" title="Next"></a> //link to next slide
+      </div>
+      <div class="es-slide" id="es-slides__2">
+        Slide content goes here
+        <a class="es-slide__prev" href="#es-slides__1" title="Next"></a> //link to previous slide
+        <a class="es-slide__next" href="#es-slides__3" title="Next"></a> //link to next slide
+      </div>
+      <div class="es-slide" id="es-slides__3">
+        Slide content goes here
+        <a class="es-slide__prev" href="#es-slides__2" title="Next"></a> //link to previous slide
+        <a class="es-slide__next" href="#es-slides__4" title="Next"></a> //link to next slide
+      </div>
+      <div class="es-slide" id="es-slides__4">
+        Slide content goes here
+        <a class="es-slide__prev" href="#es-slides__3" title="Next"></a> //link to previous slide
+        <a class="es-slide__next" href="#es-slides__1" title="Next"></a> //link to next slide
+      </div>
+    </div>
+    <!-- container with navigation arrows -->
+    <div class="es-slider__nav">
+      <a class="es-slider__navlink" href="#es-slides__1"></a>
+      <a class="es-slider__navlink" href="#es-slides__2"></a>
+      <a class="es-slider__navlink" href="#es-slides__3"></a>
+      <a class="es-slider__navlink" href="#es-slides__4"></a>
+    </div>
+  </div>
+</div>
+
+*/
+.es-slider__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.es-slider {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.es-slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  scroll-snap-align: center;
+}
+
+.es-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  scroll-snap-align: center;
+  margin-right: 0px;
+  box-sizing: border-box;
+  background: white;
+  transform-origin: center center;
+  transform: scale(1);
+}
+
+.es-slide a {
+  background: none;
+  border: none;
+}
+
+a.es-slide__prev,
+.es-slider::before {
+  left: 5%;
+}
+
+a.es-slide__next,
+.es-slider::after {
+  right: 5%;
+}
+
+.es-slider::before,
+.es-slider::after,
+.es-slide__prev,
+.es-slide__next {
+  position: absolute;
+  top: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.es-slider__nav {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+.es-slider__navlink {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #001e61;
+  margin: 0 10px 0 10px;
+}
+
+.es-slider__navlink:hover,
+.es-slider__navlink:active {
+  background-color: #78a9df;
+}
+
+@media screen and (min-width: 700px) {
+  .es-slider {
+    max-width: unset;
+    overflow: unset;
+    display: block;
+  }
+  .es-slider::before {
+    transform: rotate(180deg);
+  }
+  .es-slide {
+    width: unset;
+  }
+  .es-slider__nav {
+    display: none;
+  }
+}
 @font-face {
   font-family: "es-Gilroy-semibold";
   src: url("../fonts/Gilroy-SemiBold.otf") format("opentype");
@@ -58,6 +205,7 @@
   width: 32px;
   margin: 16px;
   cursor: pointer;
+  content: url(../img/es-slider-arrow-next.webp);
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv {
   background-image: url(../img/kv-bg.webp);

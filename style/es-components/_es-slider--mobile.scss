@@ -38,10 +38,11 @@ how to use
 </div>
 
 */
+@import "../es-helpers/es-variables";
 
 //container for the slider, positions it in the center of a page
 .es-slider__container {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -49,13 +50,12 @@ how to use
 
 //bounding box for the slides
 .es-slider {
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
-    //margin: 20px;
-    text-align: center;
-    overflow: hidden; // hide side scroll
-    position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  text-align: center;
+  overflow: hidden; // hide side scroll
+  position: relative;
 }
 
 .es-slides {
@@ -65,7 +65,7 @@ how to use
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   scroll-snap-stop: always;
-  //scroll-snap-align: center;
+  scroll-snap-align: center;
 }
 
 .es-slide {
@@ -92,15 +92,15 @@ how to use
 //position srrows
 a.es-slide__prev,
 .es-slider::before {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+  //  transform: rotate(180deg);
+  //  -webkit-transform: rotate(180deg);
   left: 5%;
 }
 
 a.es-slide__next,
 .es-slider::after {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  // transform: rotate(-45deg);
+  // -webkit-transform: rotate(-45deg);
   right: 5%;
 }
 
@@ -110,21 +110,13 @@ a.es-slide__next,
 .es-slide__prev,
 .es-slide__next {
   position: absolute;
-  top: 48%;
-  width: 35px;
-  height: 35px;
-  border: solid black;
-  border-width: 0 4px 4px 0;
+  top: calc(50% - 60px / 2);
+  width: 60px;
+  height: 60px;
+  // border: solid black;
+  // border-width: 0 4px 4px 0;
   padding: 3px;
   box-sizing: border-box;
-}
-
-.es-slider::before,
-.es-slider::after {
-  content: "";
-  z-index: 1;
-  background: none;
-  pointer-events: none;
 }
 
 //bottom breadcrumbs container
@@ -144,6 +136,40 @@ a.es-slide__next,
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: black;
+  background-color: $es-dark-color;
   margin: 0 10px 0 10px;
+}
+
+.es-slider__navlink:hover,
+.es-slider__navlink:active {
+  background-color: $es-main-text-light-color;
+}
+
+@media screen and (min-width: 700px) {
+  .es-slider {
+    max-width: unset;
+    overflow: unset;
+    display: block;
+  }
+
+  // .es-slider::before,
+  // .es-slider::after {
+  //   content: url(../img/es-slider-arrow-next.webp);
+  //   scale: 60%;
+  //   z-index: 1;
+  //   background: none;
+  //   pointer-events: none;
+  //   outline: 1px solid red;
+  // }
+
+  .es-slider::before {
+    //transform-origin: center;
+    transform: rotate(180deg);
+  }
+  .es-slide {
+    width: unset;
+  }
+  .es-slider__nav {
+    display: none;
+  }
 }
