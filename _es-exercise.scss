@@ -1,0 +1,80 @@
+.es-exercise {
+    &__title {
+      @include es-text-reset;
+      font-size: 25px;
+      text-align: center;
+      font-family: $es-title;
+      color: $es-main-text-color;
+    }
+    &__slides {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 450px;
+    }
+    &__slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__arrow {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      margin-top: 35px;
+    }
+    &__descCtn {
+      padding: 20px;
+    }
+    &__descTitle {
+      @include es-text-reset;
+      text-transform: uppercase;
+      font-size: 25px;
+      font-family: $es-regular;
+      color: $es-main-text-color;
+      margin-top: 20px;
+      &--bright {
+        color: $es-main-text-light-color;
+      }
+    }
+    &__descList {
+      @include es-text-reset;
+      margin: 0;
+      padding: 0;
+      color: $es-main-text-color;
+    }
+    &__descItem {
+      @include es-text-reset;
+      margin: 0;
+      padding: 0;
+      color: $es-main-text-color;
+      font-family: $es-thin;
+      &--bold {
+        font-family: $es-regular;
+      }
+    }
+  }
+
+  @media (min-width: 750px) {
+    .es-exercise {
+        &__title {
+          font-size: 40px;
+          sup {
+            font-size: 18px;
+          }
+        }
+        &__slides {
+          align-items: center;
+        }
+        &__arrow {
+          margin-top: unset;
+        }
+        &__slide {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+  }

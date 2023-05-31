@@ -1,0 +1,86 @@
+.es-how {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 50px 0;
+
+    &::after {
+      content: url(./img/es-how-happyFace.webp);
+      display: block;
+      position: absolute;
+      right: 10%;
+      bottom: -4%;
+      transform: scale(0.6);
+    }
+    &__content {
+      width: 100%;
+    }
+    &__title {
+      @include es-text-reset;
+      font-size: 30px;
+      text-align: center;
+      font-family: $es-title;
+      color: $es-main-text-color;
+      position: relative;
+      &::after {
+        content: url(./img/es-how-sadFace.webp);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -150%;
+        transform: scale(0.6);
+      }
+    }
+    &__desc {
+      @include es-text-reset;
+      max-width: 500px;
+      font-family: $es-regular;
+      color: $es-main-text-color;
+    }
+    &__imgCtn {
+      max-width: 300px;
+      align-self: flex-end;
+    }
+    &__listItem {
+      @include es-text-reset;
+      font-family: $es-regular;
+      color: $es-main-text-color;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .es-how {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &::after {
+          right: 10%;
+          bottom: -10%;
+          transform: scale(1);
+        }
+        &__content {
+          width: 60%;
+        }
+        &__title {
+          font-size: 40px;
+          text-align: left;
+          &::after {
+            top: 0;
+            right: -10%;
+            transform: scale(1);
+          }
+        }
+        &__desc {
+          font-size: 20px;
+        }
+        &__imgCtn {
+          max-width: 400px;
+        }
+        &__listItem {
+          font-size: 20px;
+        }
+      }
+  }

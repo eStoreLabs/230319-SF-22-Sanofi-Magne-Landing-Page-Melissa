@@ -1,0 +1,54 @@
+.es-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+      @include es-text-reset;
+      font-size: 30px;
+      text-align: center;
+      font-family: $es-title;
+      color: $es-main-text-light-color;
+      position: relative;
+      &:after {
+        content: url(./img/kv-sun.webp);
+        display: block;
+        position: absolute;
+        right: -150px;
+        top: -50px;
+        transform: scale(0.7);
+        display: none;
+      }
+    }
+    &__text {
+      @include es-text-reset;
+      font-size: 16px;
+      text-align: center;
+      font-family: $es-title;
+      color: $es-main-text-color;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .es-message {
+        &__title {
+          margin-bottom: 20px;
+          font-size: 40px;
+          &:after {
+            content: url(./img/kv-sun.webp);
+            display: block;
+            position: absolute;
+            right: -150px;
+            top: -50px;
+            transform: scale(0.7);
+          }
+        }
+        &__text {
+          font-size: 20px;
+          text-align: center;
+          font-family: $es-title;
+          color: $es-main-text-color;
+          margin-top: 0;
+        }
+      }
+  }
