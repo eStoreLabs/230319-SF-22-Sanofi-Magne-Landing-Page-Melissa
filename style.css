@@ -161,12 +161,6 @@
   bottom: -10px;
   right: 0;
 }
-#es-sanofi.es-sanofi #es-magne.es-magne .es-kv__img {
-  -webkit-clip-path: circle(39.6% at 50% 50%);
-          clip-path: circle(39.6% at 50% 50%);
-  width: 100%;
-  max-height: 550px;
-}
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-kv {
     max-height: 600px;
@@ -698,6 +692,11 @@
     min-height: 300px;
   }
 }
+@media (min-width: 950px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
+    max-width: 450px;
+  }
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator {
   background-image: url(./img/es-calculator-bg.webp);
   background-position: center;
@@ -1057,6 +1056,16 @@
     right: 0px;
   }
 }
+@media (min-width: 950px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number {
+    top: 40px;
+    right: 0;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number--6 {
+    top: -70px;
+    right: 20px;
+  }
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why {
   margin-top: 50px;
 }
@@ -1280,6 +1289,160 @@
     font-size: 20px;
   }
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__title {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+  font-family: "es-Bliss-heavy";
+  color: #001883;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__textCtn {
+  background-color: #78a9df;
+  padding: 20px;
+  border-radius: 50px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__text {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "es-Gilroy-semibold";
+  position: relative;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__text::before {
+  content: url(./img/es-symptoms-lineTop.webp);
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: -40px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__text::after {
+  content: url(./img/es-symptoms-lineBottom.webp);
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  right: -40px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__subtitle {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-top: 10px;
+  color: #78a9df;
+  font-family: "es-Gilroy-semibold";
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bottomCtn {
+  background-image: url(./img/es-symptoms-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bodyCtn {
+  position: relative;
+  max-width: 250px;
+  z-index: 0;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
+  text-align: center;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bodyImg {
+  display: block;
+  margin: 0 auto;
+  z-index: 0;
+  max-width: 230px;
+  max-height: 480px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__magnifierGlass {
+  position: absolute;
+  cursor: none;
+  width: 510px;
+  height: 510px;
+  margin-left: -255px;
+  margin-top: -255px;
+  transition: left 0.4s ease-in, top 0.4s ease-in;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__magnifierGlass img {
+  transition: all 0.4s ease-in;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleItem {
+  margin-left: -150px;
+  display: block;
+  z-index: 10;
+  position: relative;
+  color: #001883;
+  transition: 0.2s ease-in-out;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleItem.es-currentlySelected {
+  transform: scale(1.15);
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleText {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-top: 10px;
+  text-align: left;
+  font-family: "es-Bliss-heavy";
+  padding-left: 140px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+@media (min-width: 750px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__title {
+    font-size: 40px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__subtitle {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bottomCtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
+    position: absolute;
+    right: 0%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleText {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-top: 10px;
+    padding-left: 140px;
+    font-size: 18px;
+    margin: 30px 0;
+  }
+}
+@media (min-width: 950px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
+    position: absolute;
+    right: 5%;
+  }
+}
+@media (min-width: 1000px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
+    position: absolute;
+    right: 10%;
+  }
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
   margin: 50px 0;
   padding: 10px;
@@ -1374,6 +1537,66 @@
   margin: 5px 0;
   padding: 0;
 }
+@media (min-width: 750px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
+    margin-top: 0px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__mainCtn {
+    margin-top: -200px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__ctn {
+    padding: 20px 40px;
+    width: 70%;
+    border-radius: 100px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__ctn::after {
+    content: url(./img/es-active-line-top.webp);
+    display: block;
+    position: absolute;
+    top: -50px;
+    right: -60px;
+    transform: scale(0.8);
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomCtn {
+    position: relative;
+    background-color: transparent;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomCtn::after {
+    content: url(./img/es-active-line-bottom.webp);
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: -50px;
+    transform: scale(0.8);
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__questionCtn {
+    position: absolute;
+    top: -20px;
+    left: -90px;
+    background-image: url(./img/es-how-numberBg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 950px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
+    margin-top: -150px;
+  }
+}
+@media (min-width: 1100px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
+    margin-top: -200px;
+  }
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title {
   font-size: 16px;
   line-height: 1.3;
@@ -1437,6 +1660,26 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descItem--bold {
   font-family: "es-Gilroy-semibold";
 }
+@media (min-width: 750px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title {
+    font-size: 40px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title sup {
+    font-size: 18px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__slides {
+    align-items: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__arrow {
+    margin-top: unset;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq {
   margin-top: 80px;
 }
@@ -1492,6 +1735,11 @@
   font-family: "es-Gilroy-regular";
   color: #001883;
 }
+@media (min-width: 750px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__title {
+    font-size: 40px;
+  }
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles {
   padding: 10px;
 }
@@ -1544,6 +1792,11 @@
   color: #001e61;
   outline: 2px solid #001e61;
   background-color: #fff;
+}
+@media (min-width: 750px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__title {
+    font-size: 40px;
+  }
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-productsDesc {
   padding: 10px;
@@ -1613,136 +1866,4 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__logo {
   align-self: flex-end;
-}
-@media (min-width: 750px) {
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__title {
-    font-size: 40px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__subtitle {
-    font-size: 16px;
-    line-height: 1.3;
-    margin-top: 10px;
-    font-size: 25px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bottomCtn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
-    position: absolute;
-    right: 0%;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__singleText {
-    font-size: 16px;
-    line-height: 1.3;
-    margin-top: 10px;
-    padding-left: 140px;
-    font-size: 18px;
-    margin: 30px 0;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
-    margin-top: 0px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__mainCtn {
-    margin-top: -200px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__ctn {
-    padding: 20px 40px;
-    width: 70%;
-    border-radius: 100px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__ctn::after {
-    content: url(./img/es-active-line-top.webp);
-    display: block;
-    position: absolute;
-    top: -50px;
-    right: -60px;
-    transform: scale(0.8);
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomCtn {
-    position: relative;
-    background-color: transparent;
-    margin: 0 auto;
-    max-width: 500px;
-    padding: 20px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__bottomCtn::after {
-    content: url(./img/es-active-line-bottom.webp);
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    left: -50px;
-    transform: scale(0.8);
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__questionCtn {
-    position: absolute;
-    top: -20px;
-    left: -90px;
-    background-image: url(./img/es-how-numberBg.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title {
-    font-size: 40px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title sup {
-    font-size: 18px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__slides {
-    align-items: center;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__arrow {
-    margin-top: unset;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__slide {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__title {
-    font-size: 40px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__title {
-    font-size: 40px;
-  }
-}
-@media (min-width: 950px) {
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
-    max-width: 450px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number {
-    top: 40px;
-    right: 0;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number--6 {
-    top: -70px;
-    right: 20px;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
-    position: absolute;
-    right: 5%;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
-    margin-top: -150px;
-  }
-}
-@media (min-width: 1000px) {
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
-    position: absolute;
-    right: 10%;
-  }
-}
-@media (min-width: 1100px) {
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo {
-    margin-top: -200px;
-  }
 }/*# sourceMappingURL=style.css.map */
