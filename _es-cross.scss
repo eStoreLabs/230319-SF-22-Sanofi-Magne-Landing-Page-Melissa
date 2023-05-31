@@ -1,3 +1,4 @@
+
 .es-cross {
     padding: 20px;
     margin-top: 20px;
@@ -5,15 +6,16 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    
     &__item {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-width: 300px;
+      //min-width: 300px;
     }
     &__img {
-      max-width: 280px;
+      max-width: 210px;
     }
     &__name {
       @include es-text-reset;

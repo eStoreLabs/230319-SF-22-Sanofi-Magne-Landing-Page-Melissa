@@ -24,6 +24,7 @@
     .es-btn--arrow {
       @include es-btn--arrow;
     }
+    @import "es-slider";
     @import "es-kv";
     @import "es-cross";
     @import "es-may";
