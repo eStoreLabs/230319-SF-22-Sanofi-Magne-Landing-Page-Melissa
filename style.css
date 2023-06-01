@@ -372,7 +372,7 @@
   font-size: 18px;
   transition: 0.4s ease-in-out;
   display: block;
-  max-width: 150px;
+  width: 150px;
   text-align: center;
   margin: auto;
   margin: unset;
@@ -394,7 +394,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 1fr;
-  outline: 1px solid blue;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may-mobile--2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 2rem;
+  gap: 2rem;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__img {
   grid-column: 2/3;
@@ -419,15 +425,12 @@
   font-family: "es-Gilroy-semibold";
   font-size: 30px;
   color: #001883;
-  outline: 1px solid red;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__txtCtn {
   grid-column: 1/3;
   grid-row: 2/3;
-  outline: 1px solid purple;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__text {
-  outline: 1px solid red;
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
@@ -452,7 +455,7 @@
   font-size: 18px;
   transition: 0.4s ease-in-out;
   display: block;
-  max-width: 150px;
+  width: 150px;
   text-align: center;
   margin: auto;
 }
@@ -463,11 +466,35 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow {
   display: none;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__itemCtn {
+  max-width: 80%;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__icon {
+  max-width: 50px;
+  max-height: 50px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__packshotCtn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 80%;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__slide--second {
+  display: none;
+}
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may {
     grid-template-columns: 1fr 2fr;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may-mobile {
+    display: none;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-may-mobile--2 {
     display: none;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may-desktop {

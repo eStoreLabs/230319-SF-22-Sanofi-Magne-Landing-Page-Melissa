@@ -12,8 +12,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr;
-    outline: 1px solid blue;
-    
+    &--2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-block: 2rem;
+      gap: 2rem;
+    }
   }
   &__img {
   grid-column: 2/3;
@@ -37,15 +42,12 @@
     font-family: $es-regular;
     font-size: 30px;
     color: $es-main-text-color;
-    outline: 1px solid red;
   }
   &__txtCtn {
     grid-column: 1/3;
     grid-row: 2/3;
-    outline: 1px solid purple;
   }
   &__text {
-    outline: 1px solid red;
     @include es-text-reset;
     font-family: $es-thin;
     font-size: 16px;
@@ -66,12 +68,36 @@
   &__arrow {
     display: none;
   }
+  &__itemCtn {
+    max-width: 80%;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__icon {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  &__packshotCtn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 80%;
+  }
+  &__slide--second {
+    display: none;
+  }
 }
 
 @media (min-width: 750px) {
   .es-may {
     &-mobile {
       display: none;
+      &--2 {
+        display: none;
+      }
     }
     &-desktop {
       display: block;
