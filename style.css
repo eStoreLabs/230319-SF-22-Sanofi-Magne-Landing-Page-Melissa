@@ -105,13 +105,6 @@
     overflow: unset;
     display: block;
   }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-slides {
-    max-width: unset;
-    width: unset;
-    overflow: unset;
-    display: flex;
-    flex-wrap: wrap;
-  }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-slide {
     width: unset;
     overflow: unset;

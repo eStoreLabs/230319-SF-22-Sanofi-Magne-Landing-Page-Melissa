@@ -14,6 +14,7 @@
     text-align: center;
    overflow: hidden; // hide side scroll
     position: relative;
+
   }
 
   .es-slides {
@@ -44,26 +45,27 @@
     
   }
 
-  @media screen and (min-width: 850px) {
-    .es-slider {
-      max-width: unset;
-      width: unset;
-      height: unset;
-      overflow: unset;
-      display: block;
-    }
-    .es-slides {
+    @media screen and (min-width: 850px) {
+      .es-slider {
         max-width: unset;
-      width: unset;
-      overflow: unset;
-      display: flex;
-      flex-wrap: wrap;
-
-    }
-    .es-slide {
+        width: unset;
+        height: unset;
+        overflow: unset;
+        display: block;
+      }
+  
+      // .es-slides {
+      //   max-width: unset;
+      //   width: unset;
+      //   overflow: unset;
+      //   display: flex;
+      //   flex-wrap: wrap;
+      // }
+  
+      .es-slide {
         width: unset;
         overflow: unset;
         margin: 10px;
         height: unset;
       }
-}
+    }
