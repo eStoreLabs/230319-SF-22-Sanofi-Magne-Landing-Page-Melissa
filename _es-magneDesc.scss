@@ -22,13 +22,14 @@
       align-items: center;
       margin-top: 20px;
     }
+    
     &__slide {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       min-width: 200px;
-      min-height: 350px;
+      min-height: 320px;
       &--badge {
         position: relative;
       }
@@ -67,6 +68,9 @@
       background-color: transparent;
       align-self: flex-start;
       margin-top: 100px;
+    }
+    &__imgCtn {
+      display: none;
     }
     &__img {
       max-width: 300px;
@@ -128,14 +132,44 @@
         text-align: center;
       }
     }
-    // &__button {
+    &__slider--mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //outline: 1px solid blue;
+      .es-magneDesc__scrollCtn {
+        //overflow-y: scroll;
+        //max-width: 250px;
+        //overflow: hidden;
+      }
+      .es-magneDesc__howCtn {
+        //outline: 5px solid red;
+        display: flex;
+        //overflow: scroll;
+        //max-width: 300px;
+        //overflow: hidden;
+        //flex-wrap: nowrap;
+      }
       
-    // }
+    .es-magneDesc__howItem {
+      min-height: unset;
+      
+    }
+    .es-magneDesc__how-text {
+      min-height: unset;
+    }
+    .es-magneDesc__button {
+      display: none;
+    }
+    .es-hide {
+      display: block;
+    }
+    }
   }
 
-  .es-magneDesc__howItem:hover .es-magneDesc__numberCtn {
-    animation: es-bounce 2s infinite;
-  }
+  // .es-magneDesc__howItem:hover .es-magneDesc__numberCtn {
+  //   animation: es-bounce 2s infinite;
+  // }
 
   @media (min-width: 750px) {
     .es-magneDesc {
@@ -156,8 +190,24 @@
           justify-content: center;
           align-items: center;
         }
+        &__slider--mobile {
+          .es-magneDesc__arrow {
+            display: none;
+          }
+          
+          .es-magneDesc__button {
+            @include es-button--secondary;
+            display: block;
+          }
+          .es-hide {
+            display: none;
+          }
+        }
         &__slide {
           min-width: 300px;
+        }
+        &__imgCtn {
+          display: block;
         }
         &__img {
           max-width: 300px;
