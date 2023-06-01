@@ -1,10 +1,8 @@
 .es-exercise {
+  padding: 14px;
     &__title {
       @include es-text-reset;
-      font-size: 25px;
-      text-align: center;
-      font-family: $es-title;
-      color: $es-main-text-color;
+      @include es-header--secondary--mobile;
     }
     &__slides {
       display: flex;
@@ -59,7 +57,8 @@
   @media (min-width: 750px) {
     .es-exercise {
         &__title {
-          font-size: 40px;
+          @include es-header--secondary--desktop;
+          text-align: center;
           sup {
             font-size: 18px;
           }

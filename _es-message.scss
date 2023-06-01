@@ -1,14 +1,13 @@
 .es-message {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding: 14px;
     &__title {
       @include es-text-reset;
-      font-size: 30px;
-      text-align: center;
-      font-family: $es-title;
-      color: $es-main-text-light-color;
+      @include es-header--secondary--mobile--light;
+      text-align: left;
       position: relative;
       &:after {
         content: url(./img/kv-sun.webp);
@@ -22,10 +21,7 @@
     }
     &__text {
       @include es-text-reset;
-      font-size: 16px;
-      text-align: center;
-      font-family: $es-title;
-      color: $es-main-text-color;
+      @include es-subheader--mobile;
     }
   }
 
@@ -33,7 +29,8 @@
     .es-message {
         &__title {
           margin-bottom: 20px;
-          font-size: 40px;
+          @include es-header--secondary--desktop--light;
+          text-align: center;
           &:after {
             content: url(./img/kv-sun.webp);
             display: block;
@@ -44,10 +41,8 @@
           }
         }
         &__text {
-          font-size: 20px;
+          @include es-subheader--desktop;
           text-align: center;
-          font-family: $es-title;
-          color: $es-main-text-color;
           margin-top: 0;
         }
       }

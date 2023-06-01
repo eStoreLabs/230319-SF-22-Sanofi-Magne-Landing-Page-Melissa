@@ -1,16 +1,15 @@
 .es-faq {
     margin-top: 80px;
+    padding: 14px;
     &__title {
       @include es-text-reset;
-      font-size: 25px;
-      text-align: center;
-      font-family: $es-title;
-      color: $es-main-text-color;
+      @include es-header--secondary--mobile;
+      text-align: left;
       margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
     }
     &__item {
       cursor: pointer;
@@ -51,7 +50,8 @@
   @media (min-width: 750px) {
     .es-faq {
         &__title {
-          font-size: 40px;
+          @include es-header--secondary--desktop;
+          text-align: center;
         }
       }
   }

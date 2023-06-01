@@ -183,7 +183,9 @@
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 25px;
+  font-family: "es-Bliss-heavy";
+  color: #001883;
+  font-size: 30px;
   margin-bottom: 60px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__subtitleCtn {
@@ -266,6 +268,11 @@
   #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__text {
     width: 50%;
   }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__title {
+    font-family: "es-Bliss-heavy";
+    color: #001883;
+    font-size: 42px;
+  }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__subtitleCtn {
     position: relative;
     align-self: flex-end;
@@ -328,7 +335,6 @@
     font-size: 16px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-kv__title {
-    font-size: 40px;
     margin-bottom: 0;
     margin-top: -80px;
   }
@@ -423,8 +429,8 @@
   line-height: 1.3;
   margin-top: 10px;
   font-family: "es-Gilroy-semibold";
-  font-size: 30px;
   color: #001883;
+  font-size: 30px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__txtCtn {
   grid-column: 1/3;
@@ -435,8 +441,8 @@
   line-height: 1.3;
   margin-top: 10px;
   font-family: "es-Gilroy-regular";
-  font-size: 16px;
   color: #001883;
+  font-size: 16px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__text--line {
   text-decoration: underline;
@@ -502,6 +508,9 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may__title {
     width: unset;
+    font-family: "es-Gilroy-semibold";
+    color: #001883;
+    font-size: 42px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may__img {
     grid-column: 1/2;
@@ -584,19 +593,16 @@
   }
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-message {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 14px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-message__title {
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #78a9df;
+  font-size: 30px;
+  text-align: left;
   position: relative;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-message__title:after {
@@ -612,15 +618,17 @@
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 16px;
-  text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 16px;
 }
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-message__title {
     margin-bottom: 20px;
-    font-size: 40px;
+    font-family: "es-Gilroy-semibold";
+    color: #78a9df;
+    font-size: 42px;
+    text-align: center;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-message__title:after {
     content: url(./img/kv-sun.webp);
@@ -631,10 +639,10 @@
     transform: scale(0.7);
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-message__text {
+    font-family: "es-Gilroy-semibold";
+    color: #001883;
     font-size: 20px;
     text-align: center;
-    font-family: "es-Bliss-heavy";
-    color: #001883;
     margin-top: 0;
   }
 }
@@ -643,6 +651,7 @@
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
+  padding: 14px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__container {
   display: flex;
@@ -710,6 +719,11 @@
   font-family: "es-Gilroy-semibold";
   font-size: 18px;
   transition: 0.4s ease-in-out;
+  display: block;
+  width: 150px;
+  text-align: center;
+  margin: auto;
+  margin: unset;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__link:hover {
   background-color: #001e61;
@@ -732,10 +746,10 @@
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
   font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 30px;
+  text-align: left;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__howCtn {
   display: flex;
@@ -776,8 +790,9 @@
   line-height: 1.3;
   margin-top: 10px;
   text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 16px;
   min-height: 60px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__how-text--hidden {
@@ -791,24 +806,6 @@
   font-family: "es-Gilroy-semibold";
   font-size: 12px;
   text-align: center;
-}
-#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__button {
-  font-size: 16px;
-  line-height: 1.3;
-  margin-top: 10px;
-  border: none;
-  background-color: #001e61;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-family: "es-Gilroy-semibold";
-  transition: 0.4s ease-in-out;
-}
-#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__button:hover {
-  background-color: #fff;
-  outline: 2px solid #001e61;
-  color: #001e61;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__howItem:hover .es-magneDesc__numberCtn {
   animation: es-bounce 2s infinite;
@@ -840,6 +837,13 @@
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__howItem {
     min-height: 300px;
   }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__title {
+    font-family: "es-Gilroy-semibold";
+    color: #001883;
+    font-size: 42px;
+    text-align: center;
+    max-width: 24ch;
+  }
 }
 @media (min-width: 950px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
@@ -855,6 +859,7 @@
   min-height: 650px;
   display: grid;
   align-content: center;
+  padding: 14px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__ctn {
   display: flex;
@@ -867,10 +872,10 @@
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 30px;
+  text-align: left;
   word-wrap: normal;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__item {
@@ -906,9 +911,10 @@
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  text-align: center;
-  font-family: "es-Gilroy-semibold";
+  text-align: left;
+  font-family: "es-Gilroy-regular";
   color: #001883;
+  font-size: 16px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__dataInput {
   border-radius: 20px;
@@ -934,16 +940,15 @@
   text-decoration: none;
   color: #001e61;
   border: 2px solid #001e61;
-  background-color: transparent;
   border-radius: 20px;
-  padding: 5px 30px;
+  padding: 5px 20px;
   font-family: "es-Gilroy-semibold";
-  font-size: 14px;
+  font-size: 18px;
   transition: 0.4s ease-in-out;
-  width: 130px;
-  height: 30px;
-  cursor: pointer;
-  position: relative;
+  display: block;
+  width: 150px;
+  text-align: center;
+  margin: auto;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__submitBtn:hover {
   background-color: #001e61;
@@ -1016,6 +1021,10 @@
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__title {
     padding-top: unset;
+    font-family: "es-Gilroy-semibold";
+    color: #001883;
+    font-size: 42px;
+    text-align: center;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__returnBtn {
     margin: 20px 0 0 0;
@@ -1031,25 +1040,23 @@
   background-image: none;
   width: 100%;
   min-height: 750px;
-  padding: 20px 10px;
+  padding: 14px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__title {
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 30px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__desc {
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 16px;
-  text-align: center;
   font-family: "es-Gilroy-regular";
   color: #001883;
+  font-size: 16px;
   margin: 15px auto;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__desc span {
@@ -1081,6 +1088,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__contentCtn {
   max-width: 400px;
   min-height: 150px;
+  text-align: center;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__contentCtn--6 {
   align-self: flex-start;
@@ -1109,17 +1117,17 @@
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 20px;
   font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__sliderDesc {
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 16px;
   font-family: "es-Gilroy-regular";
   color: #001883;
+  font-size: 16px;
   min-height: 110px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__link {
@@ -1162,7 +1170,10 @@
     padding-top: 70px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care__title {
-    font-size: 40px;
+    font-family: "es-Gilroy-semibold";
+    color: #001883;
+    font-size: 42px;
+    text-align: center;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care__desc {
     font-size: 20px;
@@ -1222,10 +1233,10 @@
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #78a9df;
+  font-size: 30px;
+  padding: 14px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__textCtn {
   font-size: 16px;
@@ -1275,6 +1286,7 @@
   margin-top: 10px;
   color: #001883;
   font-family: "es-Gilroy-semibold";
+  font-size: 16px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__slides {
   display: flex;
@@ -1309,6 +1321,11 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-why__title {
+    font-family: "es-Gilroy-semibold";
+    color: #78a9df;
+    font-size: 42px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__infoCtn {
     background-position: center;
@@ -1354,7 +1371,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 50px 0;
+  padding: 50px 14px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how::after {
   content: url(./img/es-how-happyFace.webp);
@@ -1371,10 +1388,9 @@
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 30px;
   position: relative;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-how__title::after {
@@ -1397,12 +1413,10 @@
   max-width: 300px;
   align-self: flex-end;
 }
-#es-sanofi.es-sanofi #es-magne.es-magne .es-how__listItem {
-  font-size: 16px;
-  line-height: 1.3;
-  margin-top: 10px;
-  font-family: "es-Gilroy-semibold";
+#es-sanofi.es-sanofi #es-magne.es-magne .es-how__list {
+  font-family: "es-Gilroy-regular";
   color: #001883;
+  font-size: 16px;
 }
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-how {
@@ -1420,8 +1434,10 @@
     width: 60%;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-how__title {
-    font-size: 40px;
-    text-align: left;
+    font-family: "es-Gilroy-semibold";
+    color: #001883;
+    font-size: 42px;
+    text-align: center;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-how__title::after {
     top: 0;
@@ -1438,14 +1454,16 @@
     font-size: 20px;
   }
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms {
+  padding: 14px;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__title {
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 25px;
-  text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 30px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__textCtn {
   background-color: #78a9df;
@@ -1546,14 +1564,18 @@
   line-height: 1.3;
   margin-top: 10px;
   text-align: left;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
+  color: #001883;
+  font-size: 18px;
   padding-left: 140px;
-  font-size: 14px;
   margin: 10px 0;
 }
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__title {
-    font-size: 40px;
+    font-family: "es-Gilroy-semibold";
+    color: #001883;
+    font-size: 42px;
+    text-align: center;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__subtitle {
     font-size: 16px;
@@ -1746,14 +1768,16 @@
     margin-top: -200px;
   }
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise {
+  padding: 14px;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title {
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 25px;
-  text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 30px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__slides {
   display: flex;
@@ -1811,7 +1835,10 @@
 }
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title {
-    font-size: 40px;
+    font-family: "es-Gilroy-semibold";
+    color: #001883;
+    font-size: 42px;
+    text-align: center;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__title sup {
     font-size: 18px;
@@ -1831,20 +1858,17 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq {
   margin-top: 80px;
+  padding: 14px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__title {
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 25px;
-  text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 30px;
+  text-align: left;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__item {
   cursor: pointer;
@@ -1886,20 +1910,22 @@
 }
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-faq__title {
-    font-size: 40px;
+    font-family: "es-Gilroy-semibold";
+    color: #001883;
+    font-size: 42px;
+    text-align: center;
   }
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles {
-  padding: 10px;
+  padding: 14px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__title {
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 25px;
-  text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 30px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__ctn {
   display: flex;
@@ -1921,30 +1947,36 @@
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 25px;
-  text-align: center;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
   color: #001883;
+  font-size: 16px;
   margin-top: 20px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__link {
   text-decoration: none;
-  background-color: #001e61;
-  color: #fff;
+  color: #001e61;
+  border: 2px solid #001e61;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   font-family: "es-Gilroy-semibold";
-  font-size: 14px;
+  font-size: 18px;
   transition: 0.4s ease-in-out;
+  display: block;
+  width: 150px;
+  text-align: center;
+  margin: auto;
+  width: 210px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__link:hover {
-  color: #001e61;
-  outline: 2px solid #001e61;
-  background-color: #fff;
+  background-color: #001e61;
+  color: #fff;
 }
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__title {
-    font-size: 40px;
+    font-family: "es-Gilroy-semibold";
+    color: #001883;
+    font-size: 42px;
+    text-align: center;
   }
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-productsDesc {
@@ -1966,7 +1998,7 @@
   font-size: x-small;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims {
-  padding: 10px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2001,8 +2033,9 @@
   font-size: 16px;
   line-height: 1.3;
   margin-top: 10px;
-  font-size: 25px;
-  font-family: "es-Bliss-heavy";
+  font-family: "es-Gilroy-semibold";
+  color: #001883;
+  font-size: 18px;
   color: #78a9df;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__number {

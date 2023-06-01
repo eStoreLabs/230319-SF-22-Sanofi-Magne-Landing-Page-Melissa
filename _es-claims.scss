@@ -1,5 +1,5 @@
 .es-claims {
-    padding: 10px;
+    padding: 14px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -27,8 +27,7 @@
     }
     &__warning {
       @include es-text-reset;
-      font-size: 25px;
-      font-family: $es-title;
+      @include es-text--important;
       color: $es-main-text-light-color;
     }
     &__number {

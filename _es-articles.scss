@@ -1,11 +1,8 @@
 .es-articles {
-    padding: 10px;
+    padding: 14px;
     &__title {
       @include es-text-reset;
-      font-size: 25px;
-      text-align: center;
-      font-family: $es-title;
-      color: $es-main-text-color;
+      @include es-header--secondary--mobile;
     }
     &__ctn {
       display: flex;
@@ -25,33 +22,21 @@
     }
     &__subtitle {
       @include es-text-reset;
-      font-size: 25px;
-      text-align: center;
-      font-family: $es-title;
-      color: $es-main-text-color;
+      @include es-subheader--mobile;
+      
       margin-top: 20px;
     }
     &__link {
-      text-decoration: none;
-      background-color: $es-dark-color;
-      color: #fff;
-      border-radius: 20px;
-      padding: 10px 20px;
-      font-family: $es-regular;
-      font-size: 14px;
-      transition: 0.4s ease-in-out;
-      &:hover {
-        color: $es-dark-color;
-        outline: 2px solid $es-dark-color;
-        background-color: #fff;
-      }
+      @include es-button--primary;
+      width: 210px;
     }
   }
 
   @media (min-width: 750px) {
     .es-articles {
       &__title {
-        font-size: 40px;
+        @include es-header--secondary--desktop;
+        text-align: center;
       }
     }
   }
