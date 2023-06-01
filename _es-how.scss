@@ -21,14 +21,7 @@
       @include es-text-reset;
       @include es-header--secondary--mobile;
       position: relative;
-      &::after {
-        content: url(./img/es-how-sadFace.webp);
-        display: block;
-        position: absolute;
-        right: 0;
-        top: -150%;
-        transform: scale(0.6);
-      }
+      
     }
     &__desc {
       @include es-text-reset;
@@ -68,6 +61,12 @@
           @include es-header--secondary--desktop;
           text-align: center;
           &::after {
+            
+              content: url(./img/es-how-sadFace.webp);
+              display: block;
+              position: absolute;
+              
+            
             top: 0;
             right: -10%;
             transform: scale(1);
