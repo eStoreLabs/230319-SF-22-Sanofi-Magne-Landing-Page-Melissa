@@ -138,14 +138,13 @@
         </section>
 
         <section class="es-may">
-            <picture class="es-may__img">
-              <source media="(max-width:750px)" srcset="./img/es-may-img-mobile.png">
-              <img
+          <div class="es-may-mobile">
+            <img class="es-may__img--decoration" src="./img/es-heart.png" alt="">
+            <p class="es-may__title">Nie pozwól, <br/> by stres zepsuł <br />Twoją Majówkę!</p>
+            <img class="es-may__img" src="./img/es-may-img-mobile.png">
+          </div>
             
-            src="./img/es-may-slider-img.webp"
-            alt="Źdźbła trawy w zbliżeniu makro, niedobór magnezu zwiększa podatność na stres i może skutkować uczuciem zmęczenia. Uśmiechnięta kobieta w kapeluszu. W czym pomaga magnez? Magnez pomaga na skurcze mięśni, na stres i na nerwowość."
-          />
-            </picture>
+          <img class="es-may-desktop" src="./img/es-may-slider-img.webp" alt="Źdźbła trawy w zbliżeniu makro, niedobór magnezu zwiększa podatność na stres i może skutkować uczuciem zmęczenia. Uśmiechnięta kobieta w kapeluszu. W czym pomaga magnez? Magnez pomaga na skurcze mięśni, na stres i na nerwowość."/>
             
           <div class="es-slides__Ctn">
             <!-- Slideshow container -->
@@ -154,11 +153,12 @@
             <div class="es-mySlides">
               <div class="es-may__slide">
                 <div class="es-may__content">
-                  <p class="es-may__title">
+                  <p class="es-may__title es-may-desktop">
                     Nie pozwól, by stres zepsuł <br />
                     Twoją Majówkę!
                   </p>
-                  <p class="es-may__text">
+                  <div class="es-may__txtCtn">
+                    <p class="es-may__text">
                     Maj zasługuje na miano najlepszego miesiąca w&nbsp;roku!
                     Majówka, weekendowe wyprawy, festiwale na świeżym powietrzu,
                     odpoczynek na&nbsp;działce…</p>
@@ -186,6 +186,8 @@
                     class="es-may__link"
                     >Sprawdź</a
                   >
+                  </div>
+                  
                 </div>
               </div>
             </div>
