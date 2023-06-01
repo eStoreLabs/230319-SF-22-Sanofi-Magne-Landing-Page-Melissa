@@ -1,0 +1,175 @@
+.es-calculator {
+    //background-image: none;
+    background-image: url(./img/es-calculator-bg.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin-block: 50px;
+    min-height: 650px;
+    display: grid;
+      align-content: center;
+    
+    &__ctn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      
+    }
+    &__title {
+      @include es-text-reset;
+      font-size: 30px;
+      text-align: center;
+      font-family: $es-title;
+      color: $es-main-text-color;
+      word-wrap: normal;
+      //padding-top: 50px;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__select {
+      border-radius: 20px;
+      border: 1px solid $es-dark-color;
+      padding: 10px;
+      margin: 10px;
+      font-family: $es-regular;
+      color: $es-main-text-color;
+      background-color: #fff;
+      cursor: pointer;
+      min-width: 320px;
+      position: relative;
+      appearance: none;
+      background-image: url(./img/es-select-arrow.png);
+      background-repeat: no-repeat;
+      background-position: 99%;
+      background-size: 8%;
+      &:focus, &:active {
+        outline: 2px solid #dfae78;
+        border-color: #dfae78;
+      }
+    }
+
+    &__selectLabel {
+      @include es-text-reset;
+      text-align: center;
+      font-family: $es-regular;
+      color: $es-main-text-color;
+    }
+    &__dataInput {
+      border-radius: 20px;
+      border: 1px solid $es-dark-color;
+      padding: 10px;
+      margin: 10px;
+      font-family: $es-regular;
+      color: $es-main-text-color;
+      background-color: #fff;
+      cursor: pointer;
+      min-width: 320px;
+      &:focus {
+        outline: 2px solid #dfae78;
+        border-color: #dfae78;
+      }
+      &:active {
+        outline: 2px solid #dfae78;
+        border-color: #dfae78;
+      }
+    }
+    &__submitBtn {
+      margin: 50px 0;
+      text-decoration: none;
+      color: $es-dark-color;
+      border: 2px solid $es-dark-color;
+      background-color: transparent;
+      border-radius: 20px;
+      padding: 5px 30px;
+      font-family: $es-regular;
+      font-size: 14px;
+      transition: 0.4s ease-in-out;
+      width: 130px;
+      height: 30px;
+      cursor: pointer;
+      position: relative;
+      &:hover {
+        background-color: $es-dark-color;
+        color: #fff;
+      }
+      &::after {
+        content: url(./img/es-line.webp);
+        position: absolute;
+        top: -30px;
+        left: -150%;
+        transform: scale(0.6);
+      }
+    }
+    &__resultText {
+      @include es-text-reset;
+      text-align: center;
+      font-family: $es-regular;
+      color: $es-main-text-color;
+    }
+    &__result {
+      @include es-text-reset;
+      font-size: 30px;
+      text-align: center;
+      font-family: $es-title;
+      color: $es-main-text-color;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+    &__resultClaim {
+      @include es-text-reset;
+      font-size: 12px;
+      text-align: center;
+      font-family: $es-thin;
+      color: $es-main-text-color;
+      margin: 0;
+      max-width: 350px;
+    }
+    &__returnBtn {
+      margin: 50px 0;
+      text-decoration: none;
+      color: $es-dark-color;
+      border: 2px solid $es-dark-color;
+      background-color: transparent;
+      border-radius: 20px;
+      padding: 5px 30px;
+      font-family: $es-regular;
+      font-size: 14px;
+      transition: 0.4s ease-in-out;
+      width: 200px;
+      height: 30px;
+      cursor: pointer;
+      position: relative;
+      &:hover {
+        background-color: $es-dark-color;
+        color: #fff;
+      }
+      &::after {
+        content: url(./img/es-line.webp);
+        position: absolute;
+        top: -30px;
+        left: -60%;
+        transform: scale(0.6);
+      }
+    }
+  }
+
+  @media (min-width: 750px) {
+    .es-calculator {
+        
+        &__title {
+        padding-top: unset;
+        }
+        &__returnBtn {
+          margin: 20px 0 0 0;
+        }
+        &__submitBtn {
+          margin: 20px 0 0 0;
+        }
+      }
+  }

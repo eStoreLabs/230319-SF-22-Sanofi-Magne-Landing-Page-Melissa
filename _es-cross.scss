@@ -1,0 +1,30 @@
+
+.es-cross {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      //min-width: 300px;
+    }
+    &__img {
+      max-width: 210px;
+    }
+    &__name {
+      @include es-text-reset;
+      font-family: $es-regular;
+      text-align: center;
+      color: $es-dark-color;
+    }
+    &__link {
+      @include es-button--primary;
+      margin: unset;
+    }
+  }

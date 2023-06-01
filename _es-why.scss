@@ -1,0 +1,120 @@
+.es-why {
+    margin-top: 50px;
+    &__title {
+      @include es-text-reset;
+      font-size: 30px;
+      text-align: center;
+      font-family: $es-title;
+      color: $es-main-text-light-color;
+    }
+    &__textCtn {
+      @include es-text-reset;
+      background-color: $es-main-text-light-color;
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 50px;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__text {
+      color: #fff;
+      font-family: $es-regular;
+      text-align: center;
+      margin: 0;
+      &--light {
+        font-family: $es-thin;
+      }
+    }
+    &__contentCtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__infoCtn {
+      background-image: url(./img/es-why__bg.webp);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      min-height: 200px;
+      padding: 0px 30px;
+      margin-top: -10px;
+      width: 100%;
+      display: flex;
+      // justify-content: flex-start;
+      align-items: center;
+    }
+    &__info {
+      @include es-text-reset;
+      color: $es-main-text-color;
+      font-family: $es-regular;
+    }
+    &__slides {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    &__slideText {
+      @include es-text-reset;
+      color: $es-main-text-color;
+      font-family: $es-thin;
+      text-align: center;
+      padding: 10px;
+      width: 250px;
+      min-height: 100px;
+      &--title {
+        font-family: $es-regular;
+        min-height: 40px;
+      }
+    }
+    &__arrow {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .es-why {
+        &__contentCtn {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        &__infoCtn {
+          // background-image: url(./img/es-why__bg.webp);
+          // background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
+          max-width: 35%;
+          margin-top: -20px;
+          min-height: 350px;
+          padding-inline: 50px;
+        }
+        &__info {
+          font-size: 25px;
+        }
+        &__slides {
+          min-width: 50%;
+        }
+        &__slideText {
+          width: 400px;
+          font-size: 20px;
+          min-height: 150px;
+          sup {
+            font-size: 14px;
+          }
+          &--title {
+            font-size: 25px;
+            min-height: 40px;
+          }
+        }
+      }
+  }

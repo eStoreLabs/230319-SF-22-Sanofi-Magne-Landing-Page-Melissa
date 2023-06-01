@@ -1,0 +1,265 @@
+.es-kv {
+    background-image: url(./img/kv-bg.webp);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    min-height: 500px;
+    position: relative;
+    &__nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.678);
+      border-radius: 100% 0% 48% 52% / 0% 34% 66% 100%;
+      padding: 10px 5px;
+      width: 100%;
+      z-index: 1;
+    }
+    &__navCtn {
+      display: flex;
+      flex-direction: column;
+      //z-index: 10;
+      padding: 0;
+      
+    }
+    &__navItem {
+      min-width: 160px;
+      text-align: center;
+      list-style: none;
+      padding: 10px;
+    }
+    &__navLink {
+      @include es-text-reset;
+      text-decoration: none;
+      color: $es-main-text-color;
+      position: relative;
+      font-family: $es-regular;
+      font-size: 16px;
+      cursor: pointer;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1.5px;
+        width: 100%;
+        background-color: $es-main-text-color;
+      }
+      &:nth-child(1) {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      min-height: 450px;
+      position: relative;
+      font-family: $es-title;
+      color: $es-main-text-color;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      
+    }
+    &__title {
+      @include es-text-reset;
+      font-size: 25px;
+      margin-bottom: 60px;
+    }
+    &__subtitleCtn {
+      position: absolute;
+      bottom: 24px;
+      left: 0.4rem;
+      background-image: url(./img/es-kv-text-bg.webp);
+      background-repeat: no-repeat;
+      background-size: contain;
+      min-width: 190px;
+      min-height: 137px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+    &__subtitleBadge {
+      width: 60px;
+      position: absolute;
+      top: -30px;
+      left: 30px;
+    }
+    &__subtitle {
+      @include es-text-reset;
+      font-size: 15px;
+      text-align: right;
+      margin-top: 35px;
+      margin-right: -24px;
+    }
+    &__imgCtn {
+      position: absolute;
+      // z-index: 0;
+      right: 0.5rem;
+      bottom: 0;
+      width: 75%;
+      &:after {
+        content: url("./img/kv-sun.webp");
+        display: block;
+        scale: 0.6;
+        position: absolute;
+        right: -20px;
+        bottom: -70px;
+      }
+    }
+    &__img {
+      // clip-path: circle(39.6% at 50% 50%);
+      //width: 100%;
+      // max-height: 550px;
+      // clip-path: url(./img/es-leaf.svg);
+      // background-size: cover;
+    }
+    
+  }
+
+  @media (min-width: 750px) {
+    .es-kv {
+        max-height: 600px;
+        &__navCtn {
+          display: flex;
+          flex-direction: row;
+          //flex-wrap: wrap;
+        }
+        &__navItem {
+          min-width: 100px;
+          max-width: 100px;
+          padding: 5px;
+        }
+        &__navLink {
+          font-size: 12px;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background-color: $es-main-text-color;
+          }
+          &:nth-child(1) {
+            &::after {
+              display: none;
+            }
+          }
+        }
+        &__content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        &__text {
+          width: 50%;
+        }
+        &__subtitleCtn {
+          position: relative;
+          align-self: flex-end;
+          margin-bottom: -61px;
+          margin-right: -41px;
+          width: 300px;
+          min-height: 200px;
+          &:before {
+            display: block;
+            content: url(./img/kv-sun.webp);
+            position: absolute;
+            left: -200px;
+          }
+        }
+        &__subtitle {
+          font-size: 17px;
+          text-align: left;
+          margin-top: -14px;
+          margin-right: -37px;
+        }
+        &__subtitleBadge {
+          width: 90px;
+          position: absolute;
+          top: -40px;
+          left: 40px;
+        }
+       &__imgCtn {
+        position: unset;
+        width: unset;
+        &::after {
+        content: url(./img/es-header-line.webp);
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        }
+        }
+        &__img {
+          max-width: 100%;
+          max-height: 550px;
+        }
+      }
+  }
+
+  @media (min-width: 950px) {
+    .es-kv {
+        
+        &__nav {
+          position: absolute;
+          &::after {
+            content: url(./img/nav-line.webp);
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+        }
+        &__navItem {
+          min-width: 160px;
+          max-width: 160px;
+          padding: 10px;
+        }
+        &__navLink {
+          font-size: 16px;
+        }
+        // &__img {
+        //   clip-path: none;
+        // }
+        // &__text {
+        //   display: flex;
+        //   flex-direction: column;
+        //   justify-content: center;
+        //   align-items: center;
+        //   width: 50%;
+        //   font-family: $es-title;
+        //   color: $es-main-text-color;
+        //   position: relative;
+        // }
+        &__title {
+          font-size: 40px;
+          margin-bottom: 0;
+          margin-top: -80px;
+        }
+        &__subtitle {
+          font-size: 20px;
+          margin-top: 21px;
+        }
+        // &__subtitleCtn {
+        //   position: absolute;
+        //   bottom: -20px;
+        //   right: -100px;
+        //   &::after {
+        //     display: block;
+        //     content: url(./img/kv-sun.webp);
+        //     position: absolute;
+        //     left: -200px;
+        //   }
+        // }
+      }
+  }
