@@ -931,7 +931,6 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  margin-block: 50px;
   min-height: 650px;
   display: grid;
   align-content: center;
@@ -958,7 +957,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__select {
   border-radius: 20px;
@@ -969,7 +968,7 @@
   color: #001883;
   background-color: #fff;
   cursor: pointer;
-  min-width: 320px;
+  min-width: 260px;
   position: relative;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1001,7 +1000,7 @@
   color: #001883;
   background-color: #fff;
   cursor: pointer;
-  min-width: 320px;
+  min-width: 260px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__dataInput:focus {
   outline: 2px solid #dfae78;
@@ -1102,6 +1101,15 @@
     color: #001883;
     font-size: 42px;
     text-align: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__item {
+    align-items: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__select {
+    min-width: 320px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__dataInput {
+    min-width: 320px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator__returnBtn {
     margin: 20px 0 0 0;

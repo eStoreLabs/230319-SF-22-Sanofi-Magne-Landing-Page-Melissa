@@ -4,7 +4,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    margin-block: 50px;
+    //margin-block: 50px;
     min-height: 650px;
     display: grid;
       align-content: center;
@@ -28,7 +28,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
+      
     }
     &__select {
       border-radius: 20px;
@@ -39,7 +40,7 @@
       color: $es-main-text-color;
       background-color: #fff;
       cursor: pointer;
-      min-width: 320px;
+      min-width: 260px;
       position: relative;
       appearance: none;
       background-image: url(./img/es-select-arrow.png);
@@ -66,7 +67,7 @@
       color: $es-main-text-color;
       background-color: #fff;
       cursor: pointer;
-      min-width: 320px;
+      min-width: 260px;
       &:focus {
         outline: 2px solid #dfae78;
         border-color: #dfae78;
@@ -147,6 +148,15 @@
         padding-top: unset;
         @include es-header--secondary--desktop;
         text-align: center;
+        }
+        &__item {
+          align-items: center;
+        }
+        &__select {
+          min-width: 320px;
+        }
+        &__dataInput {
+          min-width: 320px;
         }
         &__returnBtn {
           margin: 20px 0 0 0;
