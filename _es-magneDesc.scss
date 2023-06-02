@@ -165,6 +165,12 @@
       display: block;
     }
     }
+    &__slide--mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 250px;
+    }
   }
 
   // .es-magneDesc__howItem:hover .es-magneDesc__numberCtn {
@@ -191,9 +197,9 @@
           align-items: center;
         }
         &__slider--mobile {
-          .es-magneDesc__arrow {
-            display: none;
-          }
+          // .es-magneDesc__arrow {
+          //   display: none;
+          // }
           
           .es-magneDesc__button {
             @include es-button--secondary;

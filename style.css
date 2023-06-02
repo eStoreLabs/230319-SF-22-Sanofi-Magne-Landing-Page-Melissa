@@ -82,6 +82,11 @@
   scroll-snap-type: x mandatory;
   scroll-snap-stop: always;
   scroll-snap-align: center;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-slides::-webkit-scrollbar {
+  display: none;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-slide {
   display: flex;
@@ -520,6 +525,7 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may-desktop {
     display: block;
+    height: 100%;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may__title {
     width: unset;
@@ -871,6 +877,12 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__slider--mobile .es-hide {
   display: block;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__slide--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 250px;
+}
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__container {
     display: flex;
@@ -888,9 +900,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__slider--mobile .es-magneDesc__arrow {
-    display: none;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__slider--mobile .es-magneDesc__button {
     font-size: 16px;
