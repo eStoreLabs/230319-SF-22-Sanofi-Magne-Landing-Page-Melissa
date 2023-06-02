@@ -1923,7 +1923,10 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-  margin-top: 35px;
+  margin-top: 100px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__imgCtn img {
+  max-height: 100%;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descCtn {
   padding: 20px;
@@ -1973,6 +1976,19 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__slides {
     align-items: center;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__imgCtn {
+    width: 45%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__imgCtn img {
+    max-width: 100%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descCtn {
+    width: 55%;
+    padding-inline: 22px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__descList {
+    padding-inline: 22px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__arrow {
     margin-top: unset;
