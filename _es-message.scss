@@ -1,53 +1,73 @@
 .es-message {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding: 14px;
+    &--desktop {
+      display: none;
+    }
+    &--mobile {
+      display: grid;
+      grid-template-columns: 0.6fr 0.4fr;
+      align-items: center;
+      justify-content: space-between;
+      .es-message__img {
+        grid-column: 2/3;
+        min-width: 200px;
+        margin-right: -30px;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
     &__title {
       @include es-text-reset;
-      font-size: 30px;
-      text-align: center;
-      font-family: $es-title;
-      color: $es-main-text-light-color;
+      @include es-header--secondary--mobile--light;
+      text-align: left;
       position: relative;
-      &:after {
+      &:before{
         content: url(./img/kv-sun.webp);
         display: block;
         position: absolute;
-        right: -150px;
-        top: -50px;
-        transform: scale(0.7);
-        display: none;
+        left: -25px;
+        top: -136px;
+        transform: scale(0.4);
       }
     }
     &__text {
       @include es-text-reset;
-      font-size: 16px;
-      text-align: center;
-      font-family: $es-title;
-      color: $es-main-text-color;
+      @include es-subheader--mobile;
     }
   }
 
   @media (min-width: 750px) {
     .es-message {
+      &--mobile {
+        display: none;
+      }
+      &--desktop {
+        display: block;
+      }
         &__title {
           margin-bottom: 20px;
-          font-size: 40px;
+          @include es-header--secondary--desktop--light;
+          text-align: center;
           &:after {
             content: url(./img/kv-sun.webp);
             display: block;
             position: absolute;
-            right: -150px;
-            top: -50px;
+            right: -3px;
+            top: -96px;
             transform: scale(0.7);
+          }
+          &:before {
+            display: none;
           }
         }
         &__text {
-          font-size: 20px;
+          @include es-subheader--desktop;
           text-align: center;
-          font-family: $es-title;
-          color: $es-main-text-color;
           margin-top: 0;
         }
       }

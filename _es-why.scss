@@ -1,11 +1,19 @@
 .es-why {
-    margin-top: 50px;
+    //margin-top: 50px;
+    position: relative;
+    z-index: 0;
+    &:after {
+      content: url("./img/es-symptoms-bg.webp");
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      z-index: -1;
+    }
+    
     &__title {
       @include es-text-reset;
-      font-size: 30px;
-      text-align: center;
-      font-family: $es-title;
-      color: $es-main-text-light-color;
+      @include es-header--secondary--mobile--light;
+      padding: 14px;
     }
     &__textCtn {
       @include es-text-reset;
@@ -13,7 +21,7 @@
       width: 90%;
       margin: 0 auto;
       padding: 20px;
-      border-radius: 50px;
+      border-radius: 999px;
       min-height: 100px;
       display: flex;
       flex-direction: column;
@@ -41,7 +49,7 @@
       background-position: left;
       background-size: contain;
       min-height: 200px;
-      padding: 0px 30px;
+      padding: 0px 20px;
       margin-top: -10px;
       width: 100%;
       display: flex;
@@ -51,13 +59,22 @@
     &__info {
       @include es-text-reset;
       color: $es-main-text-color;
-      font-family: $es-regular;
+      font-family: $es-title;
+      font-size: 16px;
     }
     &__slides {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      position: relative;
+      &:before {
+        content: url("./img/es-how-sadFace.webp");
+        transform: scale(0.6);
+        position: absolute;
+        top: -100px;
+        right: 0;
+      }
     }
     &__slideText {
       @include es-text-reset;
@@ -82,11 +99,22 @@
 
   @media (min-width: 750px) {
     .es-why {
+      &:after {
+        content: "";
+      }
         &__contentCtn {
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
           align-items: center;
+        }
+        &__title {
+          @include es-header--secondary--desktop--light;
+          text-align: center;
+        }
+        &__textCtn {
+          border-radius: 50px;
+          max-width: 70%;
         }
         &__infoCtn {
           // background-image: url(./img/es-why__bg.webp);
@@ -96,13 +124,17 @@
           max-width: 35%;
           margin-top: -20px;
           min-height: 350px;
-          padding-inline: 50px;
+          padding-inline: 21px;
         }
         &__info {
-          font-size: 25px;
+          font-size: 20px;
         }
         &__slides {
           min-width: 50%;
+          margin: auto;
+          &:before {
+            content: "";
+          }
         }
         &__slideText {
           width: 400px;
@@ -117,4 +149,11 @@
           }
         }
       }
+  }
+  @media (min-width: 950px) {
+    .es-why {
+      &__info {
+        font-size: 25px;
+      }
+    }
   }

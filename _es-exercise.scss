@@ -1,10 +1,8 @@
 .es-exercise {
+  padding: 14px;
     &__title {
       @include es-text-reset;
-      font-size: 25px;
-      text-align: center;
-      font-family: $es-title;
-      color: $es-main-text-color;
+      @include es-header--secondary--mobile;
     }
     &__slides {
       display: flex;
@@ -22,7 +20,13 @@
       cursor: pointer;
       border: none;
       background-color: transparent;
-      margin-top: 35px;
+      margin-top: 100px;
+      z-index: 1;
+    }
+    &__imgCtn {
+      img {
+        max-height: 100%;
+      }
     }
     &__descCtn {
       padding: 20px;
@@ -59,13 +63,27 @@
   @media (min-width: 750px) {
     .es-exercise {
         &__title {
-          font-size: 40px;
+          @include es-header--secondary--desktop;
+          text-align: center;
           sup {
             font-size: 18px;
           }
         }
         &__slides {
           align-items: center;
+        }
+        &__imgCtn {
+          width: 45%;
+          img {
+            max-width: 100%;
+          }
+        }
+        &__descCtn {
+          width: 55%;
+          padding-inline: 22px;
+        }
+        &__descList {
+          padding-inline: 22px;
         }
         &__arrow {
           margin-top: unset;

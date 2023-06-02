@@ -2,20 +2,14 @@
     background-image: none;
     width: 100%;
     min-height: 750px;
-    padding: 20px 10px;
+    padding: 14px;
     &__title {
       @include es-text-reset;
-      font-size: 30px;
-      text-align: center;
-      font-family: $es-title;
-      color: $es-main-text-color;
+      @include es-header--secondary--mobile;
     }
     &__desc {
       @include es-text-reset;
-      font-size: 16px;
-      text-align: center;
-      font-family: $es-thin;
-      color: $es-main-text-color;
+      @include es-text--main;
       margin: 15px auto;
       span {
         font-family: $es-regular;
@@ -37,25 +31,27 @@
     }
     &__imgCtn {
       max-width: 300px;
+      min-height: 182px;
       position: relative;
       
     }
     &__img--height {
-      height: 300px;
+      max-width: 80%;
       display: grid;
       place-items: center;
     }
     &__contentCtn {
       max-width: 400px;
       min-height: 150px;
-      &--6 {
-        align-self: flex-start;
-      }
+      text-align: center;
+      // &--6 {
+      //   align-self: flex-start;
+      // }
     }
     &__number {
       position: absolute;
-      top: 20px;
-      right: 50px;
+      top: 60px;
+      right: 222px;
       width: 70px;
       height: 70px;
       background-image: url(./img/es-how-numberBg.webp);
@@ -73,35 +69,34 @@
     }
     &__sliderTitle {
       @include es-text-reset;
-      font-size: 20px;
-      font-family: $es-regular;
-      color: $es-main-text-color;
+      @include es-subheader--desktop;
     }
     &__sliderDesc {
       @include es-text-reset;
-      font-size: 16px;
-      font-family: $es-thin;
-      color: $es-main-text-color;
+      @include es-text--main;
       min-height: 110px;
     }
     &__link {
-      display: block;
-      text-decoration: none;
-      background-color: $es-main-text-color;
-      color: #fff;
-      border-radius: 40px;
-      padding: 10px 30px;
-      font-family: $es-regular;
-      font-size: 14px;
-      text-align: center;
-      transition: 0.4s ease-in-out;
-      max-width: 250px;
-      margin: auto;
-      &:hover {
-        color: $es-main-text-color;
-        outline: 2px solid $es-main-text-color;
-        background-color: transparent;
-      }
+      // display: block;
+      // text-decoration: none;
+      // background-color: $es-main-text-color;
+      // color: #fff;
+      // border-radius: 40px;
+      // padding: 10px 30px;
+      // font-family: $es-regular;
+      // font-size: 14px;
+      // text-align: center;
+      // transition: 0.4s ease-in-out;
+      // max-width: 250px;
+      // margin: auto;
+      // &:hover {
+      //   color: $es-main-text-color;
+      //   outline: 2px solid $es-main-text-color;
+      //   background-color: transparent;
+      // }
+      @include es-button--primary;
+      
+
       &--product {
         margin: 0 auto;
         align-self: center;
@@ -122,10 +117,11 @@
         background-image: url(./img/es-care-bg.webp);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        //background-size: contain;
         padding-top: 70px;
         &__title {
-          font-size: 40px;
+          @include es-header--secondary--desktop;
+          text-align: center;
         }
         &__desc {
           font-size: 20px;
@@ -138,48 +134,56 @@
           max-width: 350px;
           position: relative;
         }
+        &__img--height {
+          height: 341px;
+        }
+        // &__contentCtn--6 {
+
+        // }
         &__sliderDesc {
           min-height: 60px;
         }
-        &__link {
-          position: absolute;
-          bottom: -70px;
-          right: -30px;
-          &--product {
-            position: static;
-            max-width: 200px;
-            margin-top: 40px;
-            color: $es-main-text-color;
-            outline: 2px solid $es-main-text-color;
-            background-color: transparent;
-            font-size: 16px;
-            &:hover {
-              background-color: $es-main-text-color;
-              color: #fff;
-            }
-          }
-        }
+        // &__link {
+        //   position: absolute;
+        //   bottom: -70px;
+        //   right: -30px;
+        //   &--product {
+        //     position: static;
+        //     max-width: 200px;
+        //     margin-top: 40px;
+        //     color: $es-main-text-color;
+        //     outline: 2px solid $es-main-text-color;
+        //     background-color: transparent;
+        //     font-size: 16px;
+        //     &:hover {
+        //       background-color: $es-main-text-color;
+        //       color: #fff;
+        //     }
+        //   }
+        // }
 
         &__number {
           top: 0px;
           right: 0;
-          &--6 {
-            top: -70px;
-            right: 0px;
-          }
+          // &--6 {
+          //   top: -70px;
+          //   right: 0px;
+          // }
         }
       }
   }
 
   @media (min-width: 950px) {
     .es-care {
+      background-size: contain;
+      padding-block: 80px;
       &__number {
         top: 40px;
         right: 0;
-        &--6 {
-          top: -70px;
-          right: 20px;
-        }
+        // &--6 {
+        //   top: -70px;
+        //   right: 20px;
+        // }
       }
     }
   }
