@@ -6,8 +6,7 @@
     }
     &__textCtn {
       background-color: $es-main-text-light-color;
-      padding: 20px;
-      border-radius: 50px;
+      border-radius: 99px;
       max-width: 90%;
       margin: 0 auto;
     }
@@ -16,21 +15,8 @@
       color: #fff;
       text-align: center;
       font-family: $es-regular;
-      position: relative;
-      &::before {
-        content: url(./img/es-symptoms-lineTop.webp);
-        display: block;
-        position: absolute;
-        top: -30px;
-        left: -40px;
-      }
-      &::after {
-        content: url(./img/es-symptoms-lineBottom.webp);
-        display: block;
-        position: absolute;
-        bottom: -30px;
-        right: -40px;
-      }
+      padding-inline: 30px;
+      padding-block: 15px;
     }
     &__subtitle {
       @include es-text-reset;
@@ -112,6 +98,27 @@
         &__subtitle {
           @include es-text-reset;
           font-size: 25px;
+        }
+        &__textCtn {
+          border-radius: 50px;
+          padding: 20px;
+        }
+        &__text {
+          position: relative;
+      &::before {
+        content: url(./img/es-symptoms-lineTop.webp);
+        display: block;
+        position: absolute;
+        top: -30px;
+        left: -40px;
+      }
+      &::after {
+        content: url(./img/es-symptoms-lineBottom.webp);
+        display: block;
+        position: absolute;
+        bottom: -30px;
+        right: -40px;
+      }
         }
         &__bottomCtn {
           width: 100%;
