@@ -24,6 +24,7 @@
   width: 150px;
   text-align: center;
   margin: auto;
+
   &:hover {
     background-color: $es-dark-color;
     color: #fff;
@@ -32,19 +33,21 @@
 
 @mixin es-button--secondary {
   @include es-text-reset;
-      border: none;
-      background-color: $es-dark-color;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-family: $es-regular;
-      transition: 0.4s ease-in-out;
-      &:hover {
-        background-color: #fff;
-        outline: 2px solid $es-dark-color;
-        color: $es-dark-color;
-      }
+  text-decoration: none;
+  border: none;
+  background-color: $es-dark-color;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 150px;
+  cursor: pointer;
+  font-family: $es-regular;
+  transition: 0.4s ease-in-out;
+  &:hover {
+    background-color: #fff;
+    outline: 2px solid $es-dark-color;
+    color: $es-dark-color;
+  }
 }
 
 @mixin es-header--main--mobile {

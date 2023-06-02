@@ -31,11 +31,12 @@
     }
     &__imgCtn {
       max-width: 300px;
+      min-height: 182px;
       position: relative;
       
     }
     &__img--height {
-      height: 300px;
+      max-width: 80%;
       display: grid;
       place-items: center;
     }
@@ -43,14 +44,14 @@
       max-width: 400px;
       min-height: 150px;
       text-align: center;
-      &--6 {
-        align-self: flex-start;
-      }
+      // &--6 {
+      //   align-self: flex-start;
+      // }
     }
     &__number {
       position: absolute;
-      top: 20px;
-      right: 50px;
+      top: 60px;
+      right: 222px;
       width: 70px;
       height: 70px;
       background-image: url(./img/es-how-numberBg.webp);
@@ -76,23 +77,26 @@
       min-height: 110px;
     }
     &__link {
-      display: block;
-      text-decoration: none;
-      background-color: $es-main-text-color;
-      color: #fff;
-      border-radius: 40px;
-      padding: 10px 30px;
-      font-family: $es-regular;
-      font-size: 14px;
-      text-align: center;
-      transition: 0.4s ease-in-out;
-      max-width: 250px;
-      margin: auto;
-      &:hover {
-        color: $es-main-text-color;
-        outline: 2px solid $es-main-text-color;
-        background-color: transparent;
-      }
+      // display: block;
+      // text-decoration: none;
+      // background-color: $es-main-text-color;
+      // color: #fff;
+      // border-radius: 40px;
+      // padding: 10px 30px;
+      // font-family: $es-regular;
+      // font-size: 14px;
+      // text-align: center;
+      // transition: 0.4s ease-in-out;
+      // max-width: 250px;
+      // margin: auto;
+      // &:hover {
+      //   color: $es-main-text-color;
+      //   outline: 2px solid $es-main-text-color;
+      //   background-color: transparent;
+      // }
+      @include es-button--primary;
+      
+
       &--product {
         margin: 0 auto;
         align-self: center;
@@ -130,35 +134,41 @@
           max-width: 350px;
           position: relative;
         }
+        &__img--height {
+          height: 341px;
+        }
+        // &__contentCtn--6 {
+
+        // }
         &__sliderDesc {
           min-height: 60px;
         }
-        &__link {
-          position: absolute;
-          bottom: -70px;
-          right: -30px;
-          &--product {
-            position: static;
-            max-width: 200px;
-            margin-top: 40px;
-            color: $es-main-text-color;
-            outline: 2px solid $es-main-text-color;
-            background-color: transparent;
-            font-size: 16px;
-            &:hover {
-              background-color: $es-main-text-color;
-              color: #fff;
-            }
-          }
-        }
+        // &__link {
+        //   position: absolute;
+        //   bottom: -70px;
+        //   right: -30px;
+        //   &--product {
+        //     position: static;
+        //     max-width: 200px;
+        //     margin-top: 40px;
+        //     color: $es-main-text-color;
+        //     outline: 2px solid $es-main-text-color;
+        //     background-color: transparent;
+        //     font-size: 16px;
+        //     &:hover {
+        //       background-color: $es-main-text-color;
+        //       color: #fff;
+        //     }
+        //   }
+        // }
 
         &__number {
           top: 0px;
           right: 0;
-          &--6 {
-            top: -70px;
-            right: 0px;
-          }
+          // &--6 {
+          //   top: -70px;
+          //   right: 0px;
+          // }
         }
       }
   }
@@ -170,10 +180,10 @@
       &__number {
         top: 40px;
         right: 0;
-        &--6 {
-          top: -70px;
-          right: 20px;
-        }
+        // &--6 {
+        //   top: -70px;
+        //   right: 20px;
+        // }
       }
     }
   }
