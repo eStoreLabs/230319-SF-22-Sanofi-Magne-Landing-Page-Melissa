@@ -44,14 +44,12 @@
       max-width: 400px;
       min-height: 150px;
       text-align: center;
-      // &--6 {
-      //   align-self: flex-start;
-      // }
+
     }
     &__number {
       position: absolute;
-      top: 60px;
-      right: 222px;
+      top: 41px;
+      left: 10px;
       width: 70px;
       height: 70px;
       background-image: url(./img/es-how-numberBg.webp);
@@ -111,13 +109,19 @@
       }
     }
   }
-
+  @media (min-width: 650px) {
+    .es-care {
+      &__number {
+        left: unset;
+        right: 20px;
+      }
+    }
+  }
   @media (min-width: 750px) {
     .es-care {
         background-image: url(./img/es-care-bg.webp);
         background-repeat: no-repeat;
         background-position: center;
-        //background-size: contain;
         padding-top: 70px;
         &__title {
           @include es-header--secondary--desktop;
@@ -137,38 +141,12 @@
         &__img--height {
           height: 341px;
         }
-        // &__contentCtn--6 {
 
-        // }
         &__sliderDesc {
           min-height: 60px;
         }
-        // &__link {
-        //   position: absolute;
-        //   bottom: -70px;
-        //   right: -30px;
-        //   &--product {
-        //     position: static;
-        //     max-width: 200px;
-        //     margin-top: 40px;
-        //     color: $es-main-text-color;
-        //     outline: 2px solid $es-main-text-color;
-        //     background-color: transparent;
-        //     font-size: 16px;
-        //     &:hover {
-        //       background-color: $es-main-text-color;
-        //       color: #fff;
-        //     }
-        //   }
-        // }
-
         &__number {
-          top: 0px;
-          right: 0;
-          // &--6 {
-          //   top: -70px;
-          //   right: 0px;
-          // }
+           right: 0;
         }
       }
   }
@@ -178,12 +156,8 @@
       background-size: contain;
       padding-block: 80px;
       &__number {
-        top: 40px;
-        right: 0;
-        // &--6 {
-        //   top: -70px;
-        //   right: 20px;
-        // }
+        top: 15px;
+        right: 68px;
       }
     }
   }
