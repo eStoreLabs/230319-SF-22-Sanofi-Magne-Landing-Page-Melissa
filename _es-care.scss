@@ -113,7 +113,7 @@
         background-image: url(./img/es-care-bg.webp);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        //background-size: contain;
         padding-top: 70px;
         &__title {
           @include es-header--secondary--desktop;
@@ -165,6 +165,8 @@
 
   @media (min-width: 950px) {
     .es-care {
+      background-size: contain;
+      padding-block: 80px;
       &__number {
         top: 40px;
         right: 0;

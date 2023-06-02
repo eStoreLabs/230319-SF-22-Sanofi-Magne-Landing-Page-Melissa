@@ -162,6 +162,16 @@
         }
         &__text {
           width: 50%;
+          margin-top: 10px;
+          margin-left: 20px;
+          &:after {
+            display: block;
+            content: url(./img/kv-sun.webp);
+            position: absolute;
+            left: 5%;
+            bottom: -10%;
+            scale: 0.9;
+          }
         }
         &__title {
           @include es-header--main--desktop;
@@ -173,12 +183,7 @@
           margin-right: -41px;
           width: 300px;
           min-height: 200px;
-          &:before {
-            display: block;
-            content: url(./img/kv-sun.webp);
-            position: absolute;
-            left: -200px;
-          }
+          
         }
         &__subtitle {
           font-size: 17px;
@@ -187,7 +192,7 @@
           margin-right: -37px;
         }
         &__subtitleBadge {
-          width: 90px;
+          width: 80px;
           position: absolute;
           top: -40px;
           left: 40px;
@@ -244,6 +249,15 @@
         //   color: $es-main-text-color;
         //   position: relative;
         // }
+        &__text {
+          margin-top: 50px;
+          &::after {
+            right: 70%;
+            left: 15%;
+            bottom: 0;
+            scale: 1;
+          }
+        }
         &__title {
           //font-size: 40px;
           margin-bottom: 0;

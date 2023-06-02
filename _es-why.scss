@@ -59,7 +59,7 @@
     &__info {
       @include es-text-reset;
       color: $es-main-text-color;
-      font-family: $es-regular;
+      font-family: $es-title;
       font-size: 16px;
     }
     &__slides {
@@ -110,9 +110,11 @@
         }
         &__title {
           @include es-header--secondary--desktop--light;
+          text-align: center;
         }
         &__textCtn {
           border-radius: 50px;
+          max-width: 70%;
         }
         &__infoCtn {
           // background-image: url(./img/es-why__bg.webp);
@@ -122,11 +124,14 @@
           max-width: 35%;
           margin-top: -20px;
           min-height: 350px;
-          padding-inline: 50px;
+          padding-inline: 21px;
         }
-        
+        &__info {
+          font-size: 20px;
+        }
         &__slides {
           min-width: 50%;
+          margin: auto;
           &:before {
             content: "";
           }
