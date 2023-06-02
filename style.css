@@ -1924,6 +1924,7 @@
   border: none;
   background-color: transparent;
   margin-top: 100px;
+  z-index: 1;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__imgCtn img {
   max-height: 100%;
