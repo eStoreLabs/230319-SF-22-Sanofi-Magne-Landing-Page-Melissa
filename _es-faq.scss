@@ -1,5 +1,5 @@
 .es-faq {
-    margin-top: 80px;
+    //margin-top: 80px;
     padding: 14px;
     &__title {
       @include es-text-reset;
@@ -53,5 +53,6 @@
           @include es-header--secondary--desktop;
           text-align: center;
         }
+        
       }
   }

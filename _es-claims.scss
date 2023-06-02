@@ -7,7 +7,7 @@
     &__title {
       @include es-text-reset;
       font-size: 16px;
-      font-family: $es-title;
+      font-family: $es-regular;
       color: $es-main-text-color;
     }
     &__list {

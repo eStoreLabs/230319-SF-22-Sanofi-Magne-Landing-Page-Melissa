@@ -1,5 +1,9 @@
 .es-articles {
     padding: 14px;
+    background-image: url("./img/es-symptoms-bg.webp");
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: bottom 40% left -40%;
     &__title {
       @include es-text-reset;
       @include es-header--secondary--mobile;
@@ -8,17 +12,18 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
-      gap: 50px;
+      //align-items: center;
+      gap: 30px;
     }
     &__item {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
-      min-width: 300px;
-      max-width: 500px;
-      min-height: 450px;
+      //align-items: center;
+      width: 60%;
+      //min-width: 300px;
+      //max-width: 500px;
+      //min-height: 450px;
     }
     &__subtitle {
       @include es-text-reset;
@@ -34,8 +39,24 @@
 
   @media (min-width: 750px) {
     .es-articles {
+      background-image: none;
+      //background-size: contain;
+      //background-position: top left 100%;
       &__title {
         @include es-header--secondary--desktop;
+        text-align: center;
+      }
+      &__ctn {
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+      &__item {
+        align-items: center;
+        min-width: 300px;
+        max-width: 500px;
+        min-height: 450px;
+      }
+      &__subtitle {
         text-align: center;
       }
     }
