@@ -1,12 +1,186 @@
 .es-magneDesc {
-    background-image: url(./img/es-magneDesc-bg.webp);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: contain;
-    padding: 14px;
-    &__container {
+  background-image: url(./img/es-magneDesc-bg.webp);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  padding: 14px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &--secondary {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    min-height: 320px;
+    &--badge {
+      position: relative;
+    }
+  }
+  &__badge {
+    @include es-text-reset;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    background-color: #00b8bd;
+    border-radius: 50%;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: $es-regular;
+  }
+  &__name {
+    @include es-text-reset;
+    font-family: $es-regular;
+    text-align: center;
+    color: $es-dark-color;
+  }
+  &__link {
+    @include es-button--primary;
+    margin: unset;
+  }
+  &__arrow {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    align-self: flex-start;
+    margin-top: 100px;
+  }
+  &__imgCtn {
+    display: none;
+  }
+  &__img {
+    max-width: 300px;
+  }
+  &__packshot {
+    width: 310px;
+  }
+  &__title {
+    @include es-text-reset;
+    @include es-header--secondary--mobile;
+    text-align: left;
+  }
+  &__howCtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__howItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 250px;
+    min-height: 150px;
+    margin-top: 20px;
+  }
+
+  &__numberCtn {
+    height: 60px;
+    width: 60px;
+    background-image: url(./img/es-how-numberBg.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__number {
+    @include es-text-reset;
+    font-size: 30px;
+    font-family: $es-title;
+    color: $es-dark-color;
+    margin: 0;
+  }
+  &__how-text {
+    @include es-text-reset;
+    text-align: center;
+    @include es-subheader--mobile;
+    min-height: 60px;
+    &--hidden {
+      @include es-text-reset;
+      background-color: $es-main-text-light-color;
+      color: #fff;
+      padding: 15px;
+      border-radius: 40px;
+      font-family: $es-regular;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+  &__slider--mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //outline: 1px solid blue;
+    // .es-magneDesc__scrollCtn {
+    //   overflow-y: scroll;
+    //   max-width: 250px;
+    //   overflow: hidden;
+    // }
+    .es-magneDesc__howCtn {
+      //outline: 5px solid red;
+      display: flex;
+      //overflow: scroll;
+      //max-width: 300px;
+      //overflow: hidden;
+      //flex-wrap: nowrap;
+    }
+
+    .es-magneDesc__howItem {
+      min-height: unset;
+    }
+    .es-magneDesc__how-text {
+      min-height: unset;
+    }
+    .es-magneDesc__button {
+      display: none;
+    }
+    .es-hide {
+      display: block;
+    }
+  }
+  &__slide--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+  }
+}
+
+// .es-magneDesc__howItem:hover .es-magneDesc__numberCtn {
+//   animation: es-bounce 2s infinite;
+// }
+
+@media (min-width: 750px) {
+  .es-magneDesc {
+    &__container {
+      display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       &--secondary {
@@ -20,219 +194,44 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 20px;
     }
-    
-    &__slide {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-width: 200px;
-      min-height: 320px;
-      &--badge {
-        position: relative;
+    &__slider--mobile {
+      // .es-magneDesc__arrow {
+      //   display: none;
+      // }
+
+      .es-magneDesc__button {
+        @include es-button--secondary;
+        display: block;
+      }
+      .es-hide {
+        display: none;
       }
     }
-    &__badge {
-      @include es-text-reset;
-      position: absolute;
-      top: -10px;
-      right: 0px;
-      background-color: #00b8bd;
-      border-radius: 50%;
-      color: #fff;
-      width: 70px;
-      height: 70px;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 11px;
-      text-transform: uppercase;
-      font-family: $es-regular;
-    }
-    &__name {
-      @include es-text-reset;
-      font-family: $es-regular;
-      text-align: center;
-      color: $es-dark-color;
-    }
-    &__link {
-      @include es-button--primary;
-      margin: unset;
-    }
-    &__arrow {
-      cursor: pointer;
-      border: none;
-      background-color: transparent;
-      align-self: flex-start;
-      margin-top: 100px;
+    &__slide {
+      min-width: 300px;
     }
     &__imgCtn {
-      display: none;
+      display: block;
     }
     &__img {
       max-width: 300px;
     }
-    &__packshot {
-      width: 310px;
+    &__howItem {
+      min-height: 300px;
     }
     &__title {
-      @include es-text-reset;
-      @include es-header--secondary--mobile;
-      text-align: left;
-    }
-    &__howCtn {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-    &__howItem {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      min-width: 250px;
-      min-height: 150px;
-      margin-top: 20px;
-    }
-
-    &__numberCtn {
-      height: 60px;
-      width: 60px;
-      background-image: url(./img/es-how-numberBg.webp);
-      background-repeat: no-repeat;
-      background-size: contain;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &__number {
-      @include es-text-reset;
-      font-size: 30px;
-      font-family: $es-title;
-      color: $es-dark-color;
-      margin: 0;
-    }
-    &__how-text {
-      @include es-text-reset;
+      @include es-header--secondary--desktop;
       text-align: center;
-      @include es-subheader--mobile;
-      min-height: 60px;
-      &--hidden {
-        @include es-text-reset;
-        background-color: $es-main-text-light-color;
-        color: #fff;
-        padding: 15px;
-        border-radius: 40px;
-        font-family: $es-regular;
-        font-size: 12px;
-        text-align: center;
-      }
-    }
-    &__slider--mobile {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      //outline: 1px solid blue;
-      // .es-magneDesc__scrollCtn {
-      //   overflow-y: scroll;
-      //   max-width: 250px;
-      //   overflow: hidden;
-      // }
-      .es-magneDesc__howCtn {
-        //outline: 5px solid red;
-        display: flex;
-        //overflow: scroll;
-        //max-width: 300px;
-        //overflow: hidden;
-        //flex-wrap: nowrap;
-      }
-      
-    .es-magneDesc__howItem {
-      min-height: unset;
-      
-    }
-    .es-magneDesc__how-text {
-      min-height: unset;
-    }
-    .es-magneDesc__button {
-      display: none;
-    }
-    .es-hide {
-      display: block;
-    }
-    }
-    &__slide--mobile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 250px;
+      max-width: 24ch;
     }
   }
+}
 
-  // .es-magneDesc__howItem:hover .es-magneDesc__numberCtn {
-  //   animation: es-bounce 2s infinite;
-  // }
-
-  @media (min-width: 750px) {
-    .es-magneDesc {
-        &__container {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          &--secondary {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-        }
-        &__slider {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        &__slider--mobile {
-          // .es-magneDesc__arrow {
-          //   display: none;
-          // }
-          
-          .es-magneDesc__button {
-            @include es-button--secondary;
-            display: block;
-          }
-          .es-hide {
-            display: none;
-          }
-        }
-        &__slide {
-          min-width: 300px;
-        }
-        &__imgCtn {
-          display: block;
-        }
-        &__img {
-          max-width: 300px;
-        }
-        &__howItem {
-          min-height: 300px;
-        }
-        &__title {
-          @include es-header--secondary--desktop;
-          text-align: center;
-          max-width: 24ch;
-        }
-      }
-  }
-
-  @media (min-width: 950px) {
-    .es-magneDesc {
-      &__img {
-        max-width: 450px;
-      }
+@media (min-width: 950px) {
+  .es-magneDesc {
+    &__img {
+      max-width: 450px;
     }
   }
+}

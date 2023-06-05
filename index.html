@@ -13,7 +13,51 @@
   <div class="es-sanofi" id="es-sanofi">
     <div class="es-magne" id="es-magne">
       <header class="es-kv">
-        <nav class="es-kv__nav">
+        <nav class="es-kv__nav es-kv__nav--mobile">
+          <button type="button" class="es-kv__navBtn">
+            <div class="es-kv__navStrokeCtn">
+              <span class="es-kv__navStroke es-kv__navStroke--top"></span>
+              <span class="es-kv__navStroke es-kv__navStroke--middle"></span>
+              <span class="es-kv__navStroke es-kv__navStroke--bottom"></span>
+            </div>
+          </button>
+          <ul class="es-kv__navCtn es-hide">
+            <a data-href="#sprawdz-ile-magnezu-potrzebujesz" class="es-kv__navLink">
+              <li class="es-kv__navItem">
+                Sprawdź, ile magnezu <br />
+                potrzebujesz
+              </li>
+            </a>
+            <a data-href="#jak-zadbac-o-dobrostan-psychiczny" class="es-kv__navLink">
+              <li class="es-kv__navItem">
+                Jak zadbać <br />
+                o&nbsp;dobrostan psychiczny?
+              </li>
+            </a>
+            <a data-href="#dlaczego-warto-brac-magnez" class="es-kv__navLink">
+              <li class="es-kv__navItem">
+                Dlaczego warto <br />
+                brać magnez?
+              </li>
+            </a>
+            <a data-href="#jak-ukoic-nerwy-i-radzic-sobie-ze-stresem" class="es-kv__navLink">
+              <li class="es-kv__navItem">
+                Jak ukoić nerwy i&nbsp;pozbyć <br />
+                się stresu?
+              </li>
+            </a>
+            <a data-href="#cwiczenia-relaksacyjne" class="es-kv__navLink">
+              <li class="es-kv__navItem">
+                Ćwiczenia <br />
+                relaksacyjne
+              </li>
+            </a>
+            <a data-href="#faq" class="es-kv__navLink">
+              <li class="es-kv__navItem">FAQ</li>
+            </a>
+          </ul>
+        </nav>
+        <nav class="es-kv__nav es-kv__nav--desktop">
           <ul class="es-kv__navCtn">
             <a data-href="#sprawdz-ile-magnezu-potrzebujesz" class="es-kv__navLink">
               <li class="es-kv__navItem">
@@ -347,7 +391,7 @@
             <div class="es-magneDesc__scrollCtn">
 
            
-            <div class="es-magneDesc__howCtn">
+            <div class="es-magneDesc__howCtn es-magneDesc__howCtn--mobile">
               
               <div class="es-magneDesc__howItem es-mySlides-6">
                 <div class="es-magneDesc__slide--mobile">
@@ -1419,6 +1463,7 @@
     </div>
   </div>
   <script src="app.js"></script>
+  <script src="slider.js"></script>v
   <script defer>
     $(".es-kv__navLink").click(function () {
       var idik = $(this).attr("data-href");
