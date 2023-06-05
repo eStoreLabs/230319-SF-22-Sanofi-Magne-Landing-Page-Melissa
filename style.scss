@@ -3,7 +3,6 @@
 @import "variables";
 @import "mixins";
 
-
 #es-sanofi.es-sanofi {
   #es-magne.es-magne {
     max-width: 1200px;
@@ -14,7 +13,7 @@
     sup {
       font-size: x-small;
     }
-    
+
     img {
       max-width: 100%;
     }
@@ -45,6 +44,6 @@
     @import "es-articles";
     @import "es-productsDesc";
     @import "es-claims";
-    
+    @import "es-swiper";
   }
 }

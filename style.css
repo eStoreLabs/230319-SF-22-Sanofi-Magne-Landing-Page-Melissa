@@ -2286,4 +2286,15 @@
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-claims__logo {
   align-self: flex-end;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .swiper-button-next::after {
+  display: none;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .swiper-button-prev::after {
+  display: none;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

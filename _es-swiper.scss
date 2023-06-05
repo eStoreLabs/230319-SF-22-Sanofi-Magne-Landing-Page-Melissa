@@ -1,0 +1,16 @@
+.swiper-button-next {
+  &::after {
+    display: none;
+  }
+}
+.swiper-button-prev {
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
