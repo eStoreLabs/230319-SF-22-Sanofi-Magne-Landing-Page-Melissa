@@ -1481,6 +1481,9 @@
   top: -100px;
   right: 0;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-why__swiper {
+  max-width: 600px;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__slideText {
   font-size: 16px;
   line-height: 1.3;
