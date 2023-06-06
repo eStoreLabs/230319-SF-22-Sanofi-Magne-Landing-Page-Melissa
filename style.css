@@ -2016,6 +2016,7 @@
   background-color: transparent;
   margin-top: 100px;
   z-index: 1;
+  top: 0;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__imgCtn img {
   max-height: 100%;
@@ -2084,6 +2085,7 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__arrow {
     margin-top: unset;
+    top: 50%;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-exercise__slide {
     display: flex;

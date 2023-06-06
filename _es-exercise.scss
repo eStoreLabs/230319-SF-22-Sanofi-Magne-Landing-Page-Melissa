@@ -22,6 +22,7 @@
     background-color: transparent;
     margin-top: 100px;
     z-index: 1;
+    top: 0;
   }
   &__imgCtn {
     img {
@@ -87,6 +88,7 @@
     }
     &__arrow {
       margin-top: unset;
+      top: 50%;
     }
     &__slide {
       display: flex;
