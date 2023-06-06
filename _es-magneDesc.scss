@@ -196,13 +196,13 @@
       &--desktop {
         display: flex;
       }
-      &__button {
-        @include es-button--secondary;
-        display: block;
-      }
       .es-hide {
         display: none;
       }
+    }
+    &__button {
+      @include es-button--secondary;
+      display: block;
     }
     &__slide {
       min-width: 300px;

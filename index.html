@@ -170,6 +170,9 @@
         </div>
       </section>
 
+  
+
+
       <section class="es-may">
         <div class="es-may-mobile">
           <img class="es-may__img--decoration" src="./img/es-heart.png" alt="">
@@ -180,11 +183,9 @@
         <img class="es-may-desktop" src="./img/es-may-slider-img.webp"
           alt="Źdźbła trawy w zbliżeniu makro, niedobór magnezu zwiększa podatność na stres i może skutkować uczuciem zmęczenia. Uśmiechnięta kobieta w kapeluszu. W czym pomaga magnez? Magnez pomaga na skurcze mięśni, na stres i na nerwowość." />
 
-        <div class="es-slides__Ctn">
-          <!-- Slideshow container -->
-          <div class="es-slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="es-mySlides">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <div class="es-may__slide">
                 <div class="es-may__content">
                   <p class="es-may__title es-may-desktop">
@@ -217,7 +218,7 @@
                 </div>
               </div>
             </div>
-            <div class="es-mySlides">
+            <div class="swiper-slide">
               <div class="es-may__slide es-may__slide--second">
                 <div class="es-may__packshotCtn">
                   <img class="es-may__packshot" src="./img/es-cross-magne-b6-forte-100.webp"
@@ -242,41 +243,13 @@
                 </div>
               </div>
             </div>
-            <div class="es-may__buttonsCtn">
-              <button type="button" class="es-may__arrow es-may__arrow--prev es-prev">
-                <img class="es-btn--arrow" src="./img/es-slider-arrow-prev.webp" alt="" />
-              </button>
-              <button type="button" class="es-may__arrow es-may__arrow--next es-next">
-                <img class="es-btn--arrow" src="./img/es-slider-arrow-next.webp" alt="" />
-              </button>
-            </div>
-
           </div>
-          <div class="es-may-mobile--2">
-            <div class="es-may__itemCtn">
-              <div class="es-may__item">
-                <img src="./img/es-may-badge.webp" alt="" class="es-may__icon" />
-                <p class="es-may__text">
-                  Istnieje związek pomiędzy stresem a&nbsp;niedoborem
-                  magnezu. Niedobór magnezu zwiększa podatność na stres
-                </p>
-              </div>
-              <div class="es-may__item">
-                <img src="./img/es-may-badge2.webp" alt="" class="es-may__icon" />
-                <p class="es-may__text">
-                  Niedobór magnezu może skutkować uczuciem zmęczenia
-                </p>
-              </div>
-            </div>
-
-            <div class="es-may__packshotCtn">
-              <img class="es-may__packshot" src="./img/es-cross-magne-b6-forte-100.webp"
-                alt="Lek OTC Magne B6 Forte na silne niedobory magnezu, 60 tabletek powlekanych, do kupienia w Aptece internetowej Melissa." />
-              <a href="https://www.apteka-melissa.pl/produkt/magne-b6-forte-100-tabl,71382.html" target="_blank"
-                class="es-may__link">Sprawdź</a>
-            </div>
-
-          </div>
+          <button type="button" class="es-may__arrow es-may__arrow--prev swiper-button-prev">
+            <img class="es-btn--arrow" src="./img/es-slider-arrow-prev.webp" alt="" />
+          </button>
+          <button type="button" class="es-may__arrow es-may__arrow--next swiper-button-next">
+            <img class="es-btn--arrow" src="./img/es-slider-arrow-next.webp" alt="" />
+          </button>
         </div>
 
       </section>
@@ -304,7 +277,7 @@
       </section>
 
       <section class="es-magneDesc">
-        <div class="es-magneDesc__container">
+        <!-- <div class="es-magneDesc__container">
           <div class="es-magneDesc__slider">
             <button type="button" class="es-magneDesc__arrow es-prev2">
               <img class="es-btn--arrow" src="./img/es-slider-arrow-prev.webp" alt="" />
@@ -372,6 +345,79 @@
             <button type="button" class="es-magneDesc__arrow es-next2">
               <img class="es-btn--arrow" src="./img/es-slider-arrow-next.webp" alt="" />
             </button>
+          </div>
+          <div class="es-magneDesc__imgCtn">
+            <img src="./img/es-magneDesc-img.webp" alt="" class="es-magneDesc__img" />
+          </div>
+        </div> -->
+        <div class="es-magneDesc__container">
+          <div class="swiper">
+          <div class="es-magneDesc__slider swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="es-magneDesc__slide es-magneDesc__slide--badge">
+                <p class="es-magneDesc__badge">
+                  suplement <br />
+                  diety
+                </p>
+                <img src="./img/es-cross-magne-zis-30.webp"
+                  alt="Suplement diety Magne-B6 Zmęczenie i Stres jest dostępny w Aptece internetowej Melissa. Zawiera wyciąg z korzenia ashwagandhy."
+                  class="es-magneDesc__packshot" />
+                <p class="es-magneDesc__name">
+                  Magne-B<sub>6</sub> ZMĘCZENIE I STRES <br />
+                  30 tabl.
+                </p>
+                <a href="https://www.apteka-melissa.pl/produkt/magne-b6-zmeczenie-i-stres-30-tabl-1-szt,58888.html"
+                  target="_blank" class="es-magneDesc__link">Sprawdź</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="es-magneDesc__slide">
+                <img src="./img/es-cross-magne-b6-forte-100.webp"
+                  alt="Jaki magnez jest najlepszy? Lek Magne B6 Forte 100 tabletek powlekanych jest dostępny w Aptece internetowej Melissa bez recepty."
+                  class="es-magneDesc__packshot" />
+                <p class="es-magneDesc__name">
+                  Magne B<sub>6</sub> FORTE <br />
+                  100 tabl.
+                </p>
+                <a href="https://www.apteka-melissa.pl/produkt/magne-b6-forte-100-tabl,71382.html" target="_blank"
+                  class="es-magneDesc__link">Sprawdź</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="es-magneDesc__slide">
+                <img src="./img/es-cross-magne-b6-forte-60.webp"
+                  alt="Magne B6 Forte zawiera podwójną dawkę magnezu w postaci cytrynianu magnezu i witaminę B6, która zwiększa jego wchłanianie."
+                  class="es-magneDesc__packshot" />
+                <p class="es-magneDesc__name">
+                  Magne B<sub>6</sub> FORTE <br />
+                  60 tabl.
+                </p>
+                <a href="https://www.apteka-melissa.pl/produkt/magne-b6-forte-60-tabl,26882.html" target="_blank"
+                  class="es-magneDesc__link">Sprawdź</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="es-magneDesc__slide">
+                <img src="./img/es-cross-magne-b6-60.webp"
+                  alt="Lek Magne B6 zawiera łatwo przyswajalny magnez w postaci magnezu mleczanu i witaminę B6, która zwiększa jego wchłanianie."
+                  class="es-magneDesc__packshot" />
+                <p class="es-magneDesc__name">
+                  Magne B<sub>6</sub><br />
+                  60 tabl.
+                </p>
+                <a href="https://www.apteka-melissa.pl/produkt/magne-b6-60-tabl,67420.html" target="_blank"
+                  class="es-magneDesc__link">Sprawdź</a>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="es-magneDesc__arrow swiper-button-next">
+            <img class="es-btn--arrow" src="./img/es-slider-arrow-next.webp" alt="" />
+          </button>
+          <button type="button" class="es-magneDesc__arrow swiper-button-prev">
+            <img class="es-btn--arrow" src="./img/es-slider-arrow-prev.webp" alt="" />
+          </button>
           </div>
           <div class="es-magneDesc__imgCtn">
             <img src="./img/es-magneDesc-img.webp" alt="" class="es-magneDesc__img" />
