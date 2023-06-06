@@ -68,15 +68,7 @@
     "#es-sanofi.es-sanofi #es-magne.es-magne .es-prev5"
   );
 
-  //add that 6 to test if it works for some more slides
-  const esNext6 = document.querySelector(
-    "#es-sanofi.es-sanofi #es-magne.es-magne .es-next6"
-  );
-  const esPrev6 = document.querySelector(
-    "#es-sanofi.es-sanofi #es-magne.es-magne .es-prev6"
-  );
-
-  let slideIndex = [1, 1, 1, 1, 1, 1];
+  let slideIndex = [1, 1, 1, 1, 1];
   /* Class the members of each slideshow group with different CSS classes */
   let slideId = [
     "es-mySlides",
@@ -84,16 +76,12 @@
     "es-mySlides-3",
     "es-mySlides-4",
     "es-mySlides-5",
-    "es-mySlides-6",
   ];
   showSlides(1, 0);
   showSlides(1, 1);
   showSlides(1, 2);
   showSlides(1, 3);
   showSlides(1, 4);
-  //here added the 5, test
-  //they all stopped working
-  showSlides(1, 5);
 
   function plusSlides(n, no) {
     showSlides((slideIndex[no] += n), no);
@@ -128,10 +116,6 @@
 
   esNext5.addEventListener("click", () => plusSlides(1, 4));
   esPrev5.addEventListener("click", () => plusSlides(-1, 4));
-
-  // test if this works for one more slider
-  esNext6.addEventListener("click", () => plusSlides(1, 5));
-  esPrev6.addEventListener("click", () => plusSlides(-1, 5));
 
   //show content
 
@@ -312,3 +296,10 @@
 })(document);
 
 //swiper
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

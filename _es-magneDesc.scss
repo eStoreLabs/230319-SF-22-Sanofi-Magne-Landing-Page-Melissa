@@ -21,6 +21,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    &--mobile {
+      display: flex;
+    }
+    &--desktop {
+      display: none;
+    }
   }
 
   &__slide {
@@ -32,6 +38,8 @@
     min-height: 320px;
     &--badge {
       position: relative;
+    }
+    &--mobile {
     }
   }
   &__badge {
@@ -68,6 +76,7 @@
     background-color: transparent;
     align-self: flex-start;
     margin-top: 100px;
+    top: 0;
   }
   &__imgCtn {
     display: none;
@@ -136,19 +145,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    //outline: 1px solid blue;
-    // .es-magneDesc__scrollCtn {
-    //   overflow-y: scroll;
-    //   max-width: 250px;
-    //   overflow: hidden;
-    // }
     .es-magneDesc__howCtn {
-      //outline: 5px solid red;
       display: flex;
-      //overflow: scroll;
-      //max-width: 300px;
-      //overflow: hidden;
-      //flex-wrap: nowrap;
     }
 
     .es-magneDesc__howItem {
@@ -172,10 +170,6 @@
   }
 }
 
-// .es-magneDesc__howItem:hover .es-magneDesc__numberCtn {
-//   animation: es-bounce 2s infinite;
-// }
-
 @media (min-width: 750px) {
   .es-magneDesc {
     &__container {
@@ -195,11 +189,14 @@
       justify-content: center;
       align-items: center;
     }
-    &__slider--mobile {
-      // .es-magneDesc__arrow {
-      //   display: none;
-      // }
-      .es-magneDesc__button {
+    &__slider {
+      &--mobile {
+        display: none;
+      }
+      &--desktop {
+        display: flex;
+      }
+      &__button {
         @include es-button--secondary;
         display: block;
       }
@@ -218,6 +215,7 @@
     }
     &__howItem {
       min-height: 300px;
+      min-width: 200px;
     }
     &__title {
       @include es-header--secondary--desktop;
