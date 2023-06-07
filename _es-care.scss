@@ -62,6 +62,10 @@
     font-size: 40px;
     font-family: $es-title;
     color: $es-main-text-color;
+    &--six {
+      left: -30px;
+      top: 0px;
+    }
   }
   &__sliderTitle {
     @include es-text-reset;
@@ -73,23 +77,6 @@
     min-height: 110px;
   }
   &__link {
-    // display: block;
-    // text-decoration: none;
-    // background-color: $es-main-text-color;
-    // color: #fff;
-    // border-radius: 40px;
-    // padding: 10px 30px;
-    // font-family: $es-regular;
-    // font-size: 14px;
-    // text-align: center;
-    // transition: 0.4s ease-in-out;
-    // max-width: 250px;
-    // margin: auto;
-    // &:hover {
-    //   color: $es-main-text-color;
-    //   outline: 2px solid $es-main-text-color;
-    //   background-color: transparent;
-    // }
     @include es-button--primary;
 
     &--product {
@@ -111,6 +98,10 @@
     &__number {
       left: unset;
       right: 20px;
+      &--six {
+        right: -20px;
+        top: 20px;
+      }
     }
   }
 }
@@ -145,6 +136,10 @@
     }
     &__number {
       right: 0;
+      &--six {
+        right: -20px;
+        top: 60px;
+      }
     }
   }
 }
@@ -159,6 +154,10 @@
     &__number {
       top: 15px;
       right: 68px;
+      &--six {
+        right: -20px;
+        top: 60px;
+      }
     }
   }
 }
