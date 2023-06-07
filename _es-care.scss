@@ -120,9 +120,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 70px;
-    .swiper {
-      max-width: 90%;
-    }
+
     &__title {
       @include es-header--secondary--desktop;
       text-align: center;
@@ -155,6 +153,9 @@
   .es-care {
     background-size: contain;
     padding-block: 80px;
+    .swiper {
+      max-width: 90%;
+    }
     &__number {
       top: 15px;
       right: 68px;
