@@ -34,14 +34,17 @@
   text-decoration: none;
   color: $es-dark-color;
   background-color: transparent;
-  padding: 5px 20px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 10px 0px;
   font-family: $es-regular;
-  font-size: 14px;
+  font-size: 18px;
   transition: 0.4s ease-in-out;
   display: block;
   width: 180px;
   text-align: center;
   margin: auto;
+  margin-bottom: 0px;
 }
 
 @mixin es-button--secondary {

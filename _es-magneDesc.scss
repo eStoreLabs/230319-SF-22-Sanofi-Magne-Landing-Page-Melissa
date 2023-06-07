@@ -81,6 +81,8 @@
   }
   &__disabled {
     @include es-button--disabled;
+    margin-bottom: unset;
+    margin-top: 0px;
   }
   &__arrow {
     cursor: pointer;
