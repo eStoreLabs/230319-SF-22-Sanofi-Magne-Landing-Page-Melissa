@@ -5,9 +5,27 @@
   display: grid;
   justify-items: stretch;
   align-items: end;
+  &__displayDesktop {
+    display: none;
+  }
+  &__displayMobile {
+    display: block;
+    .swiper-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .es-may__slide--second {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
   &-desktop {
     display: none;
-    
   }
   &-mobile {
     display: grid;
@@ -22,18 +40,18 @@
     }
   }
   &__img {
-  grid-column: 2/3;
-  grid-row: 1/3;
-  max-width: 100%;
-  align-self: start;
-  justify-self: end;
-  align-self: center;
-  
-  z-index: 1;
-  &--decoration {
-    justify-self: center;
-    margin-right: 3rem;
-  }
+    grid-column: 2/3;
+    grid-row: 1/3;
+    max-width: 100%;
+    align-self: start;
+    justify-self: end;
+    align-self: center;
+
+    z-index: 1;
+    &--decoration {
+      justify-self: center;
+      margin-right: 3rem;
+    }
   }
   &__title {
     grid-row: 2/3;
@@ -45,6 +63,7 @@
   &__txtCtn {
     grid-column: 1/3;
     grid-row: 2/3;
+    padding: 0 10px;
   }
   &__text {
     @include es-text-reset;
@@ -84,22 +103,12 @@
     max-width: 60%;
   }
   &__slide--second {
-    display: none;
+    //display: none;
   }
 }
 
 @media (min-width: 750px) {
   .es-may {
-    &-mobile {
-      display: none;
-      &--2 {
-        display: none;
-      }
-    }
-    &-desktop {
-      display: block;
-      height: 100%; //for firefox, so it displays properly
-    }
     &__title {
       width: unset;
       @include es-header--secondary--desktop;
@@ -115,21 +124,11 @@
     &__slide {
       display: flex;
       justify-content: center;
-      min-height: 400px;
+      min-height: 300px;
       padding-inline: 20px;
       align-items: center;
       flex-direction: row;
       gap: 20px;
-
-      &--second {
-        background-image: url(./img/es-may-slider-bg.webp);
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-size: contain;
-        padding-top: 50px;
-        padding-top: 0px;
-        max-width: 86%;
-      }
     }
     &__content {
       max-width: 86%;
@@ -143,15 +142,15 @@
     }
 
     &__img {
-    display: block;
-    margin: auto;
+      display: block;
+      margin: auto;
       max-width: 250px;
     }
     &__packshot {
       max-height: 200px;
       max-width: 80%;
     }
-  
+
     &__packshotCtn {
       display: flex;
       flex-direction: column;
@@ -160,14 +159,14 @@
       gap: 20px;
       margin-left: 20px;
     }
-  
+
     &__item {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       gap: 20px;
     }
-  
+
     &__arrow {
       display: block;
       cursor: pointer;
@@ -191,6 +190,38 @@
       top: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
+    }
+  }
+}
+@media (min-width: 950px) {
+  .es-may {
+    &__displayDesktop {
+      display: flex;
+    }
+    &__displayMobile {
+      display: none;
+    }
+    &-mobile {
+      display: none;
+      &--2 {
+        display: none;
+      }
+    }
+    &-desktop {
+      display: block;
+      height: 100%; //for firefox, so it displays properly
+    }
+    &__slide {
+      &--second {
+        background-image: url(./img/es-may-slider-bg.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+        padding-top: 50px;
+        padding-top: 0px;
+        max-width: 95%;
+        min-height: 400px;
+      }
     }
   }
 }

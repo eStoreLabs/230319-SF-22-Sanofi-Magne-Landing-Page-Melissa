@@ -1,0 +1,23 @@
+.swiper {
+  max-width: 100%;
+  min-height: max-content;
+}
+
+.swiper-button-next {
+  width: auto;
+  &::after {
+    display: none;
+  }
+}
+.swiper-button-prev {
+  width: auto;
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

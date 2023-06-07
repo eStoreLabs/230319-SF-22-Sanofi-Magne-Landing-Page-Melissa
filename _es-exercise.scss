@@ -1,5 +1,11 @@
 .es-exercise {
   padding: 14px;
+  .swiper-button-prev {
+    left: -5%;
+  }
+  .swiper-button-next {
+    right: -5%;
+  }
   &__title {
     @include es-text-reset;
     @include es-header--secondary--mobile;
@@ -22,6 +28,7 @@
     background-color: transparent;
     margin-top: 100px;
     z-index: 1;
+    top: 0;
   }
   &__imgCtn {
     img {
@@ -62,6 +69,12 @@
 
 @media (min-width: 750px) {
   .es-exercise {
+    .swiper-button-prev {
+      left: 0%;
+    }
+    .swiper-button-next {
+      right: 0%;
+    }
     &__title {
       @include es-header--secondary--desktop;
       text-align: center;
@@ -87,6 +100,7 @@
     }
     &__arrow {
       margin-top: unset;
+      top: 50%;
     }
     &__slide {
       display: flex;

@@ -1,163 +1,182 @@
 .es-care {
-    background-image: none;
-    width: 100%;
-    min-height: 750px;
-    padding: 14px;
+  background-image: none;
+  width: 100%;
+  min-height: 750px;
+  padding: 14px;
+  .swiper {
+    max-width: 100%;
+  }
+  .swiper-button-prev {
+    top: 35%;
+    left: -5%;
+  }
+  .swiper-button-next {
+    top: 35%;
+    right: -5%;
+  }
+  &__title {
+    @include es-text-reset;
+    @include es-header--secondary--mobile;
+  }
+  &__desc {
+    @include es-text-reset;
+    @include es-text--main;
+    margin: 15px auto;
+    span {
+      font-family: $es-regular;
+    }
+  }
+  &__slides {
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  &__imgCtn {
+    max-width: 300px;
+    min-height: 182px;
+    position: relative;
+  }
+  &__img--height {
+    max-width: 80%;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+  }
+  &__contentCtn {
+    max-width: 400px;
+    min-height: 150px;
+    text-align: center;
+  }
+  &__number {
+    position: absolute;
+    top: 41px;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    background-image: url(./img/es-how-numberBg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include es-text-reset;
+    font-size: 40px;
+    font-family: $es-title;
+    color: $es-main-text-color;
+    &--six {
+      left: -30px;
+      top: 0px;
+    }
+  }
+  &__sliderTitle {
+    @include es-text-reset;
+    @include es-subheader--desktop;
+  }
+  &__sliderDesc {
+    @include es-text-reset;
+    @include es-text--main;
+    min-height: 110px;
+  }
+  &__link {
+    @include es-button--primary;
+
+    &--product {
+      margin: 0 auto;
+      align-self: center;
+    }
+  }
+  &__arrow {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    &--next {
+      align-self: flex-end;
+    }
+  }
+}
+@media (min-width: 650px) {
+  .es-care {
+    &__number {
+      left: unset;
+      right: 20px;
+      &--six {
+        right: -20px;
+        top: 20px;
+      }
+    }
+    .swiper-button-prev {
+      top: 50%;
+      left: 5%;
+    }
+    .swiper-button-next {
+      top: 50%;
+      right: 5%;
+    }
+  }
+}
+@media (min-width: 750px) {
+  .es-care {
+    background-image: url(./img/es-care-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 70px;
+
     &__title {
-      @include es-text-reset;
-      @include es-header--secondary--mobile;
+      @include es-header--secondary--desktop;
+      text-align: center;
     }
     &__desc {
-      @include es-text-reset;
-      @include es-text--main;
-      margin: 15px auto;
-      span {
-        font-family: $es-regular;
-      }
-    }
-    &__slides {
-      min-height: 400px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      font-size: 20px;
+      width: 80%;
     }
     &__slide {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-    }
-    &__imgCtn {
-      max-width: 300px;
-      min-height: 182px;
-      position: relative;
-      
-    }
-    &__img--height {
-      max-width: 80%;
-      display: grid;
-      place-items: center;
+      flex-direction: row;
     }
     &__contentCtn {
-      max-width: 400px;
-      min-height: 150px;
-      text-align: center;
+      max-width: 350px;
+      position: relative;
+    }
+    &__img--height {
+      height: 341px;
+    }
 
+    &__sliderDesc {
+      min-height: 60px;
     }
     &__number {
-      position: absolute;
-      top: 41px;
-      left: 10px;
-      width: 70px;
-      height: 70px;
-      background-image: url(./img/es-how-numberBg.webp);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      @include es-text-reset;
-      font-size: 40px;
-      font-family: $es-title;
-      color: $es-main-text-color;
-      
+      right: 0;
+      &--six {
+        right: -20px;
+        top: 60px;
+      }
     }
-    &__sliderTitle {
-      @include es-text-reset;
-      @include es-subheader--desktop;
-    }
-    &__sliderDesc {
-      @include es-text-reset;
-      @include es-text--main;
-      min-height: 110px;
-    }
-    &__link {
-      // display: block;
-      // text-decoration: none;
-      // background-color: $es-main-text-color;
-      // color: #fff;
-      // border-radius: 40px;
-      // padding: 10px 30px;
-      // font-family: $es-regular;
-      // font-size: 14px;
-      // text-align: center;
-      // transition: 0.4s ease-in-out;
-      // max-width: 250px;
-      // margin: auto;
-      // &:hover {
-      //   color: $es-main-text-color;
-      //   outline: 2px solid $es-main-text-color;
-      //   background-color: transparent;
-      // }
-      @include es-button--primary;
-      
+  }
+}
 
-      &--product {
-        margin: 0 auto;
-        align-self: center;
-      }
+@media (min-width: 950px) {
+  .es-care {
+    background-size: contain;
+    padding-block: 80px;
+    .swiper {
+      max-width: 90%;
     }
-    &__arrow {
-      cursor: pointer;
-      border: none;
-      background-color: transparent;
-      &--next {
-        align-self: flex-end;
-      }
-    }
-  }
-  @media (min-width: 650px) {
-    .es-care {
-      &__number {
-        left: unset;
-        right: 20px;
+    &__number {
+      top: 15px;
+      right: 68px;
+      &--six {
+        right: -20px;
+        top: 60px;
       }
     }
   }
-  @media (min-width: 750px) {
-    .es-care {
-        background-image: url(./img/es-care-bg.webp);
-        background-repeat: no-repeat;
-        background-position: center;
-        padding-top: 70px;
-        &__title {
-          @include es-header--secondary--desktop;
-          text-align: center;
-        }
-        &__desc {
-          font-size: 20px;
-          width: 80%;
-        }
-        &__slide {
-          flex-direction: row;
-        }
-        &__contentCtn {
-          max-width: 350px;
-          position: relative;
-        }
-        &__img--height {
-          height: 341px;
-        }
-
-        &__sliderDesc {
-          min-height: 60px;
-        }
-        &__number {
-           right: 0;
-        }
-      }
-  }
-
-  @media (min-width: 950px) {
-    .es-care {
-      background-size: contain;
-      padding-block: 80px;
-      &__number {
-        top: 15px;
-        right: 68px;
-      }
-    }
-  }
+}

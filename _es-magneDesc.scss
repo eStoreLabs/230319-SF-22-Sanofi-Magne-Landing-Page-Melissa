@@ -4,6 +4,15 @@
   background-position: right center;
   background-size: contain;
   padding: 14px;
+  .swiper-slide {
+    padding: 20px 50px;
+  }
+  .swiper-button-prev {
+    left: -5%;
+  }
+  .swiper-button-next {
+    right: -5%;
+  }
   &__container {
     display: flex;
     flex-direction: column;
@@ -21,6 +30,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    &--mobile {
+      display: flex;
+    }
+    &--desktop {
+      display: none;
+    }
   }
 
   &__slide {
@@ -32,6 +47,8 @@
     min-height: 320px;
     &--badge {
       position: relative;
+    }
+    &--mobile {
     }
   }
   &__badge {
@@ -68,6 +85,7 @@
     background-color: transparent;
     align-self: flex-start;
     margin-top: 100px;
+    top: 0;
   }
   &__imgCtn {
     display: none;
@@ -76,7 +94,7 @@
     max-width: 300px;
   }
   &__packshot {
-    width: 310px;
+    width: 290px;
   }
   &__title {
     @include es-text-reset;
@@ -136,19 +154,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    //outline: 1px solid blue;
-    // .es-magneDesc__scrollCtn {
-    //   overflow-y: scroll;
-    //   max-width: 250px;
-    //   overflow: hidden;
-    // }
     .es-magneDesc__howCtn {
-      //outline: 5px solid red;
       display: flex;
-      //overflow: scroll;
-      //max-width: 300px;
-      //overflow: hidden;
-      //flex-wrap: nowrap;
     }
 
     .es-magneDesc__howItem {
@@ -172,12 +179,20 @@
   }
 }
 
-// .es-magneDesc__howItem:hover .es-magneDesc__numberCtn {
-//   animation: es-bounce 2s infinite;
-// }
-
 @media (min-width: 750px) {
   .es-magneDesc {
+    .swiper {
+      max-width: 50%;
+    }
+    .swiper-slide {
+      padding: 20px 20px;
+    }
+    .swiper-button-prev {
+      left: -6%;
+    }
+    .swiper-button-next {
+      right: -6%;
+    }
     &__container {
       display: flex;
       flex-direction: row;
@@ -195,21 +210,23 @@
       justify-content: center;
       align-items: center;
     }
-    &__slider--mobile {
-      // .es-magneDesc__arrow {
-      //   display: none;
-      // }
-
-      .es-magneDesc__button {
-        @include es-button--secondary;
-        display: block;
+    &__slider {
+      &--mobile {
+        display: none;
+      }
+      &--desktop {
+        display: flex;
       }
       .es-hide {
         display: none;
       }
     }
+    &__button {
+      @include es-button--secondary;
+      display: block;
+    }
     &__slide {
-      min-width: 300px;
+      min-width: 250px;
     }
     &__imgCtn {
       display: block;
@@ -219,6 +236,7 @@
     }
     &__howItem {
       min-height: 300px;
+      min-width: 200px;
     }
     &__title {
       @include es-header--secondary--desktop;
@@ -230,8 +248,20 @@
 
 @media (min-width: 950px) {
   .es-magneDesc {
+    .swiper-slide {
+      padding: 20px 0px;
+    }
+    .swiper-button-prev {
+      left: 0%;
+    }
+    .swiper-button-next {
+      right: 0%;
+    }
     &__img {
       max-width: 450px;
+    }
+    &__slide {
+      min-width: 300px;
     }
   }
 }

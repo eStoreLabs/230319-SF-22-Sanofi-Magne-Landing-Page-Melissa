@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   padding: 50px 14px;
   &__content {
     width: 100%;
@@ -13,7 +13,6 @@
     @include es-text-reset;
     @include es-header--secondary--mobile;
     position: relative;
-
   }
 
   &__desc {
@@ -34,13 +33,13 @@
     max-width: 50%;
     position: relative;
     &::after {
-    content: url(./img/es-how-happyFace.webp);
-    display: block;
-    position: absolute;
-    left: 10%;
-    bottom: -50%;
-    transform: scale(0.5);
-  }
+      content: url(./img/es-how-happyFace.webp);
+      display: block;
+      position: absolute;
+      left: 10%;
+      bottom: -50%;
+      transform: scale(0.5);
+    }
   }
 
   // &__listItem {
@@ -74,13 +73,12 @@
     &__title {
       @include es-header--secondary--desktop;
       text-align: center;
-
     }
 
     &__desc {
       font-size: 20px;
     }
-    
+
     &__imgCtn {
       max-width: 400px;
       margin-top: unset;
