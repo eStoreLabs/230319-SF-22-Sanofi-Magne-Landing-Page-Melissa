@@ -574,9 +574,6 @@
   gap: 1.5rem;
   max-width: 60%;
 }
-#es-sanofi.es-sanofi #es-magne.es-magne .es-may__slide--second {
-  display: none;
-}
 @media (min-width: 750px) {
   #es-sanofi.es-sanofi #es-magne.es-magne .es-may {
     grid-template-columns: 1fr 2fr;
@@ -763,6 +760,15 @@
   background-size: contain;
   padding: 14px;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc .swiper-slide {
+  padding: 20px 50px;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc .swiper-button-prev {
+  left: -5%;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc .swiper-button-next {
+  right: -5%;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__container {
   display: flex;
   flex-direction: column;
@@ -861,7 +867,7 @@
   max-width: 300px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__packshot {
-  width: 310px;
+  width: 290px;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__title {
   font-size: 16px;
@@ -955,6 +961,18 @@
   min-height: 250px;
 }
 @media (min-width: 750px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc .swiper {
+    max-width: 50%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc .swiper-slide {
+    padding: 20px 20px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc .swiper-button-prev {
+    left: -6%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc .swiper-button-next {
+    right: -6%;
+  }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__container {
     display: flex;
     flex-direction: row;
@@ -1024,6 +1042,15 @@
   }
 }
 @media (min-width: 950px) {
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc .swiper-slide {
+    padding: 20px 0px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc .swiper-button-prev {
+    left: 0%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc .swiper-button-next {
+    right: 0%;
+  }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
     max-width: 450px;
   }
@@ -1359,6 +1386,9 @@
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 70px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-care .swiper {
+    max-width: 90%;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-care__title {
     font-family: "es-Gilroy-semibold";
