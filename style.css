@@ -1049,7 +1049,7 @@
     color: #001e61;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__slide {
-    min-width: 300px;
+    min-width: 250px;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__imgCtn {
     display: block;
@@ -1081,6 +1081,9 @@
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__img {
     max-width: 450px;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__slide {
+    min-width: 300px;
   }
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-calculator {
@@ -1490,6 +1493,14 @@
   justify-content: center;
   align-items: center;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-why__textCtn::before {
+  content: url(./img/es-how-sadFace.webp);
+  display: block;
+  position: absolute;
+  top: 55%;
+  right: 7%;
+  transform: scale(0.6);
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-why__text {
   color: #fff;
   font-family: "es-Gilroy-semibold";
@@ -1582,6 +1593,9 @@
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__textCtn {
     border-radius: 50px;
     max-width: 70%;
+  }
+  #es-sanofi.es-sanofi #es-magne.es-magne .es-why__textCtn::before {
+    display: none;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-why__infoCtn {
     background-position: center;

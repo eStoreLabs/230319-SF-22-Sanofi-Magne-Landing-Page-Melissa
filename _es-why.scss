@@ -27,6 +27,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &::before {
+      content: url(./img/es-how-sadFace.webp);
+      display: block;
+      position: absolute;
+      top: 55%;
+      right: 7%;
+      transform: scale(0.6);
+    }
   }
   &__text {
     color: #fff;
@@ -118,6 +126,9 @@
     &__textCtn {
       border-radius: 50px;
       max-width: 70%;
+      &::before {
+        display: none;
+      }
     }
     &__infoCtn {
       // background-image: url(./img/es-why__bg.webp);
