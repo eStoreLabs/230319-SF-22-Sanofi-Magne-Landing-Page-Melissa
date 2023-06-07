@@ -81,6 +81,9 @@
   &__link {
     @include es-button--primary;
   }
+  &__disabled {
+    @include es-button--disabled;
+  }
   &__arrow {
     display: none;
   }

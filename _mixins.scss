@@ -13,7 +13,7 @@
 @mixin es-button--primary {
   text-decoration: none;
   color: $es-dark-color;
-  background-color: #FFF;
+  background-color: #fff;
   border: 2px solid $es-dark-color;
   border-radius: 20px;
   padding: 5px 20px;
@@ -29,6 +29,19 @@
     background-color: $es-dark-color;
     color: #fff;
   }
+}
+@mixin es-button--disabled {
+  text-decoration: none;
+  color: $es-dark-color;
+  background-color: transparent;
+  padding: 5px 20px;
+  font-family: $es-regular;
+  font-size: 14px;
+  transition: 0.4s ease-in-out;
+  display: block;
+  width: 180px;
+  text-align: center;
+  margin: auto;
 }
 
 @mixin es-button--secondary {

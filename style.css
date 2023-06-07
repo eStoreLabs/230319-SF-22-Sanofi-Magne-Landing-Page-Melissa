@@ -464,7 +464,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-cross__link {
   text-decoration: none;
   color: #001e61;
-  background-color: #FFF;
+  background-color: #fff;
   border: 2px solid #001e61;
   border-radius: 20px;
   padding: 5px 20px;
@@ -480,6 +480,19 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-cross__link:hover {
   background-color: #001e61;
   color: #fff;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-cross__disabled {
+  text-decoration: none;
+  color: #001e61;
+  background-color: transparent;
+  padding: 5px 20px;
+  font-family: "es-Gilroy-semibold";
+  font-size: 14px;
+  transition: 0.4s ease-in-out;
+  display: block;
+  width: 180px;
+  text-align: center;
+  margin: auto;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may {
   padding: 14px;
@@ -568,7 +581,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__link {
   text-decoration: none;
   color: #001e61;
-  background-color: #FFF;
+  background-color: #fff;
   border: 2px solid #001e61;
   border-radius: 20px;
   padding: 5px 20px;
@@ -583,6 +596,19 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__link:hover {
   background-color: #001e61;
   color: #fff;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-may__disabled {
+  text-decoration: none;
+  color: #001e61;
+  background-color: transparent;
+  padding: 5px 20px;
+  font-family: "es-Gilroy-semibold";
+  font-size: 14px;
+  transition: 0.4s ease-in-out;
+  display: block;
+  width: 180px;
+  text-align: center;
+  margin: auto;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-may__arrow {
   display: none;
@@ -875,7 +901,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__link {
   text-decoration: none;
   color: #001e61;
-  background-color: #FFF;
+  background-color: #fff;
   border: 2px solid #001e61;
   border-radius: 20px;
   padding: 5px 20px;
@@ -891,6 +917,19 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__link:hover {
   background-color: #001e61;
   color: #fff;
+}
+#es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__disabled {
+  text-decoration: none;
+  color: #001e61;
+  background-color: transparent;
+  padding: 5px 20px;
+  font-family: "es-Gilroy-semibold";
+  font-size: 14px;
+  transition: 0.4s ease-in-out;
+  display: block;
+  width: 180px;
+  text-align: center;
+  margin: auto;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-magneDesc__arrow {
   cursor: pointer;
@@ -1187,7 +1226,7 @@
   margin: 50px 0;
   text-decoration: none;
   color: #001e61;
-  background-color: #FFF;
+  background-color: #fff;
   border: 2px solid #001e61;
   border-radius: 20px;
   padding: 5px 20px;
@@ -1361,6 +1400,19 @@
   min-height: 150px;
   text-align: center;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-care__disabled {
+  text-decoration: none;
+  color: #001e61;
+  background-color: transparent;
+  padding: 5px 20px;
+  font-family: "es-Gilroy-semibold";
+  font-size: 14px;
+  transition: 0.4s ease-in-out;
+  display: block;
+  width: 180px;
+  text-align: center;
+  margin: auto;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__number {
   position: absolute;
   top: 41px;
@@ -1405,7 +1457,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-care__link {
   text-decoration: none;
   color: #001e61;
-  background-color: #FFF;
+  background-color: #fff;
   border: 2px solid #001e61;
   border-radius: 20px;
   padding: 5px 20px;
@@ -2341,7 +2393,7 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-articles__link {
   text-decoration: none;
   color: #001e61;
-  background-color: #FFF;
+  background-color: #fff;
   border: 2px solid #001e61;
   border-radius: 20px;
   padding: 5px 20px;

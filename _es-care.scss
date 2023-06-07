@@ -56,6 +56,9 @@
     min-height: 150px;
     text-align: center;
   }
+  &__disabled {
+    @include es-button--disabled;
+  }
   &__number {
     position: absolute;
     top: 41px;

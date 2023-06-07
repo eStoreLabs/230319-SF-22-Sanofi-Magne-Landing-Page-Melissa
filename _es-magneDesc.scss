@@ -79,6 +79,9 @@
     @include es-button--primary;
     margin: unset;
   }
+  &__disabled {
+    @include es-button--disabled;
+  }
   &__arrow {
     cursor: pointer;
     border: none;
