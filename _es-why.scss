@@ -166,6 +166,9 @@
 }
 @media (min-width: 950px) {
   .es-why {
+    .swiper {
+      margin-left: -20px;
+    }
     &__info {
       font-size: 25px;
     }

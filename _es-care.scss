@@ -3,7 +3,17 @@
   width: 100%;
   min-height: 750px;
   padding: 14px;
-
+  .swiper {
+    max-width: 100%;
+  }
+  .swiper-button-prev {
+    top: 35%;
+    left: -5%;
+  }
+  .swiper-button-next {
+    top: 35%;
+    right: -5%;
+  }
   &__title {
     @include es-text-reset;
     @include es-header--secondary--mobile;
@@ -39,6 +49,7 @@
     max-width: 80%;
     display: grid;
     place-items: center;
+    padding: 10px;
   }
   &__contentCtn {
     max-width: 400px;
@@ -102,6 +113,14 @@
         right: -20px;
         top: 20px;
       }
+    }
+    .swiper-button-prev {
+      top: 50%;
+      left: 5%;
+    }
+    .swiper-button-next {
+      top: 50%;
+      right: 5%;
     }
   }
 }
