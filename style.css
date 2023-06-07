@@ -1834,8 +1834,8 @@
 #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__bottomCtn {
   background-image: url(./img/es-symptoms-bg.webp);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: 150% 50%;
+  background-size: 120%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1935,6 +1935,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    background-position: center;
+    background-size: contain;
   }
   #es-sanofi.es-sanofi #es-magne.es-magne .es-symptoms__contentCtn {
     position: absolute;
@@ -1966,6 +1968,9 @@
   z-index: 10;
   position: relative;
 }
+#es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__img {
+  max-width: 70%;
+}
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__mainCtn {
   margin-top: -200px;
 }
@@ -1976,10 +1981,16 @@
   padding: 6px;
   width: 90%;
   margin: 0 auto;
+  padding: 15px;
   position: relative;
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__ctn::after {
-  content: none;
+  content: url(./img/es-active-line-top.webp);
+  display: block;
+  position: absolute;
+  top: -30%;
+  right: -100px;
+  transform: scale(0.5);
 }
 #es-sanofi.es-sanofi #es-magne.es-magne .es-activeInfo__title {
   font-size: 16px;
