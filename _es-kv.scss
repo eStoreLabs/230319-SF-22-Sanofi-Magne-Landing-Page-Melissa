@@ -274,7 +274,7 @@
     &__nav {
       padding: 0;
       position: absolute;
-      z-index: 1000;
+      z-index: 100;
       &::after {
         content: url(./img/nav-line.webp);
         display: block;
@@ -287,7 +287,7 @@
       min-width: 160px;
       max-width: 160px;
       padding: 10px;
-      z-index: 1000;
+      z-index: 100;
       position: relative;
     }
     &__navLink {

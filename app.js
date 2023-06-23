@@ -1431,7 +1431,7 @@
       noSwipingSelector: null,
       passiveListeners: !0,
       containerModifierClass: "swiper-",
-      slideClass: "swiper-slide",
+      slideClass: "es-swiper-slide",
       slideBlankClass: "swiper-slide-invisible-blank",
       slideActiveClass: "swiper-slide-active",
       slideDuplicateActiveClass: "swiper-slide-duplicate-active",
@@ -3432,7 +3432,7 @@
               .forEach((t) => {
                 e.$wrapperEl.prepend(i(c[t], t));
               }),
-            e.$wrapperEl.children(".swiper-slide").css(m, `${b}px`),
+            e.$wrapperEl.children(".es-swiper-slide").css(m, `${b}px`),
             x();
         }
         t({
@@ -3920,7 +3920,7 @@
               e,
               e.originalParams.navigation,
               e.params.navigation,
-              { nextEl: "swiper-button-next", prevEl: "swiper-button-prev" }
+              { nextEl: "es-swiper-button-next", prevEl: "es-swiper-button-prev" }
             )),
             !t.nextEl && !t.prevEl)
           )
@@ -6460,11 +6460,11 @@
                   c.slideShadows)
                 ) {
                   let e = p
-                      ? t.find(".swiper-slide-shadow-left")
-                      : t.find(".swiper-slide-shadow-top"),
+                      ? t.find(".es-swiper-slide-shadow-left")
+                      : t.find(".es-swiper-slide-shadow-top"),
                     s = p
-                      ? t.find(".swiper-slide-shadow-right")
-                      : t.find(".swiper-slide-shadow-bottom");
+                      ? t.find(".es-swiper-slide-shadow-right")
+                      : t.find(".es-swiper-slide-shadow-bottom");
                   0 === e.length &&
                     ((e = d(
                       `<div class="swiper-slide-shadow-${
@@ -6523,7 +6523,7 @@
               a
                 .transition(t)
                 .find(
-                  ".swiper-slide-shadow-top, .swiper-slide-shadow-right, .swiper-slide-shadow-bottom, .swiper-slide-shadow-left"
+                  ".es-swiper-slide-shadow-top, .es-swiper-slide-shadow-right, .es-swiper-slide-shadow-bottom, .es-swiper-slide-shadow-left"
                 )
                 .transition(t),
                 e.params.cubeEffect.shadow &&
@@ -6575,11 +6575,11 @@
                   a.slideShadows)
                 ) {
                   let t = e.isHorizontal()
-                      ? r.find(".swiper-slide-shadow-left")
-                      : r.find(".swiper-slide-shadow-top"),
+                      ? r.find(".es-swiper-slide-shadow-left")
+                      : r.find(".es-swiper-slide-shadow-top"),
                     s = e.isHorizontal()
-                      ? r.find(".swiper-slide-shadow-right")
-                      : r.find(".swiper-slide-shadow-bottom");
+                      ? r.find(".es-swiper-slide-shadow-right")
+                      : r.find(".es-swiper-slide-shadow-bottom");
                   0 === t.length &&
                     (t = Z(a, r, e.isHorizontal() ? "left" : "top")),
                     0 === s.length &&
@@ -6596,7 +6596,7 @@
               (s ? e.slides.find(s) : e.slides)
                 .transition(t)
                 .find(
-                  ".swiper-slide-shadow-top, .swiper-slide-shadow-right, .swiper-slide-shadow-bottom, .swiper-slide-shadow-left"
+                  ".es-swiper-slide-shadow-top, .es-swiper-slide-shadow-right, .es-swiper-slide-shadow-bottom, .es-swiper-slide-shadow-left"
                 )
                 .transition(t),
                 K({ swiper: e, duration: t, transformEl: s });
@@ -6662,11 +6662,11 @@
                   r.slideShadows)
                 ) {
                   let e = n
-                      ? t.find(".swiper-slide-shadow-left")
-                      : t.find(".swiper-slide-shadow-top"),
+                      ? t.find(".es-swiper-slide-shadow-left")
+                      : t.find(".es-swiper-slide-shadow-top"),
                     s = n
-                      ? t.find(".swiper-slide-shadow-right")
-                      : t.find(".swiper-slide-shadow-bottom");
+                      ? t.find(".es-swiper-slide-shadow-right")
+                      : t.find(".es-swiper-slide-shadow-bottom");
                   0 === e.length && (e = Z(r, t, n ? "left" : "top")),
                     0 === s.length && (s = Z(r, t, n ? "right" : "bottom")),
                     e.length && (e[0].style.opacity = l > 0 ? l : 0),
@@ -6679,7 +6679,7 @@
               (s ? e.slides.find(s) : e.slides)
                 .transition(t)
                 .find(
-                  ".swiper-slide-shadow-top, .swiper-slide-shadow-right, .swiper-slide-shadow-bottom, .swiper-slide-shadow-left"
+                  ".es-swiper-slide-shadow-top, .es-swiper-slide-shadow-right, .es-swiper-slide-shadow-bottom, .es-swiper-slide-shadow-left"
                 )
                 .transition(t);
             },
@@ -6771,7 +6771,7 @@
                     : 1 - (1 - f.opacity) * c * n,
                 x = `translate3d(${g}) ${v} ${w}`;
               if ((m && f.shadow) || !m) {
-                let e = i.children(".swiper-slide-shadow");
+                let e = i.children(".es-swiper-slide-shadow");
                 if ((0 === e.length && f.shadow && (e = Z(r, i)), e.length)) {
                   const t = r.shadowPerProgress ? d * (1 / r.limitProgress) : d;
                   e[0].style.opacity = Math.min(Math.max(Math.abs(t), 0), 1);
@@ -6786,7 +6786,7 @@
             const { transformEl: s } = e.params.creativeEffect;
             (s ? e.slides.find(s) : e.slides)
               .transition(t)
-              .find(".swiper-slide-shadow")
+              .find(".es-swiper-slide-shadow")
               .transition(t),
               K({ swiper: e, duration: t, transformEl: s, allSlides: !0 });
           },
@@ -6860,7 +6860,7 @@
                   c < 0 ? "" + (1 + (1 - f) * c) : "" + (1 - (1 - f) * c)
                 })\n      `;
                 if (a.slideShadows) {
-                  let e = o.find(".swiper-slide-shadow");
+                  let e = o.find(".es-swiper-slide-shadow");
                   0 === e.length && (e = Z(a, o)),
                     e.length &&
                       (e[0].style.opacity = Math.min(
@@ -6876,7 +6876,7 @@
               const { transformEl: s } = e.params.cardsEffect;
               (s ? e.slides.find(s) : e.slides)
                 .transition(t)
-                .find(".swiper-slide-shadow")
+                .find(".es-swiper-slide-shadow")
                 .transition(t),
                 K({ swiper: e, duration: t, transformEl: s });
             },
@@ -7108,8 +7108,8 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   preventInteractionOnTransition: false,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".es-swiper-button-next",
+    prevEl: ".es-swiper-button-prev",
   },
   breakpoints: {
     1024: {

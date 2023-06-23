@@ -4,13 +4,13 @@
   background-position: right center;
   background-size: contain;
   padding: 14px;
-  .swiper-slide {
+  .es-swiper-slide {
     padding: 20px 50px;
   }
-  .swiper-button-prev {
+  .es-swiper-button-prev {
     left: -5%;
   }
-  .swiper-button-next {
+  .es-swiper-button-next {
     right: -5%;
   }
   &__container {
@@ -189,13 +189,13 @@
     .swiper {
       max-width: 50%;
     }
-    .swiper-slide {
+    .es-swiper-slide {
       padding: 20px 20px;
     }
-    .swiper-button-prev {
+    .es-swiper-button-prev {
       left: -6%;
     }
-    .swiper-button-next {
+    .es-swiper-button-next {
       right: -6%;
     }
     &__container {
@@ -253,13 +253,13 @@
 
 @media (min-width: 950px) {
   .es-magneDesc {
-    .swiper-slide {
+    .es-swiper-slide {
       padding: 20px 0px;
     }
-    .swiper-button-prev {
+    .es-swiper-button-prev {
       left: 0%;
     }
-    .swiper-button-next {
+    .es-swiper-button-next {
       right: 0%;
     }
     &__img {
