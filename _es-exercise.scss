@@ -28,7 +28,7 @@
     background-color: transparent;
     margin-top: 100px;
     z-index: 1;
-    top: 0;
+    top: 0 !important;
   }
   &__imgCtn {
     img {
@@ -45,6 +45,7 @@
     font-family: $es-regular;
     color: $es-main-text-color;
     margin-top: 20px;
+    text-align: left;
     &--bright {
       color: $es-main-text-light-color;
     }
@@ -54,6 +55,7 @@
     margin: 0;
     padding: 0;
     color: $es-main-text-color;
+    text-align: left;
     list-style: none;
   }
   &__descItem {
@@ -98,6 +100,8 @@
     }
     &__descList {
       padding-inline: 22px;
+      text-align: left;
+      list-style: none;
     }
     &__arrow {
       margin-top: unset;

@@ -57,6 +57,7 @@
     grid-row: 2/3;
     justify-self: center;
     width: 12ch;
+    text-align: left;
     @include es-text-reset;
     @include es-header--secondary--mobile;
   }
@@ -68,6 +69,7 @@
   &__text {
     @include es-text-reset;
     @include es-text--main;
+    text-align: left;
 
     &--line {
       text-decoration: underline;
